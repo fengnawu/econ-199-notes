@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title></title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css">
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme">
+  <link rel="stylesheet" href="reveal.js/css/theme/simple.css"/>
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],  
+          processEscapes: true,
+          displaystyle: true
+      },
+      "HTML-CSS": { availableFonts: ["TeX"] }
+    });
+  </script><script type="text/javascript"
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full">
+  </script>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section id="syllabus-and-introduction" class="slide level2">
+<h2>Syllabus and Introduction</h2>
+<h4 id="intermediate-microeconomics-econ-100a">Intermediate Microeconomics (Econ 100A)</h4>
+<h4 id="kristian-lópez-vargas">Kristian López Vargas</h4>
+<h4 id="ucsc---spring-2017">UCSC - Spring 2017</h4>
+</section>
+<section id="about-me" class="slide level2">
+<h2>About me</h2>
+<ul>
+<li><p>Assistant Professor – Economics UCSC</p></li>
+<li><p>My field of work: Micro, Behav. &amp; Exp. Econ</p></li>
+<li><p>PhD in Economics from the Univ. of Maryland</p></li>
+<li><p>Prev. experience: MEF, WB, IADB, UMD, Tel Reg.</p></li>
+<li><p>Taught microeconomics before</p></li>
+</ul>
+</section>
+<section id="why-take-this-class" class="slide level2">
+<h2>Why take this class?</h2>
+<ul>
+<li><p>Well, it is a requirement!</p></li>
+<li><p>...more important: this course gives you tools to <em>understand better</em> how <em>consumers</em> and <em>firms</em> make decisions, and how prices are determined</p></li>
+<li>Examples:
+<ul>
+<li>Policy Analysis<br />
+</li>
+<li>Marketing</li>
+<li>Life decisions</li>
+</ul></li>
+</ul>
+</section>
+<section id="why-take-this-class-2" class="slide level2">
+<h2>Why take this class? (2)</h2>
+<ul>
+<li><p>This course provides <strong>tools</strong> that economists use to assess the benefits and costs of possible courses of actions</p></li>
+<li><p>This course will sharpen your <strong>reasoning</strong> to determine if a <strong>certain action is &quot;optimal&quot;</strong> (best)</p></li>
+<li><p>Examples:</p>
+<ul>
+<li><p>Do we increase the <strong>minimum wage</strong>? If so, by how much?</p></li>
+<li><p>What is the optimal <strong>price for a product</strong>. Are we leaving money on the table?!</p></li>
+<li><p>Is a company inefficiently <strong>allocating its resources</strong>, so that its costs are higher than they could be.</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="syllabus" class="slide level2">
+<h2>Syllabus</h2>
+</section>
+<section id="syllabus-1-kristian" class="slide level2">
+<h2>Syllabus (1) Kristian</h2>
+<ul>
+<li><p>Email <a href="mailto:kristian@ucsc.edu">kristian@ucsc.edu</a></p></li>
+<li><p>Office hours: Thu 8am to 10am.</p></li>
+<li><p>Engineering 2 Building - Office 419</p></li>
+<li>Lectures: MWF from 2:40pm to 3:45pm.
+<ul>
+<li>J Bask Aud 101</li>
+</ul></li>
+</ul>
+</section>
+<section id="syllabus-2-tas" class="slide level2">
+<h2>Syllabus (2) TAs</h2>
+<ul>
+<li><p>Dahyeon Jeong (DJ) <a href="mailto:dajeong@ucsc.edu">dajeong@ucsc.edu</a>; office hrs: Friday 10:00am - 12:00pm ,</p></li>
+<li><p>Jiayi Xu <a href="mailto:jxu55@ucsc.edu">jxu55@ucsc.edu</a>; office hrs: Monday 2:00pm - 4:00pm,</p></li>
+<li><p>Quintero, Alfonso afquinte@ucsc.edu; office hrs: ______</p></li>
+<li><p>Zhu, Zijing zzhu17@ucsc.edu; office hrs: ______</p></li>
+<li><p>All TAs will hold office hours in <em>Engineering 2, Rm 403F</em> (subject to change)</p></li>
+</ul>
+</section>
+<section id="syllabus-3-discussion-sections" class="slide level2">
+<h2>Syllabus (3) Discussion Sections</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Class #</th>
+<th>Sec</th>
+<th>Day / Time</th>
+<th>Location</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>60832</td>
+<td>01A</td>
+<td>M 09:20AM - 10:25AM</td>
+<td>Kresge Clrm 319</td>
+</tr>
+<tr class="even">
+<td>60833</td>
+<td>01B</td>
+<td>M 10:40AM - 11:45AM</td>
+<td>Kresge Clrm 319</td>
+</tr>
+<tr class="odd">
+<td>60834</td>
+<td>01C</td>
+<td>W 08:00AM - 09:05AM</td>
+<td>Kresge Clrm 325</td>
+</tr>
+<tr class="even">
+<td>60835</td>
+<td>01D</td>
+<td>W 12:00PM - 01:05PM</td>
+<td>Kresge Clrm 319</td>
+</tr>
+<tr class="odd">
+<td>60836</td>
+<td>01E</td>
+<td>Th 08:30AM - 09:35AM</td>
+<td>Kresge Clrm 319</td>
+</tr>
+<tr class="even">
+<td>60837</td>
+<td>01F</td>
+<td>Th 09:50AM - 10:55AM</td>
+<td>Kresge Clrm 319</td>
+</tr>
+<tr class="odd">
+<td>60838</td>
+<td>01G</td>
+<td>F 10:40AM - 11:45AM</td>
+<td>Kresge Clrm 319</td>
+</tr>
+<tr class="even">
+<td>60839</td>
+<td>01H</td>
+<td>F 12:00PM - 01:05PM</td>
+<td>Kresge Clrm 319</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="syllabus-4-msi" class="slide level2">
+<h2>Syllabus (4) MSI</h2>
+<ul>
+<li>There is a new system (Gianluca makes announcement)</li>
+</ul>
+</section>
+<section id="syllabus-5-course-objectives" class="slide level2">
+<h2>Syllabus (5) Course Objectives</h2>
+<ul>
+<li><p><strong>Microeconomics</strong> is a body of concepts for understanding the economic behavior of individuals, firms and markets.</p></li>
+<li><p>Our main focus: understanding how <strong>supply</strong> and <strong>demand</strong> form and then operate together in a <strong>market</strong>.</p></li>
+<li><p>We will highlight the different ways in which markets function; from perfectly competitive markets to monopolistic ones.</p></li>
+<li><p>We will also study strategic interaction and market failures.</p></li>
+</ul>
+</section>
+<section id="syllabus-6-prerequisites-math" class="slide level2">
+<h2>Syllabus (6) Prerequisites, Math</h2>
+<ul>
+<li><p>Economics 1 and calculus.</p></li>
+<li><p>Mathematics is a vital tool for conducting economic analysis.</p></li>
+<li>Main mathematical tools to be familiar with:
+<ul>
+<li>graphing functions on a plane,</li>
+<li>solving a system of two (or three) equations and two unknown variables,<br />
+</li>
+<li>derivatives (get the concept and be able to compute the derivative of common functions).</li>
+<li>Basic optimization</li>
+</ul></li>
+</ul>
+</section>
+<section id="syllabus-7-textbook-and-readings" class="slide level2">
+<h2>Syllabus (7) Textbook and Readings</h2>
+<ul>
+<li><p>Text: “Intermediate Microeconomics: A Modern Approach (Ninth Edition)” by Hal R. Varian.</p></li>
+<li><p>The prior edition is acceptable as well.</p></li>
+<li><p>It is students’ responsibility to keep up with any important deviations from the current version.</p></li>
+<li><p>Additional readings may be assigned during the quarter.</p></li>
+<li><p>If you want to read more than one book: Perloff's &quot;Microeconomics&quot;</p></li>
+</ul>
+</section>
+<section id="syllabus-8-exams-and-grading" class="slide level2">
+<h2>Syllabus (8) Exams and Grading</h2>
+<ul>
+<li><p>Two midterms each worth 20% - April 24 and May 22</p></li>
+<li><p><strong>Comprehensive final exam</strong> worth 40% on Monday, June 12 (12-2:30PM).</p></li>
+<li><p>Exams are closed book and notes may not be used. Unless otherwise indicated, only a pen and pencil are needed for the exams.</p></li>
+</ul>
+</section>
+<section id="syllabus-9-homework-assignments" class="slide level2">
+<h2>Syllabus (9) Homework Assignments</h2>
+<ul>
+<li><p>5 to 6 graded homework assignments worth 20% of the total grade</p></li>
+<li><p><strong>Late assignments will not be accepted</strong></p></li>
+<li><p>Good news: the lowest grade will be dropped. (if have an emergency that prevents you from turning in your homework - you will use this feature)</p></li>
+<li><p>Team work is encouraged. However, everyone must hand in their own homework and show his/her work</p></li>
+</ul>
+</section>
+<section id="syllabus-10-canvas-piazza---lecture-slides" class="slide level2">
+<h2>Syllabus (10) Canvas ( Piazza - Lecture Slides)</h2>
+<ul>
+<li><p>Course information and materials, including homework assignments and practice exams, will be posted on Canvas (canvas.ucsc.edu).</p></li>
+<li><p>It is each student’s responsibility to check Canvas for course updates and new material during the quarter.</p></li>
+<li><p>Questions about the material, homework and exams are only admissible via Piazza. You can access our Piazza page through Canvas.</p></li>
+<li><p>Piazza is exclusively to discuss the subject matter. Students who violate this rule will be excluded from Piazza.</p></li>
+<li><p>Lecture slides links will be distributed through Canvas.</p></li>
+</ul>
+</section>
+<section id="syllabus-11-other-miscellanea" class="slide level2">
+<h2>Syllabus (11) Other Miscellanea</h2>
+<ul>
+<li><p>You will have access to the &quot;Intermediate Micro Video Handbook&quot; (IMVH) developed by UCSD-Economics. Look for the “UCSD IMVH” link on the class site on e-commons. This is optional, but likely helpful.</p></li>
+<li><p>In some lectures, we will use MobLab (www.moblab.com) to illustrate some economic concepts using interactions in classroom experiments or games (free, and maybe with real prizes!). You will receive an invitation soon.</p></li>
+<li><p>Feedback and suggestions are very welcome!</p></li>
+<li><p>Please include “[ECON 100A]” in the subject of every email you send to the instructor or TAs. For example: Subject: [ECON 100A] I have a question about HW2!</p></li>
+</ul>
+</section>
+<section id="syllabus-12-misconduct-and-accommodations" class="slide level2">
+<h2>Syllabus (12) Misconduct and Accommodations</h2>
+<ul>
+<li><p>Academic Misconduct / Dishonesty: A student who is responsible for academic misconduct or dishonesty (cheating during tests, plagiarism etc) is subject to both academic and disciplinary sanctions. As the academic sanction, the student will automatically earn a failing grade for the course. Disciplinary sanctions are determined by the student’s College Provost or the Academic Tribunal. I encourage you to review the (new) Academic Misconduct Policy for Undergraduates: http://www.ue.ucsc.edu/academic_misconduct</p></li>
+<li><p>Special Accommodations due to Disability: Any student who thinks s/he is in need of accommodation based on the impact of a disability should contact me privately to submit their Accommodation Authorization and discuss specific needs. Please do this preferably within the first two weeks of the quarter. Please contact the Disability Resource Center at 831-459-2089 in room 125 Hahn Student Services or by e-mail at drc@ucsc.edu to coordinate those accommodations.</p></li>
+</ul>
+</section>
+<section id="syllabus-13" class="slide level2">
+<h2>Syllabus (13)</h2>
+<ul>
+<li><p>Final Class Rules: be on time, polite and respectful.</p></li>
+<li><p>Earn <strong>honorary points</strong>, participate!</p></li>
+<li><p>Use all the resources available (e.g. Modified Supplemental Instructions, TAs, IMVH, EconGraphs, etc etc)</p></li>
+<li><p>If the class is too easy for you, do not settle, ask for more. I will point you to more advanced material so you can take it to the next level. :)</p></li>
+</ul>
+</section>
+<section id="how-to-succeed-in-this-course" class="slide level2">
+<h2>How to succeed in this course</h2>
+<ul>
+<li><p>If you are under some exceptional situation, <strong>talk to professor and TAs early</strong>.</p></li>
+<li><p>Ask for advice on how to approach studying for this class.</p></li>
+<li><p>Students who did well in this class:</p>
+<ul>
+<li><p>Study on average 7 hours a week on their own.</p></li>
+<li><p>Study way more than 10 hours in exam week.</p></li>
+<li><p>70% read textbook, ~80% never miss lectures, ~80% never miss sections.</p></li>
+<li><p>Be consistent, practice your math, always study both theory and exercises.</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="introduction" class="slide level2">
+<h2>Introduction</h2>
+</section>
+<section id="what-is-microeconomics" class="slide level2">
+<h2>What is Microeconomics</h2>
+<ul>
+<li><p>Microeconomics is the study of how <strong>individual economic decision-makers</strong> such as consumers, workers, firms or managers <strong>allocate scarce resources</strong> among alternate uses.</p></li>
+<li><p>This study involves both the <em>behavior</em> of these economic agents on their own and the way their behavior <em>interacts</em> and <em>aggregate</em> to form larger entities, such as <em>markets</em>.</p></li>
+</ul>
+</section>
+<section id="two-basic-postulates" class="slide level2">
+<h2>Two basic postulates:</h2>
+<ul>
+<li><p>Rational Choice: Each person tries to choose the best alternative available to him or her.</p></li>
+<li><p>Equilibrium: Market price adjusts until quantity demanded equals quantity supplied. More generally: state or condition of a system that will continue as long as the acting forces in the remain in balance.</p></li>
+</ul>
+</section>
+<section id="example-uber" class="slide level2">
+<h2>Example: UBER</h2>
+<figure>
+<img src="img/S1_UBERSurge.png" />
+</figure>
+<!--<img src="img/S1_UBERSurge.png" style="width:100wh; align-content:center; border:0">-->
+</section>
+<section id="example-uber-1" class="slide level2">
+<h2>Example: UBER</h2>
+<figure>
+<img src="img/S1_DemandUBER.png" />
+</figure>
+<!--<img src="img/S1_DemandUBER.png" style="max-height:70%; align-content:bottom; border:0">-->
+</section>
+<section id="example-uber-2" class="slide level2">
+<h2>Example: UBER</h2>
+<figure>
+<img src="img/S1_SupplyUBER.png" />
+</figure>
+<!--<img src="img/S1_SupplyUBER.png" style="max-height:70%; align-content:bottom; border:0">-->
+</section>
+<section id="example-uber-3" class="slide level2">
+<h2>Example: UBER</h2>
+<figure>
+<img src="img/S1_UBERSupplyDemand.png" />
+</figure>
+<!--<img src="img/S1_UBERSupplyDemand.png" style="width:100vh; align-content:center; border:0">-->
+</section>
+<section id="thanks" class="slide level2">
+<h2>Thanks</h2>
+<!--<iframe src="https://www.econgraphs.org/graphs/micro/consumer_theory/budget_constraint?embed=true" ></iframe>-->
+<!--
+========================================================================
+
+
+cd docs && \
+pandoc  \
+-t revealjs -V revealjs-url=reveal.js \
+--css=reveal.js/css/theme/simple.css \
+-H reveal.js/js/revealMathJax.js \
+-s S1_Introduction.md -o S1_Introduction.html && \
+cd .. && \
+git add docs/S1_Introduction.html && \
+git commit -am " add content to S1_Introduction.md " && \
+git push origin master && \
+mkdocs gh-deploy
+
+========================================================================
+-->
+</section>
+    </div>
+  </div>
+
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+              { src: 'reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>

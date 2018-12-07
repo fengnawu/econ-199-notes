@@ -1,0 +1,40 @@
+site_name: Lectures and Homeworks
+theme: readthedocs
+pages:
+    - Home: index.md
+    - Lectures:
+      - Intro and Syllabus: S1_Introduction.md
+      - Budget Constraint (Chapter 2): S2_Budget_Constraint_Ch2.md
+      - Preferences (Chapter 3): S3_Preferences_Ch3.md
+      - Utility (Chapter 4): S4_Utility_Ch4.md
+      - Choice (Chapter 5): S5_Choice_Ch5.md
+      - Demand (Chapter 6): S6_Demand_Ch6.md
+      - Market Demand (Chapter 15): S7_Market_Demand_Ch15.md
+      - Technology (Chapter 19): S8_Technology_Ch19.md
+      - Cost Minimization (Chapter 21): S9_CostMinimization_Ch21.md
+      - Cost Curves (Chapter 22): S10_CostCurves_Ch22.md
+      - Firm Supply (Chapter 23): S11_FirmSupply_Ch23.md
+      - Equilibrium (Chapter 16): S12_Equilibrium_Ch16.md
+      - Monopoly (Chapter 25): S13_Monopoly_Ch25.md
+      - Oligopoly (Chapter 28): S14_Oligopoly_Ch28.md
+      - Game Theory (Chapter 29, 30): S15_GameTheory_Ch29_Ch30.md
+
+    - Homework Assignemts:
+      - Homework 1 (Questions): HW1_Questions.md
+#      - Homework 1 (Solutions): hw1_solutions.md
+#      - Homework 2 (Solutions): hw2_solutions.md
+#      - Homework 3 (Solutions): hw3_solutions.md
+#      - Homework 4 (Solutions): hw4_solutions.md
+#      - Homework 5 (Solutions): hw5_solutions.md
+#      - Homework 6 (Solutions): hw6_solutions.md
+
+    - Moblab experiments: moblab_games.md
+
+
+
+extra_css: [extra.css]
+extra_javascript: []
+site_author: Kristian López-Vargas
+extra_javascript: ["https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML","js/mathjaxhelper.js"]
+
+
