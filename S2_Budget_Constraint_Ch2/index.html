@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Kristian López-Vargas">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Budget Constraint (Chapter 2) - Lectures and Homeworks</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../extra.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Budget Constraint (Chapter 2)";
+    var mkdocs_page_input_path = "S2_Budget_Constraint_Ch2.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Lectures and Homeworks</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lectures</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../S1_Introduction/">Intro and Syllabus</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Budget Constraint (Chapter 2)</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#budget-constraint">Budget Constraint</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#intermediate-microeconomics-econ-100a">Intermediate Microeconomics (Econ 100A)</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#consumption-choice-sets">Consumption Choice Sets</a></li>
+    
+
+    <li class="toctree-l3"><a href="#consumption-bundle">Consumption bundle</a></li>
+    
+
+    <li class="toctree-l3"><a href="#affordable-bundles-budget-constraints">Affordable Bundles - Budget Constraints</a></li>
+    
+
+    <li class="toctree-l3"><a href="#affordable-bundles-budget-constraints_1">Affordable Bundles - Budget Constraints</a></li>
+    
+
+    <li class="toctree-l3"><a href="#budget-line-or-budget-constraint">"Budget line" or "budget constraint"</a></li>
+    
+
+    <li class="toctree-l3"><a href="#budget-set">Budget Set</a></li>
+    
+
+    <li class="toctree-l3"><a href="#budget-for-two-commodities">Budget for Two Commodities</a></li>
+    
+
+    <li class="toctree-l3"><a href="#budget-for-three-commodities">Budget for Three Commodities</a></li>
+    
+
+    <li class="toctree-l3"><a href="#finding-the-slope-of-the-bc">Finding the slope of the BC</a></li>
+    
+
+    <li class="toctree-l3"><a href="#example-of-bc">Example of BC</a></li>
+    
+
+    <li class="toctree-l3"><a href="#changes-in-the-bc">Changes in the BC</a></li>
+    
+
+    <li class="toctree-l3"><a href="#introducing-econgraphs">Introducing EconGraphs</a></li>
+    
+
+    <li class="toctree-l3"><a href="#income-changes">Income Changes</a></li>
+    
+
+    <li class="toctree-l3"><a href="#income-increases">Income Increases</a></li>
+    
+
+    <li class="toctree-l3"><a href="#price-changes">Price Changes</a></li>
+    
+
+    <li class="toctree-l3"><a href="#p_1-increases">$ p_1 $ increases</a></li>
+    
+
+    <li class="toctree-l3"><a href="#ad-valorem-sales-taxes">Ad Valorem Sales Taxes</a></li>
+    
+
+    <li class="toctree-l3"><a href="#exercise-in-kind-gifts">Exercise: In kind gifts</a></li>
+    
+
+    <li class="toctree-l3"><a href="#exercise-the-food-stamp-program">Exercise: The Food Stamp Program</a></li>
+    
+
+    <li class="toctree-l3"><a href="#the-food-stamp-program">The Food Stamp Program</a></li>
+    
+
+    <li class="toctree-l3"><a href="#the-food-stamp-program_1">The Food Stamp Program</a></li>
+    
+
+    <li class="toctree-l3"><a href="#other-important-cases">Other important cases</a></li>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S3_Preferences_Ch3/">Preferences (Chapter 3)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S4_Utility_Ch4/">Utility (Chapter 4)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S5_Choice_Ch5/">Choice (Chapter 5)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S6_Demand_Ch6/">Demand (Chapter 6)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S7_Market_Demand_Ch15/">Market Demand (Chapter 15)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S8_Technology_Ch19/">Technology (Chapter 19)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S9_CostMinimization_Ch21/">Cost Minimization (Chapter 21)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S10_CostCurves_Ch22/">Cost Curves (Chapter 22)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S11_FirmSupply_Ch23/">Firm Supply (Chapter 23)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S12_Equilibrium_Ch16/">Equilibrium (Chapter 16)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S13_Monopoly_Ch25/">Monopoly (Chapter 25)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S14_Oligopoly_Ch28/">Oligopoly (Chapter 28)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S15_GameTheory_Ch29_Ch30/">Game Theory (Chapter 29, 30)</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Homework Assignemts</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../HW1_Questions/">Homework 1 (Questions)</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../moblab_games/">Moblab experiments</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Lectures and Homeworks</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Lectures &raquo;</li>
+        
+      
+    
+    <li>Budget Constraint (Chapter 2)</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <pre><code>
+</code></pre>
+<h2 id="budget-constraint">Budget Constraint</h2>
+<h3 id="intermediate-microeconomics-econ-100a">Intermediate Microeconomics (Econ 100A)</h3>
+<h4 id="kristian-lopez-vargas">Kristian López Vargas</h4>
+<h4 id="ucsc-spring-2017">UCSC - Spring 2017</h4>
+<hr />
+<h2 id="consumption-choice-sets">Consumption Choice Sets</h2>
+<ul>
+<li>
+<p>A consumption choice set is the collection of all consumption choices available to the consumer.</p>
+</li>
+<li>
+<p>What constrains consumption choice?</p>
+<ul>
+<li>Budgetary, time and other resource limitations.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="consumption-bundle">Consumption bundle</h2>
+<ul>
+<li>
+<p>A consumption bundle containing $ x_1 $ units of commodity 1, $ x_2 $ units of commodity 2 and so on up to $ x_n $ units of commodity n is denoted by the vector  $ ( x_1, x_2,  … , x_n ) $.</p>
+</li>
+<li>
+<p>Prices or goods are denoted by: $ p_1, p_2, … , p_n $.</p>
+</li>
+</ul>
+<hr />
+<h2 id="affordable-bundles-budget-constraints">Affordable Bundles - Budget Constraints</h2>
+<ul>
+<li>
+<p>Suppose prices are $ p_1, p_2, … , p_n $ and a consumer has $ m $ as income. </p>
+</li>
+<li>
+<p>Question: </p>
+<ul>
+<li>When is a consumption bundle $ (x_1, … , x_n) $ affordable at those given prices and income?</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="affordable-bundles-budget-constraints_1">Affordable Bundles - Budget Constraints</h2>
+<ul>
+<li>
+<p>Answer: </p>
+<ul>
+<li>
+<p>when $ p_1 x_1 + … + p_n x_n \leq m $</p>
+</li>
+<li>
+<p>where $ m $ is the consumer’s (disposable) income.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>That is, all the bundles that when purchased do not exhaust the consumer's income.  </p>
+</li>
+</ul>
+<hr />
+<h2 id="budget-line-or-budget-constraint">"Budget line" or "budget constraint"</h2>
+<ul>
+<li>
+<p>The bundles that are only <strong>just affordable</strong> form the consumer’s <strong>budget constraint</strong> or budget line.</p>
+</li>
+<li>
+<p>This is the set:</p>
+</li>
+</ul>
+<p>$ \{ ( x_1 ,…, x_n ) \quad:\quad p_1 x_1 + … + p_n x_n = m \} $</p>
+<ul>
+<li>For simplicity we will only work with $ x_1, … , x_n $ are all equal or greater than zero.</li>
+</ul>
+<hr />
+<h2 id="budget-set">Budget Set</h2>
+<ul>
+<li>The consumer’s <strong>budget set</strong> is the set of all affordable bundles;</li>
+</ul>
+<p>$ B(p_1, … , p_n, m) =
+\{ (x_1, … , x_n) \quad:\quad p_1 x_1 + … + p_n x_n \leq m \} $</p>
+<ul>
+<li>The budget constraint (or budget line) is the upper boundary of the budget set.</li>
+</ul>
+<hr />
+<h2 id="budget-for-two-commodities">Budget for Two Commodities</h2>
+<ul>
+<li>$ p_1 x_1 + p_2 x_2 = m $. Affordable set, intercepts, slope.</li>
+</ul>
+<p><img alt="" src="../img/Ch2/INTMIC9_FIG02_01.jpg" />
+<!--<img src="img/Ch2/INTMIC9_FIG02_01.jpg" style="max-height:50%; align-content:bottom; border:0">--></p>
+<hr />
+<h2 id="budget-for-three-commodities">Budget for Three Commodities</h2>
+<p><img alt="" src="../img/Ch2/ThreeGoodsBudget.png" /></p>
+<!--<img src="img/Ch2/ThreeGoodsBudget.png" style="max-height:80%; align-content:bottom; border:0">-->
+
+<hr />
+<h2 id="finding-the-slope-of-the-bc">Finding the slope of the BC</h2>
+<ul>
+<li>
+<p>Budget line: $ p_1 x_1 + p_2 x_2 = m $</p>
+</li>
+<li>
+<p>Solve for $ x_2 $ :</p>
+<ul>
+<li>
+<p>$ p_2 x_2 = m - p_1 x_1 $</p>
+</li>
+<li>
+<p>$ x_2 = \frac{m}{p_2}  - \frac{p_1}{p_2} x_1 $</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Therefore the slope is: $ - \frac{p_1}{p_2} $</p>
+</li>
+<li>
+<p>What is the interpretation: <strong>relative price</strong>.</p>
+</li>
+</ul>
+<hr />
+<h2 id="example-of-bc">Example of BC</h2>
+<ul>
+<li>
+<p>Good one is beer (good 1) and orange juice (good 2).</p>
+</li>
+<li>
+<p>Suppose $ p_1 = 3 $ and $ p_2 = 1 $.</p>
+</li>
+<li>
+<p>Income = 100</p>
+</li>
+<li>
+<p>slope = - 3: <em>Consumer need to give up (buy less) 3 oz. of orange juice to afford (be able to buy) 1 additional oz of beer.</em></p>
+</li>
+<li>
+<p>You can use the market to transform three units of OJ into one unit of beer, at the current prices. Therefore the term of <strong>relative price</strong></p>
+</li>
+</ul>
+<hr />
+<h2 id="changes-in-the-bc">Changes in the BC</h2>
+<ul>
+<li>
+<p>The budget constraint and budget set depend upon prices and income. What happens as prices or income change?</p>
+</li>
+<li>
+<p>Income change?</p>
+</li>
+<li>
+<p>Prices change?</p>
+</li>
+<li>
+<p>Board - Doc Camera</p>
+</li>
+<li>
+<p>Makler's <a href="https://www.econgraphs.org/graphs/micro/consumer_theory/budget_constraint?textbook=varian">EconGraphs</a></p>
+</li>
+</ul>
+<hr />
+<h2 id="introducing-econgraphs">Introducing EconGraphs</h2>
+<p><iframe
+
+src="https://www.econgraphs.org/graphs/micro/consumer_theory/budget_constraint?embed=true&textbook=varian" 
+
+style="border:0px #FFFFFF none;" name="myiFrame" scrolling="auto" frameborder="0" marginheight="0px" marginwidth="0px" height="600px" width="850px"
+
+></iframe></p>
+<hr />
+<h2 id="income-changes">Income Changes</h2>
+<p><img alt="" src="../img/Ch2/INTMIC9_FIG02_02.jpg" /></p>
+<!--<img src="img/Ch2/INTMIC9_FIG02_02.jpg" style="max-height:70%; align-content: top; border:0">-->
+
+<ul>
+<li>What bundles become unaffordable or newly affordable?</li>
+</ul>
+<hr />
+<h2 id="income-increases">Income Increases</h2>
+<ul>
+<li>
+<p>Increases in income m shift the  constraint outward in a parallel manner, thereby enlarging the budget set and improving choice.</p>
+</li>
+<li>
+<p>Decreases in income m shift the  constraint inward in a parallel manner, thereby shrinking the budget set and reducing choice.</p>
+</li>
+<li>
+<p>Which one is "good" for consumer?</p>
+</li>
+</ul>
+<hr />
+<h2 id="price-changes">Price Changes</h2>
+<p><img alt="" src="../img/Ch2/INTMIC9_FIG02_03.jpg" /></p>
+<!--<img src="img/Ch2/INTMIC9_FIG02_03.jpg" style="max-height:70%; align-content:bottom; border:0">-->
+
+<ul>
+<li>What bundles become unaffordable or newly affordable?</li>
+</ul>
+<hr />
+<h2 id="p_1-increases">$ p_1 $ increases</h2>
+<ul>
+<li>
+<p>$ p_1 $ increases from $ p_1 $ to $ p_1' $</p>
+</li>
+<li>
+<p>Budget constraint pivots: slope get steeper from $ -p_1 / p_2 $ to $ -p_1'/p_2 $</p>
+</li>
+<li>
+<p>Increasing the price of one commodity pivots the constraint inward.  </p>
+</li>
+<li>
+<p>Some old choices are lost, so increasing one price could make the consumer worse off.</p>
+</li>
+</ul>
+<hr />
+<h2 id="ad-valorem-sales-taxes">Ad Valorem Sales Taxes</h2>
+<ul>
+<li>
+<p>An ad valorem sales tax levied at a rate of 5% increases all prices by 5%, from $ p $ to $ 1.05 p $ .</p>
+</li>
+<li>
+<p>An ad valorem sales tax levied at a rate of t increases all prices by tp from p to (1+t)p.</p>
+</li>
+<li>
+<p>BC under a uniform sales tax: $ (1+t) p_1 x_1 + (1+t) p_2 x_2 = m $</p>
+</li>
+<li>
+<p>Do the graph! </p>
+</li>
+</ul>
+<hr />
+<h2 id="exercise-in-kind-gifts">Exercise: In kind gifts</h2>
+<ul>
+<li>
+<p>Consumer receives $ g_1 $ units of good one as a gift.</p>
+</li>
+<li>
+<p>Case 1: you can sell (trade) the gift if you want to.</p>
+</li>
+<li>
+<p>Case 2: you cannot sell the gift.</p>
+</li>
+<li>
+<p>Draw the budget line.</p>
+</li>
+</ul>
+<hr />
+<h2 id="exercise-the-food-stamp-program">Exercise: The Food Stamp Program</h2>
+<ul>
+<li>
+<p>Coupons that can be exchanged only for food. </p>
+</li>
+<li>
+<p>How does a food stamp alter a family’s budget constraint?</p>
+</li>
+<li>
+<p>Suppose $ m = {$}400 $ , $ p_F = {$}1 $ and the price of “other goods” is $ p_G = {$}1 $.</p>
+</li>
+<li>
+<p>The budget constraint is then $ F + G = 400 $</p>
+</li>
+<li>
+<p>Draw the budget line.</p>
+</li>
+</ul>
+<hr />
+<h2 id="the-food-stamp-program">The Food Stamp Program</h2>
+<p><img alt="" src="../img/Ch2/INTMIC9_FIG02_06B.jpg" /></p>
+<!--<img src="img/Ch2/INTMIC9_FIG02_06B.jpg" style="max-height:70%; align-content:bottom; border:0">-->
+
+<hr />
+<h2 id="the-food-stamp-program_1">The Food Stamp Program</h2>
+<ul>
+<li>What if food stamps can be traded on a black market for $0.50 each?</li>
+</ul>
+<hr />
+<h2 id="other-important-cases">Other important cases</h2>
+<ul>
+<li>
+<p>What if both, prices and income, double?</p>
+</li>
+<li>
+<p>What if there are bulk discounts for units beyond a threshold?</p>
+</li>
+<li>
+<p>What if there are quantity penalties for units beyond a threshold?</p>
+</li>
+</ul>
+<hr />
+<!--
+// This piece of code below creates the reveal presentation and pushes to GitHub and then deploys to GitHub pages. Modify the commit message and paste into terminal.
+
+cd docs && \
+pandoc  \
+-t revealjs -V revealjs-url=reveal.js \
+--css=reveal.js/css/theme/simple.css \
+-H reveal.js/js/revealMathJax.js \
+-s S2_Budget_Constraint_Ch2.md -o S2_Budget_Constraint_Ch2.html && \
+cd ..
+
+
+cd docs && \
+pandoc  \
+-t revealjs -V revealjs-url=reveal.js \
+--css=reveal.js/css/theme/simple.css \
+-H reveal.js/js/revealMathJax.js \
+-s S2_Budget_Constraint_Ch2.md -o S2_Budget_Constraint_Ch2.html && \
+cd .. && \
+git add docs/S2_Budget_Constraint_Ch2.html && \
+git add docs/S2_Budget_Constraint_Ch2.md && \
+git commit -am " add content to S2_Budget_Constraint_Ch2.md " && \
+git push origin master && \
+mkdocs gh-deploy 
+
+-->
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../S3_Preferences_Ch3/" class="btn btn-neutral float-right" title="Preferences (Chapter 3)">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../S1_Introduction/" class="btn btn-neutral" title="Intro and Syllabus"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../S1_Introduction/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../S3_Preferences_Ch3/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" defer></script>
+      <script src="../js/mathjaxhelper.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

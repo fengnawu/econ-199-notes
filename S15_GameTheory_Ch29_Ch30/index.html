@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Kristian López-Vargas">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Game Theory (Chapter 29, 30) - Lectures and Homeworks</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../extra.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Game Theory (Chapter 29, 30)";
+    var mkdocs_page_input_path = "S15_GameTheory_Ch29_Ch30.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Lectures and Homeworks</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lectures</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../S1_Introduction/">Intro and Syllabus</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S2_Budget_Constraint_Ch2/">Budget Constraint (Chapter 2)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S3_Preferences_Ch3/">Preferences (Chapter 3)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S4_Utility_Ch4/">Utility (Chapter 4)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S5_Choice_Ch5/">Choice (Chapter 5)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S6_Demand_Ch6/">Demand (Chapter 6)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S7_Market_Demand_Ch15/">Market Demand (Chapter 15)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S8_Technology_Ch19/">Technology (Chapter 19)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S9_CostMinimization_Ch21/">Cost Minimization (Chapter 21)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S10_CostCurves_Ch22/">Cost Curves (Chapter 22)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S11_FirmSupply_Ch23/">Firm Supply (Chapter 23)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S12_Equilibrium_Ch16/">Equilibrium (Chapter 16)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S13_Monopoly_Ch25/">Monopoly (Chapter 25)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S14_Oligopoly_Ch28/">Oligopoly (Chapter 28)</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Game Theory (Chapter 29, 30)</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#game-theory">Game Theory</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#intermediate-microeconomics-econ-100a">Intermediate Microeconomics (Econ 100A)</a></li>
+        
+            <li><a class="toctree-l4" href="#kristian-lopez-vargas">Kristian López Vargas</a></li>
+        
+            <li><a class="toctree-l4" href="#ucsc-spring-2017">UCSC - Spring 2017</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#game-theory_1">Game Theory</a></li>
+    
+
+    <li class="toctree-l3"><a href="#types-of-games">Types of Games</a></li>
+    
+
+    <li class="toctree-l3"><a href="#game-theory-static-simultaneous-move-games">Game Theory - Static, Simultaneous-Move Games</a></li>
+    
+
+    <li class="toctree-l3"><a href="#static-games-representation">Static Games - Representation</a></li>
+    
+
+    <li class="toctree-l3"><a href="#best-response-correspondence">Best Response Correspondence</a></li>
+    
+
+    <li class="toctree-l3"><a href="#dominant-strategy">Dominant Strategy</a></li>
+    
+
+    <li class="toctree-l3"><a href="#dominant-strategy-equilibrium">Dominant Strategy equilibrium</a></li>
+    
+
+    <li class="toctree-l3"><a href="#nash-equilibrium">Nash Equilibrium</a></li>
+    
+
+    <li class="toctree-l3"><a href="#nash-equilibrium-in-pure-strategies">Nash Equilibrium in Pure Strategies</a></li>
+    
+
+    <li class="toctree-l3"><a href="#mixed-strategies">Mixed Strategies</a></li>
+    
+
+    <li class="toctree-l3"><a href="#ok-but-why-mixed-strategies">OK, but WHY Mixed Strategies?</a></li>
+    
+
+    <li class="toctree-l3"><a href="#mixed-strategies-example">Mixed Strategies - Example</a></li>
+    
+
+    <li class="toctree-l3"><a href="#best-response-curves-in-simultaneous-games">Best response curves (in simultaneous games)</a></li>
+    
+
+    <li class="toctree-l3"><a href="#best-response-curves-adding-mixed-strategies">Best response curves - adding mixed Strategies</a></li>
+    
+
+    <li class="toctree-l3"><a href="#best-response-curves-adding-mixed-strategies_1">Best response curves - adding mixed Strategies</a></li>
+    
+
+    <li class="toctree-l3"><a href="#calculating-rows-expected-payoff">Calculating Row's Expected Payoff</a></li>
+    
+
+    <li class="toctree-l3"><a href="#calculating-columns-expected-payoff">Calculating Column's Expected Payoff</a></li>
+    
+
+    <li class="toctree-l3"><a href="#best-response-curves">Best Response Curves</a></li>
+    
+
+    <li class="toctree-l3"><a href="#sequential-games">Sequential Games</a></li>
+    
+
+    <li class="toctree-l3"><a href="#sequential-games-key-concepts">Sequential Games - Key concepts</a></li>
+    
+
+    <li class="toctree-l3"><a href="#sequential-games-key-concepts_1">Sequential Games - Key concepts</a></li>
+    
+
+    <li class="toctree-l3"><a href="#game-applications">Game Applications</a></li>
+    
+
+    <li class="toctree-l3"><a href="#games-of-coordination">Games of Coordination</a></li>
+    
+
+    <li class="toctree-l3"><a href="#battle-of-the-sexes">Battle of the Sexes</a></li>
+    
+
+    <li class="toctree-l3"><a href="#prisoners-dilemma">Prisoner's Dilemma</a></li>
+    
+
+    <li class="toctree-l3"><a href="#prisoners-dilemma_1">Prisoner's Dilemma</a></li>
+    
+
+    <li class="toctree-l3"><a href="#assurance-games">Assurance Games</a></li>
+    
+
+    <li class="toctree-l3"><a href="#chicken">Chicken</a></li>
+    
+
+    <li class="toctree-l3"><a href="#games-of-commitment">Games of Commitment</a></li>
+    
+
+    <li class="toctree-l3"><a href="#savings-and-social-security">Savings and Social Security</a></li>
+    
+
+    <li class="toctree-l3"><a href="#savings-and-social-security_1">Savings and Social Security</a></li>
+    
+
+    <li class="toctree-l3"><a href="#now-a-beauty-contest">Now a Beauty Contest</a></li>
+    
+
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Homework Assignemts</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../HW1_Questions/">Homework 1 (Questions)</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../moblab_games/">Moblab experiments</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Lectures and Homeworks</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Lectures &raquo;</li>
+        
+      
+    
+    <li>Game Theory (Chapter 29, 30)</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="game-theory">Game Theory</h2>
+<h4 id="intermediate-microeconomics-econ-100a">Intermediate Microeconomics (Econ 100A)</h4>
+<h4 id="kristian-lopez-vargas">Kristian López Vargas</h4>
+<h4 id="ucsc-spring-2017">UCSC - Spring 2017</h4>
+<hr />
+<h2 id="game-theory_1">Game Theory</h2>
+<p>In competitive markets or in a monopoly there is no reason to think about any specific competitor.</p>
+<p>BUT many other economic interactions do not have that core feature and agents do find themselves in interdependent / strategic interactions.</p>
+<p>Interdependence (or strategic interdependence) means that my satisfaction or profit depends on my actions AND the actions of at least one other specific player. Therefore, I need to care for what s/he does or does not... I use a strategy.</p>
+<p>A <strong>game</strong> is an interaction with strategic interdependence.</p>
+<hr />
+<h2 id="types-of-games">Types of Games</h2>
+<p>Timing:</p>
+<ul>
+<li>
+<p>Static Games: Each player acts simultaneously, only once and has complete information about the payoff functions but imperfect information about rivals’ moves.</p>
+</li>
+<li>
+<p>Dynamic Games: Players act sequentially. Usually assumed that each player has perfect recall of what happened prior to his/her turn to decide.</p>
+</li>
+</ul>
+<p>Information:</p>
+<ul>
+<li>
+<p>Complete information (payoff function is common knowledge among all players) is different from</p>
+</li>
+<li>
+<p>Perfect information (player knows full history of game up to the point he is about to move)</p>
+</li>
+</ul>
+<hr />
+<h2 id="game-theory-static-simultaneous-move-games">Game Theory - Static, Simultaneous-Move Games</h2>
+<p>Unless stated otherwise,  we will assume  we are in a "one-shot" (one round only) interaction.</p>
+<p>Payoff's will be apparent to the players after the choices have been made (simultaneous game).</p>
+<p>Typically, we use a <strong>payoff matrix</strong> that arranges all the possible outcomes a game can have.</p>
+<hr />
+<h2 id="static-games-representation">Static Games - Representation</h2>
+<ul>
+<li>We use a payoff matrix when we have few strategies per player.</li>
+</ul>
+<p><img alt="" src="../img/Ch29/INTMIC9_Table29_02.jpg" /></p>
+<hr />
+<h2 id="best-response-correspondence">Best Response Correspondence</h2>
+<p>The <strong>best response correspondence</strong> is the choice a player will make that will maximize her payoff, given the other players strategy.</p>
+<p>If there is more than one optimal response; your best response will be all of the choices in the set.</p>
+<p>See examples in document camera.</p>
+<hr />
+<h2 id="dominant-strategy">Dominant Strategy</h2>
+<p>A strategy $ s $ is a <strong>dominant strategy</strong> if it produces higher payoff than other strategies regardless of rivals’ strategies.</p>
+<p>In other words, if a player has an optimal strategy irrespective of the other player's move, such a strategy is the "dominant strategy".</p>
+<p>See examples in document camera.</p>
+<p>A strategy $ s' $ is a “dominated strategy” if for every strategy played by the opponent, there is another action the player can take and obtain higher payoff than with $ s' $.</p>
+<p>If the best response set does not vary with what the opponent chooses and is unique, then the only strategy in the best response set is the dominant strategy.</p>
+<hr />
+<h2 id="dominant-strategy-equilibrium">Dominant Strategy equilibrium</h2>
+<p><strong>Dominant strategy equilibrium</strong> represents the combination of strategies that players in the game arrive at when everyone has used their own <em>dominant strategy</em>.</p>
+<p>There can be a dominant strategy equilibrium only when all players have a dominant strategy.</p>
+<p><img alt="" src="../img/Ch29/INTMIC9_Table29_01.jpg" /></p>
+<hr />
+<h2 id="nash-equilibrium">Nash Equilibrium</h2>
+<p>We say that a set of strategies in a game forms a <strong>Nash Equilibrium</strong> if:</p>
+<ul>
+<li>
+<p>Agents are MUTUALLY BEST RESPONDING to each other's played strategies. So no player has an incentive to deviate from what they are playing.</p>
+</li>
+<li>
+<p>When all other players use in fact those strategies, one cannot obtain a higher playoff by choosing a different strategy.</p>
+</li>
+</ul>
+<p>Example: Cournot's equilibrium.</p>
+<hr />
+<h2 id="nash-equilibrium-in-pure-strategies">Nash Equilibrium in Pure Strategies</h2>
+<p>NE: (Player A, Top); (Player A, Left)</p>
+<p><img alt="" src="../img/Ch29/INTMIC9_Table29_02.jpg" /></p>
+<hr />
+<h2 id="mixed-strategies">Mixed Strategies</h2>
+<p>So far, players have used pure strategies, which means that each player chooses a single action.</p>
+<p>A mixed strategy is when a player chooses among possible actions probabilistically (flipping coins, tossing the dice, etc.)</p>
+<p>A pure strategy assigns a probability of 1 to a single action, and zero to the other actions.</p>
+<p>In a mixed strategy, more than one strategy receives a probability greater than zero.</p>
+<hr />
+<h2 id="ok-but-why-mixed-strategies">OK, but WHY Mixed Strategies?</h2>
+<ul>
+<li>
+<p>Practical point of view: In some games you want to be unpredictable</p>
+<ul>
+<li>Tennis service</li>
+<li>Penalty kick in football</li>
+<li>Poker</li>
+<li>War</li>
+</ul>
+</li>
+<li>
+<p>Mathematical point of view:</p>
+<ul>
+<li>Needed if pure strategy equilibria do not exist</li>
+<li>May coexist with pure strategy NE</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="mixed-strategies-example">Mixed Strategies - Example</h2>
+<p><img alt="" src="../img/Ch29/INTMIC9_Table29_03.jpg" /></p>
+<p>Calculate expected payoff if both players play 50/50 chances between their strategies:</p>
+<hr />
+<h2 id="best-response-curves-in-simultaneous-games">Best response curves (in simultaneous games)</h2>
+<p>Let's go deeper into finding mixed strategy Nash Equilibria</p>
+<p>Consider the simple game in which the players are given the matrix beforehand-</p>
+<p><img alt="" src="../img/Ch30/INTMIC9_Table30_01.jpg" /></p>
+<p>Suppose $ b_c(r) $ is the best response for column player and $ b_r(c) $ is the best response for player row.</p>
+<p><strong>Nash Equilibrium</strong> is the strategy profile ($ r^* $, $ c^* $) such that: $ c^* = b_c(r^*) ~~ $ and $ ~ r^* = b_r(c^*) $</p>
+<p>N.E. in pure strategies: NE1: $ ~(r^* = Top $ , $ c^* = Left) ~$ and NE2: $ ~(r^* = Bottom$ , $ c^* = Right) ~$</p>
+<hr />
+<h2 id="best-response-curves-adding-mixed-strategies">Best response curves - adding mixed Strategies</h2>
+<p>Let's add mixed strategies to what we know about best response curves.</p>
+<p>$ r = $ probability row plays top. $ 1-r $ probability row plays bottom.</p>
+<p>$ c = $ probability column plays left. $ 1-c $ probability column plays right.</p>
+<p>We have pure strategies is $ r $ and $ c $ are equal to either 0 or 1.</p>
+<p>Let's now calculate the payoff of the row and the columns</p>
+<hr />
+<h2 id="best-response-curves-adding-mixed-strategies_1">Best response curves - adding mixed Strategies</h2>
+<table>
+<thead>
+<tr>
+<th>Combination</th>
+<th>Probability</th>
+<th>Row's Payoff</th>
+<th>Column's Payoff</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Top, Left</td>
+<td>$ r ~ c $</td>
+<td>2</td>
+<td>1</td>
+</tr>
+<tr>
+<td>B, L</td>
+<td>$ (1-r)~c $</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>T, R</td>
+<td>$ r~(1-c) $</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>B, R</td>
+<td>$ (1-r)~(1-c) $</td>
+<td>1</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="calculating-rows-expected-payoff">Calculating Row's Expected Payoff</h2>
+<p>Row's Expected  Payoff becomes:</p>
+<p>$ \pi_{row}(r,c) = 2rc+ (1-r)(1-c) = 2rc+1-r-c +rc = (3c - 1)r + (1- c) $</p>
+<p>Row chooses $ r $ so the key term is $ (3c - 1) $</p>
+<p>This implies:</p>
+<p>$
+r^*(c)=
+\begin{cases}
+0 ~~~if ~c &lt; 1/3 \\
+1 ~~~if ~c &gt; 1/3 \\
+[0,1 ] ~~~if ~c = 1/3 \\
+\end{cases}
+$</p>
+<!-- Now suppose that row consider increasing $ r $ by $ \\Delta{r} $ -->
+
+<!-- $ \\Delta{\\pi_{row}(r,c)} = \\pi_{row}(r+\\Delta{r} ,c) - \\pi_{row}(r,c) =  (3c - 1)\\Delta{r} $ -->
+
+<!-- When is this expression positive and when is it negative? -->
+
+<!-- We want to increase $ r $ when $ c > 1/3 $, decrease $ r $ if $ c < 1/3 $ and do nothing if $ 0 \\le r \\le 1 $ when $ c = 1/3 $ -->
+
+<hr />
+<h2 id="calculating-columns-expected-payoff">Calculating Column's Expected Payoff</h2>
+<p>Columns's Expected Payoff becomes:</p>
+<p>$ \pi_{column}(r,c) = rc+ 2(1-r)(1-c) = rc + 2 - 2r - 2c + 2rc = (3r - 2)c + 2(1 - r) $</p>
+<p>Columns chooses $ c $ so the key term is $ (3r - 2) $</p>
+<p>This implies:</p>
+<p>$
+c^*(r)=
+\begin{cases}
+0 ~~~if ~r &lt; 2/3 \\
+1 ~~~if ~r &gt; 2/3 \\
+[0,1 ] ~~~if ~r = 2/3 \\
+\end{cases}
+$</p>
+<hr />
+<h2 id="best-response-curves">Best Response Curves</h2>
+<p>Let's draw then: How many Equilibria do you see?</p>
+<p><img alt="" src="../img/Ch30/INTMIC9_FIG30_01.jpg" /></p>
+<hr />
+<h2 id="sequential-games">Sequential Games</h2>
+<p>Consider the following "The new entry game" where the Incumbent can choose to drive prices down if the entrant joins the market.</p>
+<p>Key concepts: Decision node; Proper subgame; Strategy vs. Action; Payoff pairs.</p>
+<p><img alt="" src="../img/Ch29/INTMIC9_FIG29_02.jpg" /></p>
+<hr />
+<h2 id="sequential-games-key-concepts">Sequential Games - Key concepts</h2>
+<ul>
+<li>
+<p>In games where players move sequentially, we distinguish between an action and a strategy.</p>
+</li>
+<li>
+<p>An <em>action</em> is a move that a player makes at a specified point (decision node).</p>
+</li>
+<li>
+<p>A <em>strategy</em> is a <u> complete plan </u> that specifies the action a player will make based on information available at each decision node. (e.g, Entrant: Enters; Incumbent: Fight if Entrant Enters; Incumbent: Don't Fight if Entrant Stays Out;)</p>
+</li>
+<li>
+<p>A <strong>strategy profile</strong> is simply a particular combination of strategies implemented by all players.</p>
+</li>
+</ul>
+<hr />
+<h2 id="sequential-games-key-concepts_1">Sequential Games - Key concepts</h2>
+<ul>
+<li>
+<p>A <strong>subgame</strong> is a subset of game that starts at an independent node and can be analyzed in isolation of other subgames.</p>
+</li>
+<li>
+<p>A <strong>subgame-perfect equilibrium</strong> is A strategy profile that constitutes a Nash equilibrium for every proper "subgame".</p>
+</li>
+<li>
+<p>We find the equilibrium using backward induction and that is why we also call it "backward induction equilibrium".</p>
+</li>
+</ul>
+<hr />
+<h2 id="game-applications">Game Applications</h2>
+<hr />
+<h2 id="games-of-coordination">Games of Coordination</h2>
+<p>Coordination games involve both (or more) players to work together to obtain the highest payoff.</p>
+<p>The constraining aspect to this game is lack of communication that can arise.</p>
+<hr />
+<h2 id="battle-of-the-sexes">Battle of the Sexes</h2>
+<p>"Battle of the Sexes" is a coordination game</p>
+<p><img alt="" src="../img/Ch30/INTMIC9_Table30_03.jpg" /></p>
+<!-- Let us assume a couple plan to watch a movie together but by miraculous phenomenon, they got amnesia and forgot which movie they were supposed to watch. -->
+
+<!-- The boy would prefer to watch the new action movie and the girl would like something more artistically nuanced. Note: both would be willing to sacrifice their choice for the opportunity to be with their partner. (IF ONLY THEY KNEW!) -->
+
+<!-- Battle of the Sexes example -->
+
+<!-- Finally, say the girl's choice was the closest choice via walking distance in relation the lobby. Assuming this stipulation, we find the **focal point** of the game. -->
+
+<hr />
+<h2 id="prisoners-dilemma">Prisoner's Dilemma</h2>
+<p><img alt="" src="img/ch29/INTMIC9_Table29_04.jpg" /></p>
+<hr />
+<h2 id="prisoners-dilemma_1">Prisoner's Dilemma</h2>
+<p>Summed up: two people convicted of a crime are questioned. Each can choose to confess (implicating the other) and take less punishment, or deny and take risk of being implicated. 2 confessions = mild punishment, both deny = negligible punishment.</p>
+<p>The (unique) dominant strategy dictates that you are better off confessing than to risk being implicated.</p>
+<p><em>Pareto Efficiency</em> occurs when all resources are allocated efficiently. Is this the case here?</p>
+<p>The problem arises due to lack of trust. A common occurrence of a one-shot game.</p>
+<p>What would it happen is this game repeated over and over?</p>
+<hr />
+<h2 id="assurance-games">Assurance Games</h2>
+<p><img alt="" src="../img/Ch30/INTMIC9_Table30_05.jpg" /></p>
+<!-- Consider the nuclear arms race of the 1950's. Two countries on the brink of destruction and terror. -->
+
+<!-- The Nash Equilibrium would be either for both parties to refrain or to build. (Refraining is twice the payoff!) -->
+
+<!-- A country that chooses to refrain leaves their constituents at the mercy of the foreign counterpart. -->
+
+<!-- One way to cooperate is by allowing the counterpart to inspect your facilities; to ensure that you don't have the intention of building nuclear bombs. -->
+
+<!-- The matter then comes down to whether or not the evidence is sufficient. -->
+
+<hr />
+<h2 id="chicken">Chicken</h2>
+<p><img alt="" src="../img/Ch30/INTMIC9_Table30_06.jpg" /></p>
+<!-- Recall every movie that involves two cars and two irresponsible individuals: -->
+
+<!-- Obviously we can assume that Nash Equilibrium would not be achieved if both choose to drive straight both diverted. -->
+
+<!-- *Note the two Nash Equilibria are preferred differently by each player* (different from the assurance game) -->
+
+<!-- The most important strategy is this game is **commitment**. If a person knows they are messing with a maniac, they are more likely to swerve. -->
+
+<hr />
+<h2 id="games-of-commitment">Games of Commitment</h2>
+<p>The friendly kidnapper</p>
+<p><img alt="" src="../img/Ch30/INTMIC9_FIG30_08.jpg" /></p>
+<hr />
+<h2 id="savings-and-social-security">Savings and Social Security</h2>
+<p><img alt="" src="../img/Ch30/INTMIC9_Table30_10.jpg" /></p>
+<hr />
+<h2 id="savings-and-social-security_1">Savings and Social Security</h2>
+<p><img alt="" src="../img/Ch30/INTMIC9_FIG30_09.jpg" /></p>
+<hr />
+<h2 id="now-a-beauty-contest">Now a Beauty Contest</h2>
+<!--
+
+// This piece of code below creates the reveal presentation and pushes to GitHub and then deploys to GitHub pages. Modify the commit message and paste it into terminal.
+
+cd docs && \
+pandoc  \
+-t revealjs -V revealjs-url=reveal.js \
+--css=reveal.js/css/theme/simple.css \
+-H reveal.js/js/revealMathJax.js \
+-s S15_GameTheory_Ch29_Ch30.md -o S15_GameTheory_Ch29_Ch30.html && \
+cd .. && \
+git add docs/* && \
+git commit -am " add content to S15_GameTheory_Ch29_Ch30.md " && \
+git push origin master && \
+mkdocs gh-deploy 
+
+-->
+
+<!--  http://www.tablesgenerator.com/markdown_tables -->
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../HW1_Questions/" class="btn btn-neutral float-right" title="Homework 1 (Questions)">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../S14_Oligopoly_Ch28/" class="btn btn-neutral" title="Oligopoly (Chapter 28)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../S14_Oligopoly_Ch28/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../HW1_Questions/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" defer></script>
+      <script src="../js/mathjaxhelper.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title></title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css">
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme">
+  <link rel="stylesheet" href="reveal.js/css/theme/simple.css"/>
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],  
+          processEscapes: true,
+          displaystyle: true
+      },
+      "HTML-CSS": { availableFonts: ["TeX"] }
+    });
+  </script><script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full">
+  </script>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section id="technology" class="slide level2">
+<h2>Technology</h2>
+<h4 id="intermediate-microeconomics-econ-100a">Intermediate Microeconomics (Econ 100A)</h4>
+<h4 id="kristian-lópez-vargas">Kristian López Vargas</h4>
+<h4 id="ucsc---spring-2017">UCSC - Spring 2017</h4>
+</section>
+<section id="production" class="slide level2">
+<h2>Production</h2>
+<ul>
+<li><p>Production transforms a set of inputs into a set of outputs</p></li>
+<li>Inputs / factors of production:
+<ul>
+<li>labor, land, raw materials, capital</li>
+<li>Measured in flows</li>
+</ul></li>
+<li>Output:
+<ul>
+<li>The amount of goods and services produces by the firm is the firm’s output.</li>
+<li>In flow too</li>
+</ul></li>
+</ul>
+</section>
+<section id="technology-1" class="slide level2">
+<h2>Technology</h2>
+<ul>
+<li><p>What is technology?</p>
+<ul>
+<li>Knowledge</li>
+<li>...determines the quantity of output that is feasible to attain for a given set of inputs.</li>
+</ul></li>
+<li><p>What is a &quot;technological constraint&quot;?</p>
+<ul>
+<li>Is what separates what is feasible given our current knowledge and what is not.</li>
+</ul></li>
+</ul>
+</section>
+<section id="technological-constraints" class="slide level2">
+<h2>Technological constraints</h2>
+<ol type="1">
+<li><p><strong>Production set</strong>: all combinations of inputs and outputs that are technically feasible.</p></li>
+<li><p><strong>Production function</strong>: upper boundary of production set.</p>
+<ul>
+<li>The production function tells us the maximum possible output that can be attained by the firm for any given (combination) of inputs.</li>
+</ul></li>
+<li>Examples (input, output):
+<ul>
+<li>(9 hrs of studying per week, final grade of 35) in PS but not efficient (below PF).</li>
+<li>(9 hrs of studying per week, final grade of 94) not in PS (i.e. not feasible).</li>
+<li>(9 hrs of studying per week, final grade of 93) in PS and on PF (feasible and efficient).</li>
+</ul></li>
+</ol>
+</section>
+<section id="production-functions-sets" class="slide level2">
+<h2>Production Functions, Sets</h2>
+<iframe src="https://www.desmos.com/calculator/vlpsht9mav?embed" width="700px" height="500px" style="border: 1px solid #ccc" frameborder="0">
+</iframe>
+</section>
+<section id="example---smoothie-recipe" class="slide level2">
+<h2>Example - smoothie recipe</h2>
+<figure>
+<img src="img/TuttiFruttiSmoothie.png" />
+</figure>
+</section>
+<section id="production-functions-notation-examples" class="slide level2">
+<h2>Production Functions, Notation, Examples</h2>
+<ul>
+<li>q = f(L, K)
+<ul>
+<li>q = output (note that book uses $ y $ for output)</li>
+<li>K = Capital</li>
+<li>L = Labor</li>
+</ul></li>
+<li>Examples:
+<ul>
+<li>$ q = f(L, K) = L + K $</li>
+<li>$ q = f(L, K) = L \times K^2 $</li>
+<li>$ q = f(L) = L^{0.5} $</li>
+<li>$ q = f(L, K) = min \{ L , K/0.5 \} $</li>
+</ul></li>
+<li>Remember: every input and output is expressed in units per unit of time.</li>
+</ul>
+</section>
+<section id="isoquants" class="slide level2">
+<h2>Isoquants</h2>
+<ul>
+<li><p><strong>Isoquants</strong>: represent all the combinations of inputs that produce a constant level of output.</p></li>
+<li><p><em>Isoquants</em> are like indifference curves for preferences, except &quot;isoquants&quot; describe technology not preferences.</p></li>
+<li><p><em>Isoquants</em> &quot;live&quot; in the space (plane) of factor of production or inputs.</p></li>
+</ul>
+</section>
+<section id="examples-of-isoquants" class="slide level2">
+<h2>Examples of isoquants</h2>
+<ol type="1">
+<li><p>Fixed proportions, complements — one man, one shovel: $ q = \textrm{min} \{ man, shovel\} $</p></li>
+<li><p>Perfect substitutes — pen, pencils: $ q = pen + pencils $</p></li>
+<li><p>Cobb Douglass: $ q = A L^a K^b $</p></li>
+<li><p>Warning: a monotonic transformation of f(K,L) does not give the same technology!</p></li>
+</ol>
+<ul>
+<li>Exercise: what type of tech is a cooking recipe?</li>
+</ul>
+</section>
+<section id="assumptions---well-behaved-technologies" class="slide level2">
+<h2>Assumptions - well-behaved technologies</h2>
+<ol type="1">
+<li><p>Monotonic — more inputs produce more output</p></li>
+<li><p>Convexity — averages produce more than extremes</p></li>
+</ol>
+</section>
+<section id="d-version-of-a-c-d-production-function" class="slide level2">
+<h2>3-D version of a C-D production function</h2>
+<figure>
+<img src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Cobb_douglas.png" />
+</figure>
+</section>
+<section id="marginal-product" class="slide level2">
+<h2>Marginal Product</h2>
+<ul>
+<li><p>$ MP_L $ is how much extra output you get from increasing the usage of labor holding K constant.</p></li>
+<li><p>$ MP_L = \frac{ ∂f(L,K) }{∂L} $</p></li>
+<li><p>Similarly: $ MP_K = \frac{ ∂f(L,K) }{ ∂K } $</p></li>
+<li>Examples:
+<ul>
+<li>$ q = f(L, K) = L + K $</li>
+<li>$ q = f(L, K) = L \times K^2 $</li>
+<li>$ q = f(L) = L^{0.5} $</li>
+<li>$ q = f(L, K) = min \{ L , K/2 \} $</li>
+</ul></li>
+</ul>
+</section>
+<section id="average-product-ap_l" class="slide level2">
+<h2>Average product $ {AP}_L $</h2>
+<ul>
+<li><p>$ AP_L $ is the per-worker output: $ AP_L = \frac{ f(L,K) }{ L} $</p></li>
+<li><p>$ AP_K $ is the per machine output: $ AP_K = \frac{ f(L,K) }{ K } $</p></li>
+<li>Examples:
+<ul>
+<li>$ q = f(L, K) = L + K $</li>
+<li>$ q = f(L, K) = L \times K^2 $</li>
+<li>$ q = f(L) = L^{0.5} $</li>
+<li>$ q = f(L, K) = min \{ L , K/2 \} $</li>
+</ul></li>
+</ul>
+</section>
+<section id="apl-and-mpl" class="slide level2">
+<h2>APL and MPL</h2>
+<ul>
+<li><p>If $ MP_L &gt; AP_L $ , can it be that $ AP_L $ is decreasing? Nope</p></li>
+<li><p>If $ MP_L &lt; AP_L $ , can it be that $ AP_L $ is increasing? Nope</p></li>
+<li><p>If $ MP_L $ and $ AP_L $ cross, where/how do they cross?</p></li>
+</ul>
+</section>
+<section id="technical-rate-of-substitution-trs" class="slide level2">
+<h2>Technical rate of substitution TRS</h2>
+<ul>
+<li><p>Similar to MRS</p></li>
+<li><p>Technical rate of substitution (TRS): Suppose you increase $ L $ by $ \Delta L $. How much can you reduce K ( $ - \Delta K $ ) such that production level is not altered?</p></li>
+<li><p>Mathematically, TSR is the derivative of K with respect to L, along one isoquant curve: $ TRS = \frac{ dK }{ dL } = - \frac{ MP_L }{ MP_K } $</p></li>
+<li><p>Examples: do Cobb-Douglas and linear production.</p></li>
+</ul>
+</section>
+<section id="diminishing-marginal-product-returns" class="slide level2">
+<h2>Diminishing marginal product / returns</h2>
+<ul>
+<li><strong>Diminishing marginal returns</strong>: More of a <em>single</em> input produces more output, but at a decreasing rate:
+<ul>
+<li>Example: $ q = f(L, K) = L^{0.5} K^2 $</li>
+</ul></li>
+<li><p>Diminishing TRS equivalent to convexity.</p></li>
+<li><p>(!) There is a difference between diminishing returns (MPs) and diminishing TRS (!)</p>
+<ul>
+<li><p>Example: $ q = L \times K $</p></li>
+<li><p>$ MP_L $ is not diminishing but $ TRS $ is decreasing.</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="isoquants-and-returns-to-scale" class="slide level2">
+<h2>Isoquants and Returns to Scale</h2>
+<figure>
+<img src="img/Ch19/Isoquants.gif" />
+</figure>
+</section>
+<section id="returns-to-scale" class="slide level2">
+<h2>Returns to scale</h2>
+<ul>
+<li>Is this scalable?
+<ul>
+<li>Often, firms need to grow! Can I just multiply the amount of inputs?</li>
+<li>That depends largely on the firms’ technology.</li>
+</ul></li>
+<li>What happen to my output if I double ALL my inputs?
+<ul>
+<li>Doubling inputs: $ f(2L, 2K) $ what is the resulting $ q $ ?</li>
+<li>Similarly $ f(3L, 3K) $ ?</li>
+<li>Similarly $ f(1.1L, 1.1K) $ ?</li>
+</ul></li>
+</ul>
+</section>
+<section id="returns-to-scale---definition" class="slide level2">
+<h2>Returns to scale - definition</h2>
+<p>Production function exhibits:</p>
+<ul>
+<li>Constant returns to scale (CRS): when a percentage increase in inputs is followed by the same percentage increase in output.
+<ul>
+<li>Example: doubling inputs doubles output: $ f(2L, 2K) = 2f(L, K) $</li>
+</ul></li>
+<li>Increasing returns to scale (IRS): when a percentage increase in inputs is followed by a larger percentage increase in output.
+<ul>
+<li>Example: $ f(2L, 2K) &gt; 2f(L, K) $</li>
+</ul></li>
+<li>Decreasing returns to scale (DRS): when a percentage increase in inputs is followed by a smaller percentage increase in output.
+<ul>
+<li>Example: $ f(2L, 2K) &lt; 2f(L, K) $</li>
+</ul></li>
+</ul>
+</section>
+<section id="returns-to-scale---intuition" class="slide level2">
+<h2>Returns to scale - intuition</h2>
+<p>Some technologies allow for proportional scaling up of your production operation. Some other technologies do not. Why?</p>
+<ol type="1">
+<li><p>CRS: Easy replication (e.g. flyer distribution, data centers. Think of other examples)</p></li>
+<li><p>IRS: Occurs often with greater <em>specialization</em> of L and K (e.g. a larger plant more productive than two small plants).</p></li>
+<li><p>DRS: Occurs often because of the difficulty in organizing/coordinating/<em>searching</em> activities as firm size increases (e.g. mining).</p></li>
+</ol>
+</section>
+<section id="returns-to-scale---the-math" class="slide level2">
+<h2>Returns to scale - the math</h2>
+<p>For $ t&gt;1 $, the production function $ f(L,K) $ exhibits CRS/IRS/DRS when:</p>
+<ol type="1">
+<li><p>CRS: $ f(tL,tK) = t f(L,K) $</p></li>
+<li><p>IRS: $ f(tL,tK) &gt; t f(L,K) $</p></li>
+<li><p>DRS: $ f(tL,tK) &lt; t f(L,K) $</p></li>
+</ol>
+</section>
+<section id="returns-to-scale---examples" class="slide level2">
+<h2>Returns to scale - examples</h2>
+<ul>
+<li>$ q = f(L, K) = L + K $</li>
+<li>$ q = f(L, K) = L \times K^2 $</li>
+<li>$ q = f(L) = L^{0.5} $</li>
+<li>$ q = f(L, K) = min \{ L , K/2 \} $</li>
+</ul>
+</section>
+<section id="returns-to-scale---graphics" class="slide level2">
+<h2>Returns to scale - graphics</h2>
+<figure>
+<img src="img/Ch19/R2S.gif" />
+</figure>
+</section>
+<section id="returns-to-scale---local-notion" class="slide level2">
+<h2>Returns to scale - local notion</h2>
+<ul>
+<li><p>&quot;Returns to scale&quot; are a <strong>local notion!</strong></p></li>
+<li><p>Some prod functions have &quot;global&quot; returns to scale (e.g. $ q = L K $ ), but not all.</p></li>
+<li><p>Example: $ q = f(L,K) = (L+K) + (K+L)^2 - 0.1 (K+L)^3 $</p>
+<ul>
+<li>Start at $ (L, K) = (0.5 , 0.5) $</li>
+<li>Try scaling inputs up by $ t=2 $</li>
+<li>Try scaling inputs up by $ t=10 $</li>
+<li><a href="https://www.desmos.com/calculator/gv4w07lsw6">try set t=2 and then t=10 in this desmos example</a></li>
+</ul></li>
+</ul>
+</section>
+<section id="long-run-and-short-run-of-the-firm" class="slide level2">
+<h2>Long run and short run of the firm</h2>
+<ol type="1">
+<li><p>If all factors can be adjusted, <strong>the firm is in the &quot;long run&quot;</strong></p></li>
+<li><p>If at least one factor <strong>cannot</strong> be adjusted, <strong>the firm is in the &quot;short run&quot;</strong></p></li>
+<li><p>That is, we are in the short run (SR) when some factor(s) must stay fixed.</p>
+<ul>
+<li><p>Typically, we hold $ K $ constant at level $ \bar{K} $ in the SR.</p></li>
+<li><p>So the typical production function in the short run is written as:</p></li>
+</ul></li>
+</ol>
+<p><br /><span class="math display">$$
+q = f(L, \bar{K} )
+$$</span><br /></p>
+</section>
+<section id="explore-more-graphics-to-understand-better" class="slide level2">
+<h2>Explore more graphics to understand better</h2>
+<p><a href="http://www2.hawaii.edu/~fuleky/anatomy/anatomy.html" class="uri">http://www2.hawaii.edu/~fuleky/anatomy/anatomy.html</a></p>
+</section>
+<section class="slide level2">
+
+<!--
+
+// This piece of code below creates the reveal presentation and pushes to GitHub and then deploys to GitHub pages. Modify the commit message and paste it into terminal.
+
+cd docs && \
+pandoc  \
+-t revealjs -V revealjs-url=reveal.js \
+--css=reveal.js/css/theme/simple.css \
+-H reveal.js/js/revealMathJax.js \
+-s S8_Technology_Ch19.md -o S8_Technology_Ch19.html && \
+cd .. && \
+git add docs/S8_Technology_Ch19.html && \
+git commit -m " add content to S8_Technology_Ch19.md " && \
+git push origin master && \
+mkdocs gh-deploy
+-->
+</section>
+    </div>
+  </div>
+
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+              { src: 'reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>

@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Kristian López-Vargas">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Cost Curves (Chapter 22) - Lectures and Homeworks</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../extra.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Cost Curves (Chapter 22)";
+    var mkdocs_page_input_path = "S10_CostCurves_Ch22.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Lectures and Homeworks</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lectures</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../S1_Introduction/">Intro and Syllabus</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S2_Budget_Constraint_Ch2/">Budget Constraint (Chapter 2)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S3_Preferences_Ch3/">Preferences (Chapter 3)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S4_Utility_Ch4/">Utility (Chapter 4)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S5_Choice_Ch5/">Choice (Chapter 5)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S6_Demand_Ch6/">Demand (Chapter 6)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S7_Market_Demand_Ch15/">Market Demand (Chapter 15)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S8_Technology_Ch19/">Technology (Chapter 19)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S9_CostMinimization_Ch21/">Cost Minimization (Chapter 21)</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Cost Curves (Chapter 22)</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#cost-curves">Cost Curves</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#intermediate-microeconomics-econ-100a">Intermediate Microeconomics (Econ 100A)</a></li>
+        
+            <li><a class="toctree-l4" href="#kristian-lopez-vargas">Kristian López Vargas</a></li>
+        
+            <li><a class="toctree-l4" href="#ucsc-spring-2017">UCSC - Spring 2017</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#cost-curves-average-costs">Cost Curves - Average Costs</a></li>
+    
+
+    <li class="toctree-l3"><a href="#average-costs">Average Costs</a></li>
+    
+
+    <li class="toctree-l3"><a href="#marginal-cost">Marginal Cost</a></li>
+    
+
+    <li class="toctree-l3"><a href="#the-geometry-of-total-cost-ac-avc-and-mc">The geometry of total cost, AC, AVC and MC</a></li>
+    
+
+    <li class="toctree-l3"><a href="#some-relations-of-cost-curves">Some relations of Cost Curves</a></li>
+    
+
+    <li class="toctree-l3"><a href="#cost-curves_1">Cost Curves</a></li>
+    
+
+    <li class="toctree-l3"><a href="#cost-curves-example">Cost Curves - Example:</a></li>
+    
+
+    <li class="toctree-l3"><a href="#cost-curves-example_1">Cost Curves - Example:</a></li>
+    
+
+    <li class="toctree-l3"><a href="#cost-curves-do-at-home-examples">Cost Curves - do-at-home examples:</a></li>
+    
+
+    <li class="toctree-l3"><a href="#cost-minimization-in-two-plants">Cost minimization in two plants</a></li>
+    
+
+    <li class="toctree-l3"><a href="#long-run-and-short-run-cost-function-example">Long-run and short-run cost function - Example.</a></li>
+    
+
+    <li class="toctree-l3"><a href="#long-run-and-short-run-cost-function-example_1">Long-run and short-run cost function - Example.</a></li>
+    
+
+    <li class="toctree-l3"><a href="#short-run-ac-sac-and-long-run-ac-sac">Short-run AC (SAC) and long-run AC (SAC)</a></li>
+    
+
+    <li class="toctree-l3"><a href="#short-run-ac-sac-and-long-run-ac-sac_1">Short-run AC (SAC) and long-run AC (SAC)</a></li>
+    
+
+    <li class="toctree-l3"><a href="#econgraphs-general-cobb-douglas">EconGraphs - general Cobb-Douglas</a></li>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S11_FirmSupply_Ch23/">Firm Supply (Chapter 23)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S12_Equilibrium_Ch16/">Equilibrium (Chapter 16)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S13_Monopoly_Ch25/">Monopoly (Chapter 25)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S14_Oligopoly_Ch28/">Oligopoly (Chapter 28)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S15_GameTheory_Ch29_Ch30/">Game Theory (Chapter 29, 30)</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Homework Assignemts</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../HW1_Questions/">Homework 1 (Questions)</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../moblab_games/">Moblab experiments</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Lectures and Homeworks</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Lectures &raquo;</li>
+        
+      
+    
+    <li>Cost Curves (Chapter 22)</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="cost-curves">Cost Curves</h2>
+<h4 id="intermediate-microeconomics-econ-100a">Intermediate Microeconomics (Econ 100A)</h4>
+<h4 id="kristian-lopez-vargas">Kristian López Vargas</h4>
+<h4 id="ucsc-spring-2017">UCSC - Spring 2017</h4>
+<hr />
+<h2 id="cost-curves-average-costs">Cost Curves - Average Costs</h2>
+<ul>
+<li>
+<p>Total cost: $ c(q) = c_v(q) + F $ </p>
+</li>
+<li>
+<p>Average Cost: $ AC(q) = \frac{c(q)}{q} = \frac{c_v(q)}{q} + \frac{F}{q} $</p>
+</li>
+<li>
+<p>That is: $ AC(q) = AVC(q) + AFC(q) $</p>
+</li>
+<li>
+<p>Notice FC does not depend on $ q $, but AFC does depend on $ q $.</p>
+</li>
+<li>
+<p>Can AFC increase in $ q $</p>
+</li>
+</ul>
+<hr />
+<h2 id="average-costs">Average Costs</h2>
+<p><img alt="" src="../img/Ch22/INTMIC9_FIG22_01.jpg" /></p>
+<hr />
+<h2 id="marginal-cost">Marginal Cost</h2>
+<ul>
+<li>
+<p>Marginal cost is the change in cost due to change in output </p>
+</li>
+<li>
+<p>$ c’(q) = \frac{ ∂c(q) }{ ∂q } = \frac{ ∂c_v(q) }{ ∂q }  $</p>
+</li>
+</ul>
+<hr />
+<h2 id="the-geometry-of-total-cost-ac-avc-and-mc">The geometry of total cost, AC, AVC and MC</h2>
+<ul>
+<li>
+<p>MC: is the slope of a tangent line of c(q) at q level. </p>
+</li>
+<li>
+<p>AC: is the slope of the ray from the origin to c(q) at q level.</p>
+</li>
+<li>
+<p>See document camera side</p>
+</li>
+<li>
+<p><a href="https://www.econgraphs.org/graphs/micro/producer_theory/cost_curves">https://www.econgraphs.org/graphs/micro/producer_theory/cost_curves</a></p>
+</li>
+</ul>
+<hr />
+<h2 id="some-relations-of-cost-curves">Some relations of Cost Curves</h2>
+<ul>
+<li>
+<p>Marginal cost equals <em>AVC</em> at zero units of output</p>
+<ul>
+<li>Because AVC starts at the origin. </li>
+</ul>
+</li>
+<li>
+<p>MC: crosses at minimum points of <em>AC</em> and <em>AVC</em>.</p>
+<ul>
+<li>MC &lt; AC when AC is decreasing and MC &gt; AC when AC is increasing. </li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="cost-curves_1">Cost Curves</h2>
+<iframe src="https://www.desmos.com/calculator/dvxems10cv?embed"
+width="600px" height="600px"
+style="border: 1px solid #ccc" frameborder=0></iframe>
+
+<!-- ![](img/Ch22/INTMIC9_FIG22_02.jpg) -->
+
+<hr />
+<h2 id="cost-curves-example">Cost Curves - Example:</h2>
+<ul>
+<li>
+<p>$ c(q) = 1 + q^2 $</p>
+</li>
+<li>
+<p>$ c_v(q) = ? $ </p>
+</li>
+<li>
+<p>$ FC(q) = ? $</p>
+</li>
+<li>
+<p>$ AVC(q) = ? $</p>
+</li>
+<li>
+<p>$ AFC(q) = ? $</p>
+</li>
+<li>
+<p>$ AC(q) = ? $</p>
+</li>
+<li>
+<p>$ MC(q) = ? $</p>
+</li>
+</ul>
+<hr />
+<h2 id="cost-curves-example_1">Cost Curves - Example:</h2>
+<iframe src="https://www.desmos.com/calculator/bbxooxcg19?embed"
+width="600px" height="600px" style="border: 1px solid #ccc"
+frameborder=0></iframe>
+
+<!-- ![](img/Ch22/INTMIC9_FIG22_04.jpg) -->
+
+<hr />
+<h2 id="cost-curves-do-at-home-examples">Cost Curves - do-at-home examples:</h2>
+<ul>
+<li>
+<p>$ c(q) = 10 - 0.5(q-2)^2 + (q-2)^3 $</p>
+</li>
+<li>
+<p>Try with all kinds of functions...</p>
+</li>
+</ul>
+<hr />
+<h2 id="cost-minimization-in-two-plants">Cost minimization in two plants</h2>
+<ul>
+<li>
+<p>Possibly two technologies, therefore two cost functions $ c_1(q_1) \text{ and } c_2(q_2) $</p>
+</li>
+<li>
+<p>Graphical approach</p>
+<ul>
+<li>Use a production-requirement "box"</li>
+</ul>
+</li>
+<li>
+<p>Mathematical approach</p>
+<ul>
+<li>
+<p>$ \text{minimize} (C = c_1(q_1) + c_2(q_2)) $ subject to: $ q_1 + q_2 = q $</p>
+</li>
+<li>
+<p>replace $ q_2 $ by $ q-q_1 $ and solve $ dC/dq_1 = 0$</p>
+</li>
+<li>
+<p>Solution: $ q_1 \text{ and } q_2 $ such that $ MC_1(q_1) = MC_2(q_2) $ </p>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="long-run-and-short-run-cost-function-example">Long-run and short-run cost function - Example.</h2>
+<ul>
+<li>
+<p>$ q = 50 L^{0.5} K^{0.5} $</p>
+</li>
+<li>
+<p>Find long run cost function:</p>
+<ul>
+<li>
+<p>Total Cost (TC): $ c(w,r,q) = (q/25)(wr)^{0.5} $ </p>
+</li>
+<li>
+<p>$ AC(w,r,q) = (1/25)(wr)^{0.5} $</p>
+</li>
+<li>
+<p>$ MC(w,r,q) = (1/25)(wr)^{0.5} $</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="long-run-and-short-run-cost-function-example_1">Long-run and short-run cost function - Example.</h2>
+<ul>
+<li>
+<p>$ q = 50 L^{0.5} K^{0.5} $</p>
+</li>
+<li>
+<p>Find short-run cost function ($ K = \bar{K} $):</p>
+<ul>
+<li>
+<p>$ L^{SR} = \frac{ q^2 }{ 50^2 \bar{K} } $</p>
+</li>
+<li>
+<p>$ c^{SR}(w,r,q) = w \frac{ q^2 }{ 50^2 \bar{K} } + r \bar{K} $ </p>
+</li>
+<li>
+<p>$ {AC}^{SR}(w,r,q) = w \frac{ q }{ 50^2 \bar{K} } + r \frac { \bar{K} }{ q } $</p>
+</li>
+<li>
+<p>$ {MC}^{SR}(w,r,q) = 2 w \frac{ q }{ 50^2 \bar{K} }  $</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<p>If for example w = 25 and r = 100:</p>
+<p><img alt="" src="../img/Ch22/AC_in_LR_SR.png" />    </p>
+<hr />
+<h2 id="short-run-ac-sac-and-long-run-ac-sac">Short-run AC (SAC) and long-run AC (SAC)</h2>
+<ul>
+<li>Cost curves coincide if fixed level of capital is also LR solution.</li>
+</ul>
+<iframe src="https://www.desmos.com/calculator/eahxorwljj?embed"
+width="600px" height="600px"
+style="border: 1px solid #ccc" frameborder=0></iframe>
+
+<!-- ![](img/Ch22/INTMIC9_FIG22_07.jpg)     -->
+
+<hr />
+<h2 id="short-run-ac-sac-and-long-run-ac-sac_1">Short-run AC (SAC) and long-run AC (SAC)</h2>
+<ul>
+<li>More generally: LR cost curves envelope from below the SR ones.</li>
+</ul>
+<p><img alt="" src="../img/Ch22/INTMIC9_FIG22_08.jpg" />    </p>
+<hr />
+<h2 id="econgraphs-general-cobb-douglas">EconGraphs - general Cobb-Douglas</h2>
+<p><iframe
+
+src="https://www.econgraphs.org/graphs/micro/producer_theory/total_and_average_costs?embed=true&textbook=varian" 
+
+style="border:0px #FFFFFF none;" name="myiFrame" scrolling="auto" frameborder="0" marginheight="0px" marginwidth="0px" height="600px" width="850px"
+
+></iframe></p>
+<!--
+
+
+
+-----
+
+-->
+
+<!--
+
+// This piece of code below creates the reveal presentation and pushes to GitHub and then deploys to GitHub pages. Modify the commit message and paste it into terminal.
+
+cd docs && \
+pandoc  \
+-t revealjs -V revealjs-url=reveal.js \
+--css=reveal.js/css/theme/simple.css \
+-H reveal.js/js/revealMathJax.js \
+-s S10_CostCurves_Ch22.md -o S10_CostCurves_Ch22.html && \
+cd .. && \
+git add docs/* && \
+git commit -am " add content to S10_CostCurves_Ch22.md " && \
+git push origin master && \
+mkdocs gh-deploy 
+
+-->
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../S11_FirmSupply_Ch23/" class="btn btn-neutral float-right" title="Firm Supply (Chapter 23)">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../S9_CostMinimization_Ch21/" class="btn btn-neutral" title="Cost Minimization (Chapter 21)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../S9_CostMinimization_Ch21/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../S11_FirmSupply_Ch23/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" defer></script>
+      <script src="../js/mathjaxhelper.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

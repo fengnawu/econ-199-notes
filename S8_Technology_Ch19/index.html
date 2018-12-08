@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Kristian López-Vargas">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Technology (Chapter 19) - Lectures and Homeworks</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../extra.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Technology (Chapter 19)";
+    var mkdocs_page_input_path = "S8_Technology_Ch19.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Lectures and Homeworks</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lectures</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../S1_Introduction/">Intro and Syllabus</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S2_Budget_Constraint_Ch2/">Budget Constraint (Chapter 2)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S3_Preferences_Ch3/">Preferences (Chapter 3)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S4_Utility_Ch4/">Utility (Chapter 4)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S5_Choice_Ch5/">Choice (Chapter 5)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S6_Demand_Ch6/">Demand (Chapter 6)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S7_Market_Demand_Ch15/">Market Demand (Chapter 15)</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Technology (Chapter 19)</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#technology">Technology</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#intermediate-microeconomics-econ-100a">Intermediate Microeconomics (Econ 100A)</a></li>
+        
+            <li><a class="toctree-l4" href="#kristian-lopez-vargas">Kristian López Vargas</a></li>
+        
+            <li><a class="toctree-l4" href="#ucsc-spring-2017">UCSC - Spring 2017</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#production">Production</a></li>
+    
+
+    <li class="toctree-l3"><a href="#technology_1">Technology</a></li>
+    
+
+    <li class="toctree-l3"><a href="#technological-constraints">Technological constraints</a></li>
+    
+
+    <li class="toctree-l3"><a href="#production-functions-sets">Production Functions, Sets</a></li>
+    
+
+    <li class="toctree-l3"><a href="#example-smoothie-recipe">Example - smoothie recipe</a></li>
+    
+
+    <li class="toctree-l3"><a href="#production-functions-notation-examples">Production Functions, Notation, Examples</a></li>
+    
+
+    <li class="toctree-l3"><a href="#isoquants">Isoquants</a></li>
+    
+
+    <li class="toctree-l3"><a href="#examples-of-isoquants">Examples of isoquants</a></li>
+    
+
+    <li class="toctree-l3"><a href="#assumptions-well-behaved-technologies">Assumptions - well-behaved technologies</a></li>
+    
+
+    <li class="toctree-l3"><a href="#3-d-version-of-a-c-d-production-function">3-D version of a C-D production function</a></li>
+    
+
+    <li class="toctree-l3"><a href="#marginal-product">Marginal Product</a></li>
+    
+
+    <li class="toctree-l3"><a href="#average-product-ap_l">Average product $ {AP}_L $</a></li>
+    
+
+    <li class="toctree-l3"><a href="#apl-and-mpl">APL and MPL</a></li>
+    
+
+    <li class="toctree-l3"><a href="#technical-rate-of-substitution-trs">Technical rate of substitution TRS</a></li>
+    
+
+    <li class="toctree-l3"><a href="#diminishing-marginal-product-returns">Diminishing marginal product / returns</a></li>
+    
+
+    <li class="toctree-l3"><a href="#isoquants-and-returns-to-scale">Isoquants and Returns to Scale</a></li>
+    
+
+    <li class="toctree-l3"><a href="#returns-to-scale">Returns to scale</a></li>
+    
+
+    <li class="toctree-l3"><a href="#returns-to-scale-definition">Returns to scale - definition</a></li>
+    
+
+    <li class="toctree-l3"><a href="#returns-to-scale-intuition">Returns to scale - intuition</a></li>
+    
+
+    <li class="toctree-l3"><a href="#returns-to-scale-the-math">Returns to scale - the math</a></li>
+    
+
+    <li class="toctree-l3"><a href="#returns-to-scale-examples">Returns to scale - examples</a></li>
+    
+
+    <li class="toctree-l3"><a href="#returns-to-scale-graphics">Returns to scale - graphics</a></li>
+    
+
+    <li class="toctree-l3"><a href="#returns-to-scale-local-notion">Returns to scale - local notion</a></li>
+    
+
+    <li class="toctree-l3"><a href="#long-run-and-short-run-of-the-firm">Long run and short run of the firm</a></li>
+    
+
+    <li class="toctree-l3"><a href="#explore-more-graphics-to-understand-better">Explore more graphics to understand better</a></li>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S9_CostMinimization_Ch21/">Cost Minimization (Chapter 21)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S10_CostCurves_Ch22/">Cost Curves (Chapter 22)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S11_FirmSupply_Ch23/">Firm Supply (Chapter 23)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S12_Equilibrium_Ch16/">Equilibrium (Chapter 16)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S13_Monopoly_Ch25/">Monopoly (Chapter 25)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S14_Oligopoly_Ch28/">Oligopoly (Chapter 28)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S15_GameTheory_Ch29_Ch30/">Game Theory (Chapter 29, 30)</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Homework Assignemts</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../HW1_Questions/">Homework 1 (Questions)</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../moblab_games/">Moblab experiments</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Lectures and Homeworks</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Lectures &raquo;</li>
+        
+      
+    
+    <li>Technology (Chapter 19)</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="technology">Technology</h2>
+<h4 id="intermediate-microeconomics-econ-100a">Intermediate Microeconomics (Econ 100A)</h4>
+<h4 id="kristian-lopez-vargas">Kristian López Vargas</h4>
+<h4 id="ucsc-spring-2017">UCSC - Spring 2017</h4>
+<hr />
+<h2 id="production">Production</h2>
+<ul>
+<li>
+<p>Production transforms a set of inputs into a set of outputs</p>
+</li>
+<li>
+<p>Inputs / factors of production:</p>
+<ul>
+<li>labor, land, raw materials, capital </li>
+<li>Measured in flows</li>
+</ul>
+</li>
+<li>
+<p>Output:</p>
+<ul>
+<li>The amount of goods and services produces by the firm is the firm’s output.</li>
+<li>In flow too</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="technology_1">Technology</h2>
+<ul>
+<li>
+<p>What is technology?</p>
+<ul>
+<li>Knowledge</li>
+<li>...determines the quantity of output that is feasible to attain for a given set of inputs.</li>
+</ul>
+</li>
+<li>
+<p>What is a "technological constraint"?</p>
+<ul>
+<li>Is what separates what is feasible given our current knowledge and what is not.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="technological-constraints">Technological constraints</h2>
+<ol>
+<li>
+<p><strong>Production set</strong>: all combinations of inputs and outputs that are technically feasible.</p>
+</li>
+<li>
+<p><strong>Production function</strong>: upper boundary of production set. </p>
+<ul>
+<li>The production function tells us the maximum possible output that can be attained by the firm for any given (combination) of inputs.</li>
+</ul>
+</li>
+<li>
+<p>Examples (input, output):</p>
+<ul>
+<li>(9 hrs of studying per week, final grade of 35) in PS but not efficient (below PF).</li>
+<li>(9 hrs of studying per week, final grade of 94) not in PS (i.e. not feasible).</li>
+<li>(9 hrs of studying per week, final grade of 93) in PS and on PF (feasible and efficient).</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2 id="production-functions-sets">Production Functions, Sets</h2>
+<iframe src="https://www.desmos.com/calculator/vlpsht9mav?embed" width="700px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>
+
+<hr />
+<h2 id="example-smoothie-recipe">Example - smoothie recipe</h2>
+<p><img alt="" src="../img/TuttiFruttiSmoothie.png" /></p>
+<hr />
+<h2 id="production-functions-notation-examples">Production Functions, Notation, Examples</h2>
+<ul>
+<li>
+<p>q = f(L, K)</p>
+<ul>
+<li>q = output (note that book uses $ y $ for output)</li>
+<li>K = Capital</li>
+<li>L = Labor</li>
+</ul>
+</li>
+<li>
+<p>Examples:</p>
+<ul>
+<li>$ q = f(L, K) = L + K $</li>
+<li>$ q = f(L, K) = L \times K^2 $</li>
+<li>$ q = f(L) = L^{0.5} $ </li>
+<li>$ q = f(L, K) = min \{ L , K/0.5 \} $</li>
+</ul>
+</li>
+<li>
+<p>Remember: every input and output is expressed in units per unit of time.</p>
+</li>
+</ul>
+<hr />
+<h2 id="isoquants">Isoquants</h2>
+<ul>
+<li>
+<p><strong>Isoquants</strong>: represent all the combinations of inputs that produce a constant level of
+output.</p>
+</li>
+<li>
+<p><em>Isoquants</em> are like indifference curves for preferences, except "isoquants" describe technology not preferences.</p>
+</li>
+<li>
+<p><em>Isoquants</em> "live" in the space (plane) of factor of production or inputs.</p>
+</li>
+</ul>
+<hr />
+<h2 id="examples-of-isoquants">Examples of isoquants</h2>
+<ol>
+<li>
+<p>Fixed proportions, complements — one man, one shovel: $ q  = \textrm{min} \{ man, shovel\} $</p>
+</li>
+<li>
+<p>Perfect substitutes — pen, pencils: $ q  = pen + pencils $</p>
+</li>
+<li>
+<p>Cobb Douglass: $ q = A L^a K^b $</p>
+</li>
+<li>
+<p>Warning: a monotonic transformation of f(K,L) does not give the same technology!</p>
+</li>
+<li>
+<p>Exercise: what type of tech is a cooking recipe?</p>
+</li>
+</ol>
+<hr />
+<h2 id="assumptions-well-behaved-technologies">Assumptions - well-behaved technologies</h2>
+<ol>
+<li>
+<p>Monotonic — more inputs produce more output</p>
+</li>
+<li>
+<p>Convexity — averages produce more than extremes</p>
+</li>
+</ol>
+<hr />
+<h2 id="3-d-version-of-a-c-d-production-function">3-D version of a C-D production function</h2>
+<p><img alt="" src="https://upload.wikimedia.org/wikipedia/commons/c/c6/Cobb_douglas.png" /></p>
+<hr />
+<h2 id="marginal-product">Marginal Product</h2>
+<ul>
+<li>
+<p>$ MP_L $ is how much extra output you get from increasing the usage of labor holding K constant.</p>
+</li>
+<li>
+<p>$ MP_L = \frac{ ∂f(L,K) }{∂L} $</p>
+</li>
+<li>
+<p>Similarly: $ MP_K = \frac{ ∂f(L,K) }{ ∂K } $</p>
+</li>
+<li>
+<p>Examples:</p>
+<ul>
+<li>$ q = f(L, K) = L + K $</li>
+<li>$ q = f(L, K) = L \times K^2 $</li>
+<li>$ q = f(L) = L^{0.5} $ </li>
+<li>$ q = f(L, K) = min \{ L , K/2 \} $</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="average-product-ap_l">Average product $ {AP}_L $</h2>
+<ul>
+<li>
+<p>$ AP_L $ is the per-worker output: $ AP_L = \frac{ f(L,K) }{ L} $</p>
+</li>
+<li>
+<p>$ AP_K $ is the per machine output: $ AP_K = \frac{ f(L,K) }{ K } $</p>
+</li>
+<li>
+<p>Examples:</p>
+<ul>
+<li>$ q = f(L, K) = L + K $</li>
+<li>$ q = f(L, K) = L \times K^2 $</li>
+<li>$ q = f(L) = L^{0.5} $ </li>
+<li>$ q = f(L, K) = min \{ L , K/2 \} $</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="apl-and-mpl">APL and MPL</h2>
+<ul>
+<li>
+<p>If $ MP_L &gt; AP_L $ , can it be that $ AP_L $ is decreasing? Nope</p>
+</li>
+<li>
+<p>If $ MP_L &lt; AP_L $ , can it be that $ AP_L $ is increasing? Nope</p>
+</li>
+<li>
+<p>If $ MP_L $ and $ AP_L $ cross, where/how do they cross?</p>
+</li>
+</ul>
+<hr />
+<h2 id="technical-rate-of-substitution-trs">Technical rate of substitution TRS</h2>
+<ul>
+<li>
+<p>Similar to MRS</p>
+</li>
+<li>
+<p>Technical rate of substitution (TRS): Suppose you increase $ L $ by $ \Delta L $. How much can you reduce K ( $ - \Delta K $ ) such that production level is not altered?</p>
+</li>
+<li>
+<p>Mathematically, TSR is the derivative of K with respect to L, along one isoquant curve: $ TRS = \frac{ dK }{ dL } = - \frac{ MP_L }{ MP_K } $</p>
+</li>
+<li>
+<p>Examples: do Cobb-Douglas and linear production.</p>
+</li>
+</ul>
+<hr />
+<h2 id="diminishing-marginal-product-returns">Diminishing marginal product / returns</h2>
+<ul>
+<li>
+<p><strong>Diminishing marginal returns</strong>: More of a <em>single</em> input produces more output, but at a decreasing rate:</p>
+<ul>
+<li>Example: $ q = f(L, K) = L^{0.5} K^2 $</li>
+</ul>
+</li>
+<li>
+<p>Diminishing TRS equivalent to convexity.</p>
+</li>
+<li>
+<p>(!) There is a difference between diminishing returns (MPs) and diminishing TRS (!)</p>
+<ul>
+<li>
+<p>Example: $ q = L \times K $</p>
+</li>
+<li>
+<p>$ MP_L $ is not diminishing but $ TRS $ is decreasing.</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="isoquants-and-returns-to-scale">Isoquants and Returns to Scale</h2>
+<p><img alt="" src="../img/Ch19/Isoquants.gif" /></p>
+<hr />
+<h2 id="returns-to-scale">Returns to scale</h2>
+<ul>
+<li>
+<p>Is this scalable? </p>
+<ul>
+<li>Often, firms need to grow! Can I just multiply the amount of inputs?</li>
+<li>That depends largely on the firms’ technology.</li>
+</ul>
+</li>
+<li>
+<p>What happen to my output if I double ALL my inputs?</p>
+<ul>
+<li>Doubling inputs: $ f(2L, 2K) $ what is the resulting $ q $ ?</li>
+<li>Similarly $ f(3L, 3K) $ ?</li>
+<li>Similarly $ f(1.1L, 1.1K) $ ? </li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="returns-to-scale-definition">Returns to scale - definition</h2>
+<p>Production function exhibits:</p>
+<ul>
+<li>
+<p>Constant returns to scale (CRS): when a percentage increase in inputs is followed by the same percentage increase in output.</p>
+<ul>
+<li>Example: doubling inputs doubles output: $ f(2L, 2K) = 2f(L, K) $</li>
+</ul>
+</li>
+<li>
+<p>Increasing returns to scale (IRS): when a percentage increase in inputs is followed by a larger percentage increase in output. </p>
+<ul>
+<li>Example: $ f(2L, 2K) &gt; 2f(L, K) $</li>
+</ul>
+</li>
+<li>
+<p>Decreasing returns to scale (DRS): when a percentage increase in inputs is followed by a smaller percentage increase in output.</p>
+<ul>
+<li>Example: $ f(2L, 2K) &lt; 2f(L, K) $</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="returns-to-scale-intuition">Returns to scale - intuition</h2>
+<p>Some technologies allow for proportional scaling up of your production operation. Some other technologies do not. Why?</p>
+<ol>
+<li>
+<p>CRS: Easy replication (e.g. flyer distribution, data centers. Think of other examples) </p>
+</li>
+<li>
+<p>IRS: Occurs often with greater <em>specialization</em> of L and K (e.g. a larger plant more productive than two small plants). </p>
+</li>
+<li>
+<p>DRS: Occurs often because of the difficulty in organizing/coordinating/<em>searching</em> activities as firm size increases (e.g. mining). </p>
+</li>
+</ol>
+<hr />
+<h2 id="returns-to-scale-the-math">Returns to scale - the math</h2>
+<p>For $ t&gt;1 $, the production function $ f(L,K) $ exhibits CRS/IRS/DRS when:</p>
+<ol>
+<li>
+<p>CRS:  $ f(tL,tK) = t f(L,K) $ </p>
+</li>
+<li>
+<p>IRS:  $ f(tL,tK) &gt; t f(L,K) $</p>
+</li>
+<li>
+<p>DRS:  $ f(tL,tK) &lt; t f(L,K) $</p>
+</li>
+</ol>
+<hr />
+<h2 id="returns-to-scale-examples">Returns to scale - examples</h2>
+<ul>
+<li>$ q = f(L, K) = L + K $</li>
+<li>$ q = f(L, K) = L \times K^2 $</li>
+<li>$ q = f(L) = L^{0.5} $ </li>
+<li>$ q = f(L, K) = min \{ L , K/2 \} $</li>
+</ul>
+<hr />
+<h2 id="returns-to-scale-graphics">Returns to scale - graphics</h2>
+<p><img alt="" src="../img/Ch19/R2S.gif" /></p>
+<hr />
+<h2 id="returns-to-scale-local-notion">Returns to scale - local notion</h2>
+<ul>
+<li>
+<p>"Returns to scale" are a <strong>local notion!</strong></p>
+</li>
+<li>
+<p>Some prod functions have "global" returns to scale (e.g. $ q = L K $ ), but not all.</p>
+</li>
+<li>
+<p>Example: $ q = f(L,K) = (L+K) + (K+L)^2 - 0.1 (K+L)^3 $</p>
+<ul>
+<li>Start at $ (L, K) = (0.5 , 0.5) $</li>
+<li>Try scaling inputs up by $ t=2 $</li>
+<li>Try scaling inputs up by $ t=10 $</li>
+<li><a href="https://www.desmos.com/calculator/gv4w07lsw6">try set t=2 and then t=10 in this desmos example</a></li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="long-run-and-short-run-of-the-firm">Long run and short run of the firm</h2>
+<ol>
+<li>
+<p>If all factors can be adjusted, <strong>the firm is in the "long run"</strong></p>
+</li>
+<li>
+<p>If at least one factor <strong>cannot</strong> be adjusted, <strong>the firm is in the "short run"</strong></p>
+</li>
+<li>
+<p>That is, we are in the short run (SR) when some factor(s) must stay fixed.</p>
+<ul>
+<li>
+<p>Typically, we hold $ K $ constant at level $ \bar{K} $ in the SR.</p>
+</li>
+<li>
+<p>So the typical production function in the short run is written as:</p>
+</li>
+</ul>
+</li>
+</ol>
+<p>$$
+q = f(L, \bar{K} )
+$$</p>
+<hr />
+<h2 id="explore-more-graphics-to-understand-better">Explore more graphics to understand better</h2>
+<p><a href="http://www2.hawaii.edu/~fuleky/anatomy/anatomy.html">http://www2.hawaii.edu/~fuleky/anatomy/anatomy.html</a></p>
+<hr />
+<!--
+
+// This piece of code below creates the reveal presentation and pushes to GitHub and then deploys to GitHub pages. Modify the commit message and paste it into terminal.
+
+cd docs && \
+pandoc  \
+-t revealjs -V revealjs-url=reveal.js \
+--css=reveal.js/css/theme/simple.css \
+-H reveal.js/js/revealMathJax.js \
+-s S8_Technology_Ch19.md -o S8_Technology_Ch19.html && \
+cd .. && \
+git add docs/S8_Technology_Ch19.html && \
+git commit -m " add content to S8_Technology_Ch19.md " && \
+git push origin master && \
+mkdocs gh-deploy
+-->
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../S9_CostMinimization_Ch21/" class="btn btn-neutral float-right" title="Cost Minimization (Chapter 21)">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../S7_Market_Demand_Ch15/" class="btn btn-neutral" title="Market Demand (Chapter 15)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../S7_Market_Demand_Ch15/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../S9_CostMinimization_Ch21/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" defer></script>
+      <script src="../js/mathjaxhelper.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

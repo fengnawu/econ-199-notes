@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title></title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css">
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme">
+  <link rel="stylesheet" href="reveal.js/css/theme/simple.css"/>
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],  
+          processEscapes: true,
+          displaystyle: true
+      },
+      "HTML-CSS": { availableFonts: ["TeX"] }
+    });
+  </script><script type="text/javascript"
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full">
+  </script>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section id="utility" class="slide level2">
+<h2>Utility</h2>
+<h4 id="intermediate-microeconomics-econ-100a">Intermediate Microeconomics (Econ 100A)</h4>
+<h4 id="kristian-lópez-vargas">Kristian López Vargas</h4>
+<h4 id="ucsc---spring-2017">UCSC - Spring 2017</h4>
+</section>
+<section id="one-additional-assumption-on-preference-relations" class="slide level2">
+<h2>One additional assumption on <em>preference relations</em></h2>
+<ul>
+<li><p><em>Continuity</em>:</p>
+<ul>
+<li><p>A small change in a bundle can only cause small changes to the preference rankings and level.</p></li>
+<li><p>Put differently, if A is preferred to B, then situations suitably close to A must also be preferred to B.</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="utility-function" class="slide level2">
+<h2>Utility Function</h2>
+<ul>
+<li><p>Main idea: <strong>instead of <em>preference relations</em>, we can describe a consumers' preferences using <em>utility functions</em></strong>.</p></li>
+<li><p>Intuition: A utility function assigns a &quot;satisfaction level&quot; (a number) to each alternative or bundle.</p></li>
+<li><p>Instead of saying: $ iPhone7 \succ Galaxy8 $, we say $ U(iPhone7) &gt; U(Galaxy8) $</p></li>
+<li><p>Instead of saying: $ (2 \textrm{ Beers}, 3 \textrm{ Pizzas} ) \succ (1 \textrm{ Beers}, 4 \textrm{ Pizzas} ) $, we say $ U(2, 3) &gt; U(1, 4) $</p></li>
+</ul>
+</section>
+<section id="utility-function-1" class="slide level2">
+<h2>Utility Function</h2>
+<ul>
+<li><p>But, how does a <em>preference relations</em> and a utility function connect?</p></li>
+<li>If a consumer's preference relations are:
+<ol type="1">
+<li>complete,</li>
+<li>transitive,</li>
+<li>continuous</li>
+</ol></li>
+<li><p>Then, these preferences can be represented by a (continuous) utility function.</p></li>
+<li><p>Note on reflexivity, monotonicity, convexity.</p></li>
+</ul>
+</section>
+<section id="utility-function-2" class="slide level2">
+<h2>Utility Function</h2>
+<ul>
+<li><p><strong>When do we say that we a utility function represents someone's preference relations?</strong></p></li>
+<li><p>A utility function $ U(x) $ represents a preference relation $ \succsim $ when:</p>
+<ul>
+<li><p>$ x’ \succ x’’ \iff U(x’) &gt; U(x’’), ~~ $ for any $ x' $ and $ x'' $</p></li>
+<li><p>$ x’ \succsim x’’ \iff U(x’) \geq U(x’’) ~~ $, for any $ x' $ and $ x'' $</p></li>
+<li><p>$ x’ \sim x’’ \iff U(x’) = U(x’), ~~ $ for any $ x' $ and $ x'' $</p></li>
+</ul></li>
+<li><p>Intuitively, $ U() $ represents a preference relation if it yields the same ranking of alternatives.</p></li>
+</ul>
+</section>
+<section id="utility-function-3" class="slide level2">
+<h2>Utility Function</h2>
+<ul>
+<li><p>That is, like preference relations, utility is an ordinal (i.e. ordering) concept.</p></li>
+<li><p>If, for example, $ U(x) = 6 $ and $ U(y) = 2 $ then bundle $ x $ is strictly preferred to bundle $ y $. But we <em>cannot</em> say: <em>&quot; $ x $ is preferred three times as much as is $ y $ &quot;</em>.</p></li>
+</ul>
+<!-- --------------------------------------- -->
+<!-- ## Utility Functions - Example! -->
+<!-- * Consider the bundles $ (4,1), (2,3) $ and $ (2,2) $ and, for a certain consumer, $ (2,3) \\succ (4,1) \\sim (2,2) $. -->
+<!-- * If we as assign numbers to these bundles such that we preserve the preference ordering; e.g. $ U(2,3) = 6 > U(4,1) = U(2,2) = 4 $. -->
+<!-- * We can call these numbers "utility levels". -->
+</section>
+<section id="utility-functions-indifference-curves" class="slide level2">
+<h2>Utility Functions &amp; Indifference Curves</h2>
+<ul>
+<li><p>An indifference curve contains equally preferred bundles.</p></li>
+<li><p>In terms of <em>utility</em>, all bundles in an indifference curve give the same utility level:</p>
+<ul>
+<li>If $ x \sim y $, $ \iff $ $ U(x) = U(y) $.</li>
+</ul></li>
+<li><p>In other words, <em>indifference curves</em> are the <em>level curves</em> of <em>utility functions</em>.</p></li>
+</ul>
+</section>
+<section id="utility-functions-indiff.-curves---example" class="slide level2">
+<h2>Utility Functions &amp; Indiff. Curves - Example!</h2>
+<p>$ u(x_1, x_2) = x_1 ~ x_2 $</p>
+<iframe src="https://www.desmos.com/calculator/frwrpedk6q?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder="0">
+</iframe>
+</section>
+<section id="utility-functions-indifference-curves-1" class="slide level2">
+<h2>Utility Functions &amp; Indifference Curves</h2>
+<ul>
+<li>A more complete collection of indifference curves describes more fully the consumer’s preferences (aka indifference map).</li>
+</ul>
+<iframe src="https://www.desmos.com/calculator/hzdsglwiqo?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder="0">
+</iframe>
+</section>
+<section id="utility-functions-are-not-unique" class="slide level2">
+<h2>Utility functions (are not unique)</h2>
+<ul>
+<li><p><strong>The preferences of a certain consumer can be described/represented by more than one utility function</strong>.</p></li>
+<li><p>That is, there is no unique utility function for a preference relation.</p></li>
+<li><p>Two utility functions $ U() $ and $ V() $ represent the same preferences, if we can obtain $ V() $ by applying a <strong>strictly increasing function</strong> on <span class="math inline"><em>U</em>()</span>:</p></li>
+<li><p>That is, if we can write $ V = f( U() ) $ where $ f() $ is <em>strictly increasing</em>.</p></li>
+<li><p>[ ask students about strictly increasing functions ]</p></li>
+</ul>
+</section>
+<section id="utility-functions-are-not-unique---example-1" class="slide level2">
+<h2>Utility functions (are not unique) - Example 1!</h2>
+<ul>
+<li><p>Suppose $ U(x_1,x_2) = x_1 x_2 $ represents some preferences.</p></li>
+<li><p>You have bundles $ (4,1), (2,3) $ and $ (2,2) $.</p></li>
+<li><p>Under this utility function: $ U(2,3) = 6 &gt; U(4,1) = U(2,2) = 4 $;</p></li>
+<li><p>Therefore, we know that: $ (2,3) \succ (4,1) \sim (2,2) $.</p></li>
+</ul>
+</section>
+<section id="utility-functions-are-not-unique---example-1-1" class="slide level2">
+<h2>Utility functions (are not unique) - Example 1!</h2>
+<ul>
+<li><p>Suppose we define $ V = U^2 $.</p></li>
+<li><p>Then, $ V(x_1,x_2) = (x_1 x_2)^2 = x_1^2 x_2^2 \quad $</p></li>
+<li><p>...and so, $ V(2,3) = 36 &gt; V(4,1) = V(2,2) = 16 $</p></li>
+<li><p>SO! <strong>again</strong> $ (2,3) \succ (4,1) \sim (2,2) $.</p></li>
+<li><p><strong>That is, $ V() $ preserves the same order as $ U() $ and therefore represents the same preferences.</strong></p></li>
+</ul>
+</section>
+<section id="utility-functions-are-not-unique---example-2" class="slide level2">
+<h2>Utility functions (are not unique) - Example 2!</h2>
+<ul>
+<li><p>Suppose we define $ W = 2U + 10 $.</p></li>
+<li><p>Then, $ W(x_1,x_2) = 2 (x_1 x_2) + 10 $</p></li>
+<li><p>...and so, $ W(2,3) = 22 &gt; W(4,1) = W(2,2) = 18 $</p></li>
+<li><p>SO! <strong>again!</strong> $ (2,3) \succ (4,1) \sim (2,2) $.</p></li>
+<li><p><strong>That is, $ W() $ preserves the same order as $ U() $ and therefore represents the same preferences.</strong></p></li>
+</ul>
+</section>
+<section id="goods-bads-and-neutrals" class="slide level2">
+<h2>Goods, Bads and Neutrals</h2>
+<ul>
+<li><p>A good is a commodity unit which increases utility (gives a more preferred bundle).</p></li>
+<li><p>A bad is a commodity unit which decreases utility (gives a less preferred bundle).</p></li>
+<li><p>A neutral is a commodity unit which does not change utility (gives an equally preferred bundle).</p></li>
+<li><p>For home: Draw indifference curves for each of them</p></li>
+</ul>
+</section>
+<section id="drawing-an-indifference-curve" class="slide level2">
+<h2>Drawing an Indifference Curve</h2>
+<ol type="1">
+<li><p>Identify the utility function: $ U(x_1, x_2) $.</p></li>
+<li><p>Set the utility level to a constant level $ k $: $ U(x_1, x_2) = k $.</p></li>
+<li><p>Solve for $ x_2 $ in the previous equation to obtain a generic indifference curve.</p></li>
+<li><p>Give $ k $ an arbitrary value and draw the curve.</p></li>
+<li><p>To draw another curve, set $ k $ equal to another value and draw again.</p></li>
+</ol>
+</section>
+<section id="drawing-an-indifference-curve---example" class="slide level2">
+<h2>Drawing an Indifference Curve - Example!</h2>
+<ol type="1">
+<li><p>Utility: $ U(x_1, x_2) = x_1^{0.5} x_2 $</p></li>
+<li><p>Utility at a constant level: $ x_1^{0.5} x_2 = k $</p></li>
+<li><p>Solve for <span class="math inline"><em>x</em><sub>2</sub></span>: $ x_2 = \frac{k}{x_1^{0.5}} $.</p></li>
+<li><p>Give $ k $ a value: $ x_2 = \frac{ 10 }{x_1^{0.5}} $. Draw!</p></li>
+<li><p>Give $ k $ another value: $ x_2 = \frac{ 20 }{x_1^{0.5}} $. Draw!</p></li>
+</ol>
+<ul>
+<li>Try with other functions... for example: $ U(x_1, x_2) = x_1 + x_2^{0.5} $</li>
+</ul>
+</section>
+<section id="typical-utility-fns-perfect-substitutes" class="slide level2">
+<h2>Typical utility fns: <em>perfect substitutes</em></h2>
+<ul>
+<li><p>General: $ ~ U(x_1,x_2) = \alpha x_1 + \beta x_2 ~~ $, for $ \alpha, \beta &gt; 0 $</p></li>
+<li><p>Example: $ ~ U(x_1,x_2) = x_1 + x_2 $</p></li>
+</ul>
+</section>
+<section id="typical-utility-fns-perfect-substitutes-1" class="slide level2">
+<h2>Typical utility fns: <em>perfect substitutes</em></h2>
+<figure>
+<img src="https://s3.amazonaws.com/grapher/exports/4dledz2b0n.png" />
+</figure>
+</section>
+<section id="typical-utility-fns-perfect-complements" class="slide level2">
+<h2>Typical utility fns: <em>perfect complements</em></h2>
+<ul>
+<li><p>General: $ ~ U(x_1,x_2) = \textrm{min} \{ \frac{x_1}{\alpha}, \frac{x_2}{\beta} \} ~~ $, for $ \alpha, \beta &gt; 0 $.</p></li>
+<li><p>Example: $ ~ U = \textrm{min} \{ x_1, x_2 \} ~~ $</p></li>
+</ul>
+</section>
+<section id="typical-utility-fns-perfect-complements-1" class="slide level2">
+<h2>Typical utility fns: <em>perfect complements</em></h2>
+<figure>
+<img src="https://s3.amazonaws.com/grapher/exports/mwcfsjz8se.png" />
+</figure>
+</section>
+<section id="typical-utility-fns-cobb-douglas" class="slide level2">
+<h2>Typical utility fns: Cobb-Douglas</h2>
+<p>General $ U(x_1,x_2) = x_1^a x_2^b $ with <span class="math inline"><em>a</em> &gt; 0</span> and <span class="math inline"><em>b</em> &gt; 0</span></p>
+<p>Examples:</p>
+<ul>
+<li><p>$ U(x_1,x_2) = x_1^{0.5} x_2^{0.5} \quad $ (that is, $ a = b = 1/2 $)</p></li>
+<li><p>$ U(x_1,x_2) = x_1 x_2^3 \quad $ (that is, $ a = 1, b = 3 $)</p></li>
+<li><p>$ U(x_1,x_2) = x_1^{2} x_2^{0.75} \quad $ (that is, $ a = 2, b = 0.75 $)</p></li>
+</ul>
+</section>
+<section id="typical-utility-fns-cobb-douglas-1" class="slide level2">
+<h2>Typical utility fns: Cobb-Douglas</h2>
+<figure>
+<img src="https://s3.amazonaws.com/grapher/exports/rq92gjxrzq.png" />
+</figure>
+</section>
+<section id="marginal-utility" class="slide level2">
+<h2>Marginal Utility</h2>
+<ul>
+<li><p>Marginal means “incremental”.</p></li>
+<li><p>The marginal utility of commodity $ x_1 $ is the rate-of-change of total utility as the quantity of commodity $ x_1 $ consumed increases.</p></li>
+<li><p>$ MU_{x_1} = \frac{\partial U}{\partial x_1} $ and $ MU_{x_2} = \frac{\partial U}{\partial x_2} $</p></li>
+<li><p>To know whether $ MU_{x_1} $ is increasing or decreasing in $ x_1 $, we take the derivative of $ MU_{x_1} $ with respect to $ x_1 $. That is, we calculate: $ \frac{\partial MU_{x_1}}{\partial x_1} $</p></li>
+</ul>
+</section>
+<section id="marginal-utilities---cobb-douglas-example" class="slide level2">
+<h2>Marginal Utilities - Cobb-Douglas Example!</h2>
+<p>Utility: $ U(x_1,x_2) = x_1^{0.5} x_2^2 $</p>
+<p>Marginal Utilities:</p>
+<p>$ MU_{x_1} = \frac{\partial U}{\partial x_1} = 0.5 x_1^{-0.5} x_2^2 $</p>
+<p>$ MU_{x_2} = \frac{\partial U}{\partial x_2} = 2 x_1^{0.5} x_2^1 $</p>
+</section>
+<section id="marginal-utilities---perf.-substitutes-example" class="slide level2">
+<h2>Marginal Utilities - Perf. Substitutes Example!</h2>
+<p>Utility: $ U(x_1,x_2) = a x_1 + b x_2 $</p>
+<p>Marginal Utilities:</p>
+<p>$ MU_{x_1} = \frac{\partial U}{\partial x_1} = a $</p>
+<p>$ MU_{x_2} = \frac{\partial U}{\partial x_2} = b $</p>
+</section>
+<section id="marginal-utilities---perf.-complements-example" class="slide level2">
+<h2>Marginal Utilities - Perf. Complements Example!</h2>
+<ul>
+<li><p>Utility: $ U(x_1,x_2) = min \{ x_1 , x_2 \} $</p>
+<ul>
+<li>Not differentiable at the kinks.</li>
+</ul></li>
+</ul>
+</section>
+<section id="marginal-utilities-and-the-mrs" class="slide level2">
+<h2>Marginal Utilities and the MRS</h2>
+<p>Claim: $ MRS \equiv \frac{d x_2}{d x_1} = - \frac{ MU_{x_1} }{ MU_{x_2} } $</p>
+<p>Here is the math:</p>
+<ol start="0" type="1">
+<li><p>Remember, the equation for an indifference curve is: $ U(x_1,x_2) = k $, where satisfaction, $ k $, is a constant.</p></li>
+<li><p>Do total differentiation: $ \frac{\partial U}{\partial x_1} d x_1 +<br />
+\frac{\partial U}{\partial x_2} d x_2 = d k $,</p></li>
+<li><p>But $ dk = 0 $ since $ k $ is a constant, and $ \frac{\partial U}{\partial x_i} $ can be replaced by $ MU_{x_i} $. That is: $ MU_{x_1} d x_1 + MU_{x_2} d x_2 = 0 $</p></li>
+<li><p>We solve for $ \frac{d x_2}{d x_1} $ and we get: $ \frac{d x_2}{d x_1} = - \frac{ MU_{x_1} }{ MU_{x_2} } $</p></li>
+</ol>
+</section>
+<section id="marginal-utilities-and-the-mrs---examples" class="slide level2">
+<h2>Marginal Utilities and the MRS - Examples:</h2>
+<ul>
+<li>If $ U = x_1^{2} x_2 $,</li>
+<li>Then: $ MRS = - \frac{MU_{x_1}}{MU_{x_2}} = $ $ - \frac{2 x_1 x_2}{ x_1^2 } = $ $ - 2 \frac{ x_2 }{ x_1 } $</li>
+</ul>
+<p><br/></p>
+<ul>
+<li>If $ U = x_1 x_2^{0.5} $,</li>
+<li>Then: $ MRS = - \frac{MU_{x_1}}{MU_{x_2}} = $ $ - \frac{x_2^{0.5}}{ x_1 0.5 x_2^{-0.5}} = $ $ - 2 \frac{ x_2 }{ x_1 } $</li>
+</ul>
+<p><br/></p>
+<ul>
+<li>If $ U = x_1 + 5 x_2 $,</li>
+<li>Then: $ MRS = - 1/5 $</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<iframe src="https://www.econgraphs.org/graphs/micro/consumer_theory/indifference_curves_math?embed=true&amp;textbook=varian" style="border:0px #FFFFFF none;" name="myiFrame" scrolling="auto" frameborder="0" marginheight="0px" marginwidth="0px" height="600px" width="850px">
+</iframe>
+</section>
+<section class="slide level2">
+
+<!--
+
+// This piece of code below creates the reveal presentation and pushes to GitHub and then deploys to GitHub pages. Modify the commit message and paste it into terminal.
+
+cd docs && \
+pandoc  \
+-t revealjs -V revealjs-url=reveal.js \
+--css=reveal.js/css/theme/simple.css \
+-H reveal.js/js/revealMathJax.js \
+-s S4_Utility_Ch4.md -o S4_Utility_Ch4.html && \
+cd .. && \
+git add docs/S4_Utility_Ch4.html && \
+git commit -am " add content to S4_Utility_Ch4.md " && \
+git push origin master && \
+mkdocs gh-deploy 
+
+-->
+</section>
+    </div>
+  </div>
+
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+              { src: 'reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
