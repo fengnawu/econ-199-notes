@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Kristian López-Vargas">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Equilibrium (Chapter 16) - Lectures and Homeworks</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../extra.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Equilibrium (Chapter 16)";
+    var mkdocs_page_input_path = "S12_Equilibrium_Ch16.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Lectures and Homeworks</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lectures</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../S1_Introduction/">Intro and Syllabus</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S2_Budget_Constraint_Ch2/">Budget Constraint (Chapter 2)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S3_Preferences_Ch3/">Preferences (Chapter 3)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S4_Utility_Ch4/">Utility (Chapter 4)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S5_Choice_Ch5/">Choice (Chapter 5)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S6_Demand_Ch6/">Demand (Chapter 6)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S7_Market_Demand_Ch15/">Market Demand (Chapter 15)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S8_Technology_Ch19/">Technology (Chapter 19)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S9_CostMinimization_Ch21/">Cost Minimization (Chapter 21)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S10_CostCurves_Ch22/">Cost Curves (Chapter 22)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S11_FirmSupply_Ch23/">Firm Supply (Chapter 23)</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Equilibrium (Chapter 16)</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#competitive-market-equilibrium">(Competitive Market) Equilibrium</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#intermediate-microeconomics-econ-100a">Intermediate Microeconomics (Econ 100A)</a></li>
+        
+            <li><a class="toctree-l4" href="#kristian-lopez-vargas">Kristian López Vargas</a></li>
+        
+            <li><a class="toctree-l4" href="#ucsc-spring-2017">UCSC - Spring 2017</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#demand-determinants-of-the-demand-curve-reminder">Demand - Determinants of the Demand Curve (reminder)</a></li>
+    
+
+    <li class="toctree-l3"><a href="#the-demand-curve-surplus">The Demand Curve &amp; Surplus</a></li>
+    
+
+    <li class="toctree-l3"><a href="#consumer-surplus">Consumer Surplus</a></li>
+    
+
+    <li class="toctree-l3"><a href="#supply-determinants-of-the-supply-curve-reminder">Supply - Determinants of the Supply curve (reminder)</a></li>
+    
+
+    <li class="toctree-l3"><a href="#the-producer-surplus">The Producer Surplus</a></li>
+    
+
+    <li class="toctree-l3"><a href="#producer-surplus">Producer Surplus</a></li>
+    
+
+    <li class="toctree-l3"><a href="#market-equilibrium">Market Equilibrium</a></li>
+    
+
+    <li class="toctree-l3"><a href="#total-surplus">Total Surplus</a></li>
+    
+
+    <li class="toctree-l3"><a href="#market-equilibrium_1">Market Equilibrium</a></li>
+    
+
+    <li class="toctree-l3"><a href="#equilibrium-with-linear-curves">Equilibrium with Linear Curves</a></li>
+    
+
+    <li class="toctree-l3"><a href="#inverse-demand-and-supply-curves">Inverse Demand and Supply Curves</a></li>
+    
+
+    <li class="toctree-l3"><a href="#inverse-dp-and-sp-curves-home-exercise">Inverse D(p) and S(p) Curves - Home Exercise</a></li>
+    
+
+    <li class="toctree-l3"><a href="#the-long-run-of-the-industry-or-the-market">The long run of the industry (or the market)</a></li>
+    
+
+    <li class="toctree-l3"><a href="#the-long-run-of-the-industry">The long run of the industry</a></li>
+    
+
+    <li class="toctree-l3"><a href="#equilibrium-in-the-long-run-of-the-industry">EQUILIBRIUM in the long run of the industry</a></li>
+    
+
+    <li class="toctree-l3"><a href="#the-long-run-of-the-industry_1">The long run of the industry</a></li>
+    
+
+    <li class="toctree-l3"><a href="#the-long-run-of-the-industry_2">The long run of the industry</a></li>
+    
+
+    <li class="toctree-l3"><a href="#the-long-run-of-the-industry_3">The long run of the industry</a></li>
+    
+
+    <li class="toctree-l3"><a href="#the-long-run-of-the-industry-example">The long run of the industry - Example</a></li>
+    
+
+    <li class="toctree-l3"><a href="#the-long-run-of-the-industry-example-cont">The long run of the industry - Example (cont.)</a></li>
+    
+
+    <li class="toctree-l3"><a href="#exercise-for-home-do-it">Exercise for home (do it!)</a></li>
+    
+
+    <li class="toctree-l3"><a href="#taxes-in-the-short-run-of-the-industry">Taxes in the short run of the industry</a></li>
+    
+
+    <li class="toctree-l3"><a href="#taxes-who-pays-the-taxes">Taxes - Who pays the taxes?</a></li>
+    
+
+    <li class="toctree-l3"><a href="#quantity-tax-example">Quantity Tax - Example</a></li>
+    
+
+    <li class="toctree-l3"><a href="#where-does-the-burden-of-the-tax-fall">Where does the burden of the tax fall?</a></li>
+    
+
+    <li class="toctree-l3"><a href="#passing-along-a-tax">Passing Along a Tax</a></li>
+    
+
+    <li class="toctree-l3"><a href="#dead-weight-loss">Dead Weight Loss</a></li>
+    
+
+    <li class="toctree-l3"><a href="#dead-weight-loss-example">Dead Weight Loss - Example</a></li>
+    
+
+    <li class="toctree-l3"><a href="#dead-weight-loss-example_1">Dead Weight Loss - Example</a></li>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S13_Monopoly_Ch25/">Monopoly (Chapter 25)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S14_Oligopoly_Ch28/">Oligopoly (Chapter 28)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S15_GameTheory_Ch29_Ch30/">Game Theory (Chapter 29, 30)</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Homework Assignemts</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../HW1_Questions/">Homework 1 (Questions)</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../moblab_games/">Moblab experiments</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Lectures and Homeworks</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Lectures &raquo;</li>
+        
+      
+    
+    <li>Equilibrium (Chapter 16)</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="competitive-market-equilibrium">(Competitive Market) Equilibrium</h2>
+<h4 id="intermediate-microeconomics-econ-100a">Intermediate Microeconomics (Econ 100A)</h4>
+<h4 id="kristian-lopez-vargas">Kristian López Vargas</h4>
+<h4 id="ucsc-spring-2017">UCSC - Spring 2017</h4>
+<hr />
+<h2 id="demand-determinants-of-the-demand-curve-reminder">Demand - Determinants of the Demand Curve (reminder)</h2>
+<p>Demand Shifters can either have a positive (right shift) or negative (left shift) to the demand curve.</p>
+<p>Shifts in Demand can be caused by:</p>
+<ul>
+<li>
+<p><em>Number of Buyers</em></p>
+</li>
+<li>
+<p><em>Change In Consumer Preferences</em></p>
+</li>
+<li>
+<p><em>Price of Other Goods</em></p>
+</li>
+<li>
+<p><em>Income</em></p>
+</li>
+<li>
+<p><em>Expectations of buyers</em></p>
+</li>
+</ul>
+<hr />
+<h2 id="the-demand-curve-surplus">The Demand Curve &amp; Surplus</h2>
+<p>The demand curve represents how much all consumers want to buy (or <strong>demand</strong>) at each <strong>price</strong> level.</p>
+<p><strong>Consumer Surplus:</strong> is the difference between the amount that <em>consumers</em> are willling and able to pay for a good or service and what they actually pay.</p>
+<p><strong>Consumer Surplus</strong> acts as a measure of <em>consumer welfare</em>.</p>
+<hr />
+<h2 id="consumer-surplus">Consumer Surplus</h2>
+<p><img alt="" src="../img/Ch16/CS.png" /></p>
+<hr />
+<h2 id="supply-determinants-of-the-supply-curve-reminder">Supply - Determinants of the Supply curve (reminder)</h2>
+<p>Supply Shifters are changes in the conditions of production that can have a positive, or negative effect on the supply curve.</p>
+<p>Examples of Shifts in Supply,</p>
+<ul>
+<li>
+<p><em>Number of Sellers</em></p>
+</li>
+<li>
+<p><em>Resource Prices</em></p>
+</li>
+<li>
+<p><em>Technology</em></p>
+</li>
+<li>
+<p><em>Taxes and Subsidies</em></p>
+</li>
+<li>
+<p><em>Expectations of Producers</em></p>
+</li>
+<li>
+<p><em>Prices of Other Goods the Firm Could Produce</em></p>
+</li>
+</ul>
+<hr />
+<h2 id="the-producer-surplus">The Producer Surplus</h2>
+<p><strong>Producer Surplus</strong> is the difference between what <strong>producers</strong> are willing and able to accept for each good they supply and the price they actually receive.</p>
+<p>The <strong>producer surplus</strong> is a measure of <em>producers'</em> benefit.</p>
+<!---Graph on Producer suplus?-->
+
+<hr />
+<h2 id="producer-surplus">Producer Surplus</h2>
+<p><img alt="" src="../img/Ch16/PS.png" /></p>
+<hr />
+<h2 id="market-equilibrium">Market Equilibrium</h2>
+<p>The demand and supply curves summarize the optimal choices of all agents involved.</p>
+<p>If price is below my valuation I want to buy more. Similar for sellers: if p &gt; MC, I want to sell more.</p>
+<p><strong>Equilibrium price:</strong> Price $ p^* $ such that $ Q^d (p^*) = Q^s (p^*) $</p>
+<p>What if $ p \neq p^* $ ? agents exert pressure on market price towards equilibrium level.</p>
+<p>We will use $ Q^d (p) $ or $ D(p) $ interchangeably. Similar for $ Q^s (p) $ or $ S(p) $.</p>
+<hr />
+<h2 id="total-surplus">Total Surplus</h2>
+<p><img alt="" src="../img/Ch16/TS.png" /></p>
+<hr />
+<h2 id="market-equilibrium_1">Market Equilibrium</h2>
+<p>We reach <strong>economic efficiency</strong> in the market, when total surplus is maximized.</p>
+<p><em>"All gains from trade (between buyers and suppliers) are exhausted at the efficient point."</em></p>
+<p>It turns out that under competitive conditions, price mechanism is indeed efficient. There is no better way to maximize total surplus.</p>
+<!---
+
+------
+
+## Which is more important: demand or supply?
+
+Equilibrium price is set by **both** forces of Demand and Supply, for *most* cases.
+
+*Two cases* in which only one of the factors determines equilibrium price:
+
+* CASE 1: Completely Vertical, or Fixed, Supply (think 200 seats in a theater). Here, *Demand* is the sole determiner of price.
+
+* CASE 2: Completely Horizontal Supply (think unlimited supply & suppliers). Here, *Supply* will determine the price.
+
+-->
+
+<!----- Maybe a graph to illustrate?-->
+
+<!----- Google Marshallian Scissors for fun (can we add this)? --->
+
+<hr />
+<h2 id="equilibrium-with-linear-curves">Equilibrium with Linear Curves</h2>
+<p>Let us find the equilibrium price, $ p^* $, by equating the Supply and Demand functions.</p>
+<p>$ D(p) = a - bp $</p>
+<p>$ S(p) = c + dp $</p>
+<ol>
+<li>
+<p>To find eqm price, set $ D(p) = S(p) $ (solving...) $ p^* = \frac{a-c}{d+b} $</p>
+</li>
+<li>
+<p>To find equilibrium quantity demanded, replace $ p^* $ into $ D(p) $ or $ S(p) $ (solving...) $ Q^* = \frac{ad + bc}{d+b} $</p>
+</li>
+</ol>
+<hr />
+<h2 id="inverse-demand-and-supply-curves">Inverse Demand and Supply Curves</h2>
+<p>Calculating the Inverse simply implies solving for price in the respective equation.</p>
+<p>If $ Q^d = f(p) $, then the inverse demand is $ p = f^{-1}( Q^d ) $</p>
+<hr />
+<!-- * For example: An easy way to calculate Total Revenue function is to take the Inverse Demand and multiply it by quantity: $ TR(Q) = f^{-1} (Q) * Q $ -->
+
+<!--
+------
+
+## Inverse Demand and Supply Curves - Example
+
+* Let's practice finding the Marginal Revenue of this Demand Function $ Q^d = 240 - 2p $
+
+    * Remember: $ \\frac{\\partial TR}{\\partial Q} = MR $
+
+    * $ Q^d = 240 - 2p $, so inverse demand $ p = 120 - Q/2$
+
+    * $ TR(Q) = (120 - Q/2)Q $, so $ MR(Q) = 120 - Q $
+-->
+
+<h2 id="inverse-dp-and-sp-curves-home-exercise">Inverse D(p) and S(p) Curves - Home Exercise</h2>
+<p>Assume you are in the short run of the industry. Number of firms is fixed.</p>
+<p>Take the linear demand and linear supply of our previous example and calculate the inverse demand and supply curves.</p>
+<p>Now equate the inverse demand and the inverse supply to find the equilibrium quantity Q*.</p>
+<p>Replace Q* in the inverse demand (or inverse supply) to find the equilibrium price.</p>
+<p>You should have obtained the same solutions:</p>
+<p>$ Q^* = \frac{ad + bc}{d+b} $ and $ p^* = \frac{a-c}{d+b} $</p>
+<hr />
+<h2 id="the-long-run-of-the-industry-or-the-market">The long run of the industry (or the market)</h2>
+<p><img alt="" src="../img/Ch24/LR_supply_of_the_firm.png" /></p>
+<hr />
+<h2 id="the-long-run-of-the-industry">The long run of the industry</h2>
+<p>The long run in the industry is the time horizon in which:</p>
+<ul>
+<li>
+<p>All the firm’s inputs and production factors can be adjusted, and,</p>
+</li>
+<li>
+<p>The number of firms in the industry can increase or decrease. Firms will enter if profits $ \geq 0 $, firms exit if profits are $ &lt; 0 $ .</p>
+</li>
+</ul>
+<hr />
+<h2 id="equilibrium-in-the-long-run-of-the-industry">EQUILIBRIUM in the long run of the industry</h2>
+<ul>
+<li>
+<p>Definition of <strong>equilibrium in the long run of the industry $ (P,Q,q,J) $</strong>:</p>
+<ul>
+<li>
+<p>Price level such that every one that wants to buy (sell) is able. $ Q_d(P) = Q_s(P) $</p>
+</li>
+<li>
+<p>Firms produce q that maximize profits adjusting all inputs: for each firm:  $ P = MC(q) $  and  $ P \geq AC $</p>
+</li>
+<li>
+<p>If $ P &gt; \text{min} AC $, firms keep entering the market, supply keeps shifting rightwards, until profits are zero: That is:  $ P = \text{min} AC(q) $. </p>
+</li>
+</ul>
+<p>(J = # of firms).</p>
+</li>
+</ul>
+<hr />
+<h2 id="the-long-run-of-the-industry_1">The long run of the industry</h2>
+<ul>
+<li>Let $ p^* $ be the minimum $ AC $; and $ S_j $ is the market supply with $ j $ firms.</li>
+</ul>
+<p><img alt="" src="../img/Ch24/INTMIC9_FIG24_03.jpg" /></p>
+<hr />
+<h2 id="the-long-run-of-the-industry_2">The long run of the industry</h2>
+<p><img alt="" src="../img/Ch24/INTMIC9_FIG24_04.jpg" /></p>
+<hr />
+<h2 id="the-long-run-of-the-industry_3">The long run of the industry</h2>
+<p><img alt="" src="../img/Ch24/INTMIC9_FIG24_05.jpg" /></p>
+<hr />
+<h2 id="the-long-run-of-the-industry-example">The long run of the industry - Example</h2>
+<ul>
+<li>
+<p>Consider all firms are identical with: $$ TC(q) = 40q - q^2 + 0.01q^3 $$</p>
+</li>
+<li>
+<p>Demand curve: $ Q_d(P) = 25,000 - 1,000P $</p>
+</li>
+<li>
+<p>Find the long run equilibrium of the industry:</p>
+</li>
+</ul>
+<hr />
+<h2 id="the-long-run-of-the-industry-example-cont">The long run of the industry - Example (cont.)</h2>
+<ol>
+<li>
+<p>Set $ P = MC $ and $ P = AC $:</p>
+<ul>
+<li>$ MC = 40 – 2q + 0.03 q^2 = ~~ AC = 40 – q + 0.01 q^2 $</li>
+<li>Solve for q: $ q^* = 50 $</li>
+<li>Replace in MC: $ P^* = 15 $</li>
+</ul>
+</li>
+<li>
+<p>Find $ Q^* $ from market demand:</p>
+<ul>
+<li>$ Q^* = Q_d(P^*)= 25,000 - 1,000 \times 15 = 10,000 $</li>
+</ul>
+</li>
+<li>
+<p>Find number of firms, J, from $ Q_s(P) = Q_d(P) = Q^* $:</p>
+<ul>
+<li>$ 10,000 = 50 \times J^* ~ $
+$ ~ J^* = 200 $</li>
+</ul>
+<p><!-- *  = q^\*\\times J $ -->
+<!-- * $ 25,000 - 1,000 \\times 15 = 50 \\times J $ --></p>
+</li>
+</ol>
+<!-- * (1.) and (2.): $ Q_d(15) = 25,000 - 1,000 \\times 15 = 10,000 $ -->
+
+<!-- * Back to (2.): $ 10,000 = 50 \\times J^\* ~ $ so $ ~ J^\* = 200 $ -->
+
+<hr />
+<h2 id="exercise-for-home-do-it">Exercise for home (do it!)</h2>
+<ul>
+<li>
+<p>10 consumers with identical cobb-douglass preferences</p>
+</li>
+<li>
+<p>10 producers with identical cobb-douglass technology (do the DRS case: a+b&lt;1)</p>
+</li>
+<li>
+<p>Find the market equilibrium in the short run of the industry.</p>
+</li>
+<li>
+<p>Find the market equilibrium in the LONG run of the industry.</p>
+</li>
+</ul>
+<hr />
+<h2 id="taxes-in-the-short-run-of-the-industry">Taxes in the short run of the industry</h2>
+<ul>
+<li>
+<p>If there is a tax money "spent" by consumers is different than the money "kept" by sellers: $ P_D \neq P_S $.</p>
+</li>
+<li>
+<p>A <strong>quantity tax</strong> implies that part ($t) of the money paid for a unit of the good goes to the government.</p>
+<ul>
+<li>
+<p>$ P_D = P_S + t ~~ $ (assuming seller pays the tax)</p>
+</li>
+<li>
+<p>Now consider the equilibrium price with taxes: $ D(P_D) = S(P_S) $ and substitute in the quantity tax "equation".</p>
+</li>
+<li>
+<p>Our new equilibrium condition: $ D(P_D)=S(P_D-t) $</p>
+</li>
+</ul>
+</li>
+<li>
+<p>A <strong>value tax</strong> (or ad valorem): is a charge as a percentage of the price of the good:</p>
+<ul>
+<li>
+<p>$ P_D = (1+ \tau ) P_S ~~ $ (assuming seller pays the tax)</p>
+</li>
+<li>
+<p>Equilibrium condition: $ ~ D(P_D) = S\left( \frac{P_D}{ 1+\tau } \right) $</p>
+</li>
+<li>
+<p>E.g. if tax is 9%, then ($ \tau = 0.09 $).</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="taxes-who-pays-the-taxes">Taxes - Who pays the taxes?</h2>
+<p>Suppose that the buyer pays the tax: $ P_D - t = P_S $</p>
+<p>Note, however, this is the same equation found in our previous slide ($ P_D = P_S + t$), just expressed differently.</p>
+<p>This indicates that it doesn't matter where the tax is levied (either on the supply or the demand side).</p>
+<p>The burden of the tax will be distributed between sellers and buyers in the same way, regardless of the stated "intention" of the tax authority.</p>
+<hr />
+<h2 id="quantity-tax-example">Quantity Tax - Example</h2>
+<p>Let us consider an equation with linear supply and demand:</p>
+<p>$ D(P_d) = a - b P_d ~ $ and $ ~ S(P_s) = c + d P_s $</p>
+<p>A quantity tax is imposed on this good: $ P_D = P_S + t $</p>
+<p>We want to find $ P_S^* $ and $ P_D^* $:</p>
+<p>$ \begin{align}
+a - b P_D &amp;= c + d P_s \\
+a - b (P_s + t) &amp;= c + d P_s \\
+P_s^* &amp;= \frac{ a-c-bt }{ d+b }
+\end{align} $</p>
+<p>Also, $ P_D^* = P_S^* + t $.</p>
+<hr />
+<h2 id="where-does-the-burden-of-the-tax-fall">Where does the burden of the tax fall?</h2>
+<p><img alt="" src="../img/Ch16/INTMIC9_FIG16_03.jpg" /></p>
+<hr />
+<h2 id="passing-along-a-tax">Passing Along a Tax</h2>
+<p>Two most simple cases regarding tax burden lie in the extremes of the supply curve.</p>
+<ol>
+<li>
+<p>Perfectly <strong>elastic</strong> supply (completely horizontal) suggest that there are unlimited firms producing a good at a certain price and zero producing at any lower price. Any firm that wants to charge more, or less, than the going rate will be out of business in no time.</p>
+</li>
+<li>
+<p>The second case involves a perfect <strong>inelastic</strong> supply that suggests a good produced is fixed and no tax will move its production. In this case, none of the tax gets passed on to the consumer.</p>
+</li>
+</ol>
+<hr />
+<p><img alt="" src="../img/Ch16/INTMIC9_FIG16_05.jpg" /></p>
+<hr />
+<h2 id="dead-weight-loss">Dead Weight Loss</h2>
+<p><em>The loss of economic benefit that comes from inefficient allocation of resources.</em></p>
+<ul>
+<li>
+<p>With taxes there is a wedge between $ P_D $ and $ P_S $ (in fact: $ P_D &gt; P_S $). Some transactions are lost.</p>
+</li>
+<li>
+<p>DWL is the "value" of transactions that would occur in an efficient mechanism, but do not occur due to the wedge created by the tax.</p>
+</li>
+<li>
+<p>Wait! but the government is collecting taxes right? Maybe that is enough to compensate for the loss...</p>
+</li>
+<li>
+<p>Let us see: consumers and producers lose on surplus more than what the government collects in tax revenue!</p>
+</li>
+</ul>
+<hr />
+<p><img alt="" src="../img/Ch16/INTMIC9_FIG16_07.jpg" /></p>
+<hr />
+<h2 id="dead-weight-loss-example">Dead Weight Loss - Example</h2>
+<p>Demand: $ Q^d = 10 - 0.5 P^d $</p>
+<p>Supply: $Q^{s}= \text{max}(-2+P^s, 0) $</p>
+<p>1.- <strong>Find first the equilibrium with no tax:</strong></p>
+<ul>
+<li>
+<p>$ Q^{d} = Q^{s} $ and $ P^{s} = P^{d} = P^* $</p>
+</li>
+<li>
+<p>Solving: $ P^* = 8 $ and $ Q^* = 6 $</p>
+</li>
+</ul>
+<hr />
+<h2 id="dead-weight-loss-example_1">Dead Weight Loss - Example</h2>
+<p>2.- <strong>Now consider a quantity tax of  $6 and find the <em>equilibrium with tax</em>:</strong></p>
+<ul>
+<li>
+<p>Equilibrium satisfies now two equations:</p>
+</li>
+<li>
+<p>$ P^d = P^s + 6 $ and $ Q^d = Q^s $</p>
+</li>
+<li>
+<p>Then: $ 10 - 0.5 (P^s+6) = -2 + P^s $</p>
+</li>
+<li>
+<p>...Solve for $ P^s $</p>
+</li>
+<li>
+<p>$ P^s =6 $; $ P^d = 12 $; $ Q^* = 4 $</p>
+</li>
+</ul>
+<!--
+
+// This piece of code below creates the reveal presentation and pushes to GitHub and then deploys to GitHub pages. Modify the commit message and paste it into terminal.
+
+
+cd docs && \
+pandoc  \
+-t revealjs -V revealjs-url=reveal.js \
+--css=reveal.js/css/theme/simple.css \
+-H reveal.js/js/revealMathJax.js \
+-s S12_Equilibrium_Ch16.md -o S12_Equilibrium_Ch16.html && \
+cd ..
+
+
+cd docs && \
+pandoc  \
+-t revealjs -V revealjs-url=reveal.js \
+--css=reveal.js/css/theme/simple.css \
+-H reveal.js/js/revealMathJax.js \
+-s S12_Equilibrium_Ch16.md -o S12_Equilibrium_Ch16.html && \
+cd .. && \
+git add docs/S12_Equilibrium_Ch16.html && \
+git commit -am " add content to S12_Equilibrium_Ch16.md " && \
+git push origin master && \
+mkdocs gh-deploy 
+
+-->
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../S13_Monopoly_Ch25/" class="btn btn-neutral float-right" title="Monopoly (Chapter 25)">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../S11_FirmSupply_Ch23/" class="btn btn-neutral" title="Firm Supply (Chapter 23)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../S11_FirmSupply_Ch23/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../S13_Monopoly_Ch25/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" defer></script>
+      <script src="../js/mathjaxhelper.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

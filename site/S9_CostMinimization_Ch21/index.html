@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Kristian López-Vargas">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Cost Minimization (Chapter 21) - Lectures and Homeworks</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../extra.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Cost Minimization (Chapter 21)";
+    var mkdocs_page_input_path = "S9_CostMinimization_Ch21.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Lectures and Homeworks</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lectures</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../S1_Introduction/">Intro and Syllabus</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S2_Budget_Constraint_Ch2/">Budget Constraint (Chapter 2)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S3_Preferences_Ch3/">Preferences (Chapter 3)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S4_Utility_Ch4/">Utility (Chapter 4)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S5_Choice_Ch5/">Choice (Chapter 5)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S6_Demand_Ch6/">Demand (Chapter 6)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S7_Market_Demand_Ch15/">Market Demand (Chapter 15)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S8_Technology_Ch19/">Technology (Chapter 19)</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Cost Minimization (Chapter 21)</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#firms-decisions-cost-minimization">Firm's Decisions - Cost Minimization</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#intermediate-microeconomics-econ-100a">Intermediate Microeconomics (Econ 100A)</a></li>
+        
+            <li><a class="toctree-l4" href="#kristian-lopez-vargas">Kristian López Vargas</a></li>
+        
+            <li><a class="toctree-l4" href="#ucsc-spring-2017">UCSC - Spring 2017</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#cost-minimization-problem-intro-idea">Cost Minimization Problem - intro idea</a></li>
+    
+
+    <li class="toctree-l3"><a href="#cost-minimization-problem">Cost Minimization Problem</a></li>
+    
+
+    <li class="toctree-l3"><a href="#isocost">Isocost</a></li>
+    
+
+    <li class="toctree-l3"><a href="#solving-the-cost-minimization-problem">Solving the cost-minimization problem</a></li>
+    
+
+    <li class="toctree-l3"><a href="#solving-the-cost-minimization-problem_1">Solving the cost-minimization problem</a></li>
+    
+
+    <li class="toctree-l3"><a href="#conditional-factor-demand-functions">Conditional factor demand functions</a></li>
+    
+
+    <li class="toctree-l3"><a href="#cost-minimization-problem-the-math">Cost-minimization problem - The Math</a></li>
+    
+
+    <li class="toctree-l3"><a href="#cost-minimization-problem-case-1-tangency">Cost-minimization problem, Case 1: tangency.</a></li>
+    
+
+    <li class="toctree-l3"><a href="#example-cobb-douglass">Example: Cobb-Douglass</a></li>
+    
+
+    <li class="toctree-l3"><a href="#cost-minimization-problem-case-2-corner-solution">Cost-minimization problem, Case 2: Corner Solution.</a></li>
+    
+
+    <li class="toctree-l3"><a href="#example-linear-technology-1">Example: Linear technology (1)</a></li>
+    
+
+    <li class="toctree-l3"><a href="#example-linear-technology-2">Example: Linear technology (2)</a></li>
+    
+
+    <li class="toctree-l3"><a href="#example-linear-technology-3">Example: Linear technology (3)</a></li>
+    
+
+    <li class="toctree-l3"><a href="#example-linear-technology-4">Example: Linear technology (4)</a></li>
+    
+
+    <li class="toctree-l3"><a href="#simpler-example">Simpler example:</a></li>
+    
+
+    <li class="toctree-l3"><a href="#cost-minimization-problem-case-3-kink-solution">Cost-minimization problem, Case 3: Kink Solution</a></li>
+    
+
+    <li class="toctree-l3"><a href="#short-run-conditional-demand-for-labor-cost-function">Short-run conditional demand for labor, cost function</a></li>
+    
+
+    <li class="toctree-l3"><a href="#short-run-example">Short-run - example</a></li>
+    
+
+    <li class="toctree-l3"><a href="#returns-to-scale-and-the-cost-function">Returns to scale and the cost function</a></li>
+    
+
+    <li class="toctree-l3"><a href="#types-of-costs-fixed-and-quasi-fixed-costs">Types of costs: Fixed and quasi-fixed costs</a></li>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S10_CostCurves_Ch22/">Cost Curves (Chapter 22)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S11_FirmSupply_Ch23/">Firm Supply (Chapter 23)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S12_Equilibrium_Ch16/">Equilibrium (Chapter 16)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S13_Monopoly_Ch25/">Monopoly (Chapter 25)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S14_Oligopoly_Ch28/">Oligopoly (Chapter 28)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S15_GameTheory_Ch29_Ch30/">Game Theory (Chapter 29, 30)</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Homework Assignemts</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../HW1_Questions/">Homework 1 (Questions)</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../moblab_games/">Moblab experiments</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Lectures and Homeworks</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Lectures &raquo;</li>
+        
+      
+    
+    <li>Cost Minimization (Chapter 21)</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="firms-decisions-cost-minimization">Firm's Decisions - Cost Minimization</h2>
+<h4 id="intermediate-microeconomics-econ-100a">Intermediate Microeconomics (Econ 100A)</h4>
+<h4 id="kristian-lopez-vargas">Kristian López Vargas</h4>
+<h4 id="ucsc-spring-2017">UCSC - Spring 2017</h4>
+<hr />
+<h2 id="cost-minimization-problem-intro-idea">Cost Minimization Problem - intro idea</h2>
+<ul>
+<li>
+<p>The firm operates in two kinds of markets:</p>
+<ol>
+<li>Inputs/factor markets (e.g. it buys labor and capital)</li>
+<li>Final product market</li>
+</ol>
+</li>
+<li>
+<p>Let's focus on optimal decisions regarding the first kind of market.</p>
+</li>
+<li>
+<p>We will assume for now the firms has a target prod level $ q_0 $. (i.e. an isoquant!)</p>
+</li>
+<li>
+<p>And, it aims to achieve that level of production in the best (most efficient) way possible.</p>
+</li>
+<li>
+<p>let the fun begin</p>
+</li>
+</ul>
+<hr />
+<h2 id="cost-minimization-problem">Cost Minimization Problem</h2>
+<ul>
+<li>
+<p>The only decision the firm controls at this point is how much of inputs it uses.  </p>
+</li>
+<li>
+<p>So the most efficient way in this context refers to what is the "right" combination of (L,K) so achieve $ q_0 $.  </p>
+</li>
+<li>
+<p>The right combination is the one that minimize the cost of producing the given target level of output $ q_0 $.</p>
+</li>
+<li>
+<p>Suppose wages are denoted by  $ w $ and rental price of capital is denoted by $ r $. </p>
+</li>
+<li>
+<p>So the firm wants to: </p>
+</li>
+</ul>
+<p>minimize: $ cost = w L + r K, \quad $ subject to: $ f(L,K) = q_0 $.</p>
+<hr />
+<h2 id="isocost">Isocost</h2>
+<ul>
+<li>
+<p>Isocost: Combinations of input usage that cost the same (say $C):</p>
+</li>
+<li>
+<p>Example: This is isocost at a cost of $100:</p>
+<ul>
+<li>$ w L + r K = 100 $</li>
+</ul>
+</li>
+<li>
+<p>Example: This is isocost at a cost of $50 when wages = 20 and price of capital = 10:</p>
+<ul>
+<li>$ 20 L + 10 K = 50 $</li>
+</ul>
+</li>
+<li>
+<p>Draw draw draw more examples until you dream of isocosts a little.</p>
+</li>
+</ul>
+<hr />
+<h2 id="solving-the-cost-minimization-problem">Solving the cost-minimization problem</h2>
+<ul>
+<li>
+<p>Conceptually: find best(lowest) isocost given the required isoquant.</p>
+</li>
+<li>
+<p>Graphically... </p>
+<ol>
+<li>
+<p>Draw the "target" output level (isoquant) $ q_0 $.</p>
+</li>
+<li>
+<p>Ask: what is the cheapest combination of L,K that makes $ q_0 $ possible.</p>
+</li>
+</ol>
+</li>
+</ul>
+<hr />
+<h2 id="solving-the-cost-minimization-problem_1">Solving the cost-minimization problem</h2>
+<p><img alt="" src="../img/Ch21/INTMIC9_FIG21_01.jpg" /></p>
+<ul>
+<li>
+<p>What if prices of factors change?</p>
+</li>
+<li>
+<p>What if target output changes?</p>
+</li>
+</ul>
+<hr />
+<h2 id="conditional-factor-demand-functions">Conditional factor demand functions</h2>
+<ul>
+<li>
+<p>Optimal choices of factors are called the <strong>conditional factor demand functions</strong></p>
+<ul>
+<li>That is: $ L^* = L(w,r,q_0) $ and $ K^* = K(w,r,q_0) $</li>
+</ul>
+</li>
+<li>
+<p>Optimal cost is the <strong>cost function</strong></p>
+<ul>
+<li>That is: $ c(w,r,q_0) = w L(w,r,q_0) + r K(w,r,q_0) $</li>
+</ul>
+</li>
+<li>
+<p>Notice: all this is in the "long run" because we are able to adjust all inputs.</p>
+</li>
+</ul>
+<hr />
+<h2 id="cost-minimization-problem-the-math">Cost-minimization problem - The Math</h2>
+<p>$$
+\underset{L,K}{\text{minimize:}} ~ w L + r K
+\
+\text{Subject to:} ~  f(L,K) = q_0
+$$</p>
+<hr />
+<h2 id="cost-minimization-problem-case-1-tangency">Cost-minimization problem, Case 1: tangency.</h2>
+<ul>
+<li>
+<p>If technology satisfies mainly convexity and monotonicity then (in most cases) <em>tangency solution!</em></p>
+</li>
+<li>
+<p>Tangency condition: slope of isoquant equals slope of isocost curve.   </p>
+<ul>
+<li>In equation: $ - \frac{w}{r} = - \frac{MP_L}{MP_K} $ (EQ. 1)</li>
+</ul>
+</li>
+<li>
+<p>Constraint: $ q = f(L,K) $ (EQ. 2)</p>
+</li>
+<li>
+<p>System of two equations (Eq1 and Eq2), and two unknowns ($ L $ and $ K $).</p>
+</li>
+</ul>
+<hr />
+<h2 id="example-cobb-douglass">Example: Cobb-Douglass</h2>
+<p>If $ q = f(L,K) = L K $,</p>
+<p>$$ L^{*}(w,r,q) =  \big( \frac{ q r }{ w } \big)^{1/2}  $$</p>
+<p>$$ K^{*}(w,r,q) =  \big( \frac{ q w }{ r } \big)^{1/2}  $$</p>
+<p>$$ c(w,r,q) = wL^\star + r K^\star = 2(  q r w  )^{1/2}  $$</p>
+<p>Home exercise: solve the more general case:</p>
+<ul>
+<li>$ q = f(L,K) = A ~ L^{a} K^{b} $</li>
+<li>Find $ ~ c(w,r,q) = ?????? $</li>
+</ul>
+<hr />
+<h2 id="cost-minimization-problem-case-2-corner-solution">Cost-minimization problem, Case 2: Corner Solution.</h2>
+<p>Mainly, but not exclusively:</p>
+<ol>
+<li>Perfect Substitutes:</li>
+</ol>
+<p>$$ q = f(L,K) = a L + b K $$</p>
+<ul>
+<li>For example: $ q = f(L,K) = L + K $</li>
+</ul>
+<hr />
+<h2 id="example-linear-technology-1">Example: Linear technology (1)</h2>
+<p>$$ q = f(L,K) = a L + b K $$</p>
+<ul>
+<li>
+<p>Compare RTS  $ ( - \frac{ a }{ b }) $  Vs. slope of the isocosts $ ( - \frac{ w }{ r } ) $</p>
+</li>
+<li>
+<p>Alternatively, compare: $ \frac{ a }{ w } $  Vs. $  \frac{ b }{ r }  $</p>
+<ol>
+<li>
+<p>If $ \frac{ a }{ w } &gt; \frac{ b }{ r }  $ firm should use labor only.</p>
+</li>
+<li>
+<p>If $ \frac{ a }{ w } &lt; \frac{ b }{ r }  $ firm should use capital only.</p>
+</li>
+<li>
+<p>If $ \frac{ a }{ w } = \frac{ b }{ r }  $ any point along the isoquant, minimizes cost.</p>
+</li>
+</ol>
+</li>
+</ul>
+<hr />
+<h2 id="example-linear-technology-2">Example: Linear technology (2)</h2>
+<p>IF $ \frac{ a }{ w } &gt; \frac{ b }{ r }  $</p>
+<p>The firm should use only Labor (corner solution).</p>
+<ul>
+<li>
+<p>Then: $ q = a L $ , so $ L^*(w,r,q) =  \frac{ q }{ a }  $</p>
+</li>
+<li>
+<p>Then: $ K^*(w,r,q) =  0 $</p>
+</li>
+<li>
+<p>Then: $ c(w,r,q) = w L^\star = \frac{ w }{ a } q $</p>
+</li>
+</ul>
+<hr />
+<h2 id="example-linear-technology-3">Example: Linear technology (3)</h2>
+<p>IF $ \frac{ a }{ w } &lt; \frac{ b }{ r }  $</p>
+<p>The firm should use only Capital (corner solution).</p>
+<ul>
+<li>
+<p>Then: $ q = b K $ , so $ K^*(w,r,q) =  \frac{ q }{ b }  $</p>
+</li>
+<li>
+<p>Then: $ L^*(w,r,q) =  0 $</p>
+</li>
+<li>
+<p>Then: $ c(w,r,q) = r K^\star = \frac{ r }{ b } q $</p>
+</li>
+<li>
+<p>IF $ \frac{ a }{ w } = \frac{ b }{ r }  $, any point along the isoquant, minimizes cost.</p>
+</li>
+</ul>
+<hr />
+<h2 id="example-linear-technology-4">Example: Linear technology (4)</h2>
+<p>Putting all this together:</p>
+<p>$$ c(w,r,q)= q \times
+\begin{cases}
+    \frac{ w }{ a },&amp; \text{if} ~ \frac{ w }{ a } \leq  \frac{ r }{ b }    \
+    \frac{ r }{ b },&amp; \text{if} ~ \frac{ r }{ b } &lt;     \frac{ w }{ a }
+\end{cases}
+$$</p>
+<p>This can be written as:</p>
+<p>$$ c(w,r,q) = q ~ \textrm{min} { \frac{ w }{ a } , \frac{ r }{ b } } $$</p>
+<hr />
+<h2 id="simpler-example">Simpler example:</h2>
+<p>If $ q = f(L,K) = L + K $, then:</p>
+<p>$$ c(w,r,q) = q \times \textrm{min} { w,r } $$</p>
+<hr />
+<h2 id="cost-minimization-problem-case-3-kink-solution">Cost-minimization problem, Case 3: Kink Solution</h2>
+<ol>
+<li>Perfect Complements (kink solution):</li>
+</ol>
+<p>$$ q = f(L,K) = \text{min} { \frac{L}{a} , \frac{K}{b} } $$</p>
+<ol>
+<li>if $ q = f(L,K) = \textrm{min} \{ L ,K \} $, then:</li>
+</ol>
+<p>$$ c(w,r,q) = (w + r)q $$</p>
+<hr />
+<h2 id="short-run-conditional-demand-for-labor-cost-function">Short-run conditional demand for labor, cost function</h2>
+<ul>
+<li>
+<p>$ K = \bar{K} $ </p>
+</li>
+<li>
+<p>do the graph! </p>
+</li>
+<li>
+<p>Short-run conditional demand of labor: $ L = L(w,r,q, \bar{K}) $</p>
+</li>
+<li>
+<p>This demand is obtained from solving L from $ q = f( \bar{K}, L) $</p>
+</li>
+<li>
+<p>If there are no other inputs it does not depend on prices of inputs. </p>
+</li>
+</ul>
+<hr />
+<h2 id="short-run-example">Short-run - example</h2>
+<ul>
+<li>
+<p>$ q = f(L, K) = K^{0.5} L^{0.5} $ </p>
+</li>
+<li>
+<p>$ K = \bar{K} $  </p>
+</li>
+<li>
+<p>$ L^{SR} = \frac{ q^2 }{ \bar{K} }  $</p>
+</li>
+<li>
+<p>$ c^{SR}(w,r,q, \bar{K}) = w \frac{ q^2 }{ \bar{K} } + r \bar{K} $</p>
+</li>
+</ul>
+<hr />
+<h2 id="returns-to-scale-and-the-cost-function">Returns to scale and the cost function</h2>
+<ul>
+<li>
+<p>Let us define the average cost function:</p>
+</li>
+<li>
+<p>$ AC(w,r,q) = \frac{ c(w,r,q) }{ q } $</p>
+</li>
+<li>
+<p>IRS implies that <em>AC</em> is decreasing in $ q $. (e.g. if we want to double q, we can less than double costs).</p>
+</li>
+<li>
+<p>CRS implies that <em>AC</em> is constant in $ q $. (e.g. if we want to double q, we need to double costs).</p>
+</li>
+<li>
+<p>DRS implies that <em>AC</em> is increasing in $ q $. (e.g. if we want to double q, we need to more than double costs).</p>
+</li>
+</ul>
+<hr />
+<h2 id="types-of-costs-fixed-and-quasi-fixed-costs">Types of costs: Fixed and quasi-fixed costs</h2>
+<ol>
+<li>
+<p>Fixed: costs that must be paid, regardless of output level.</p>
+</li>
+<li>
+<p>Quasi-fixed cost: costs that must be paid, only if output level &gt; 0. (heating, lighting, etc.) </p>
+</li>
+<li>
+<p>Sunk cost: fixed costs that are not recoverable (painting your factory)</p>
+</li>
+</ol>
+<hr />
+<!--
+
+B. Revealed cost minimization
+
+1. Suppose we hold output fixed and observe choices at different factor prices.
+
+2. When prices are $ (w^s,r^s) $, choice is $ (L^s,K^s) $, and when prices are $ (w^t,r^t) $, choice is $ (L^t,K^t) $.
+
+3. If choices minimize cost, then we must have
+
+> $ w^t L^t + r^t K^t \leq w^t L^s + w^t K^s $
+> $ w^s L^s + w^s K^s \leq w^s L^t + r^s K^t $
+
+4. This is the #### ** Weak Axiom of Cost Minimization (WACM) **
+
+5. What does it imply about firm behavior? 
+
+6. Multiply the second equation by -1 and get
+
+> $ w^t L^t + r^t K^t \leq w^t L^s + w^t K^s $
+
+> $ -w^s L^t - w^s K^t \leq -w^s L^s - r^s K^s $
+
+7. Add these two inequalities: 
+
+> (w^t - w^s)(L^t - L^s) + (r^t - r^s)(L^t - L^s) \leq 0 
+
+> \Delta w \Delta L + \Delta r \Delta K \leq 0
+
+8. Roughly speaking, “factor demands move opposite to changes in factor prices”
+
+9. In particular, *factor demand curves must slope downward.*
+
+
+
+D. Long-run and short-run costs
+1. long run: all inputs variable   
+2. short run: some inputs fixed
+
+
+
+
+-->
+
+<!--
+
+// This piece of code below creates the reveal presentation and pushes to GitHub and then deploys to GitHub pages. Modify the commit message and paste it into terminal.
+
+cd docs && \
+pandoc  \
+-t revealjs -V revealjs-url=reveal.js \
+--css=reveal.js/css/theme/simple.css \
+-H reveal.js/js/revealMathJax.js \
+-s S9_CostMinimization_Ch21.md -o S9_CostMinimization_Ch21.html && \
+cd .. && \
+git add docs/S9_CostMinimization_Ch21.html && \
+git commit -m " add content to S9_CostMinimization_Ch21.md " && \
+git push origin master && \
+mkdocs gh-deploy
+
+-->
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../S10_CostCurves_Ch22/" class="btn btn-neutral float-right" title="Cost Curves (Chapter 22)">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../S8_Technology_Ch19/" class="btn btn-neutral" title="Technology (Chapter 19)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../S8_Technology_Ch19/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../S10_CostCurves_Ch22/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" defer></script>
+      <script src="../js/mathjaxhelper.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

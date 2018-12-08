@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Kristian López-Vargas">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Market Demand (Chapter 15) - Lectures and Homeworks</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../extra.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Market Demand (Chapter 15)";
+    var mkdocs_page_input_path = "S7_Market_Demand_Ch15.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Lectures and Homeworks</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lectures</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../S1_Introduction/">Intro and Syllabus</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S2_Budget_Constraint_Ch2/">Budget Constraint (Chapter 2)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S3_Preferences_Ch3/">Preferences (Chapter 3)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S4_Utility_Ch4/">Utility (Chapter 4)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S5_Choice_Ch5/">Choice (Chapter 5)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S6_Demand_Ch6/">Demand (Chapter 6)</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Market Demand (Chapter 15)</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#market-demand">Market Demand</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#intermediate-microeconomics-econ-100a">Intermediate Microeconomics (Econ 100A)</a></li>
+        
+            <li><a class="toctree-l4" href="#kristian-lopez-vargas">Kristian López Vargas</a></li>
+        
+            <li><a class="toctree-l4" href="#ucsc-spring-2017">UCSC - Spring 2017</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#market-demand_1">Market demand</a></li>
+    
+
+    <li class="toctree-l3"><a href="#market-demand-graphically">Market demand - graphically</a></li>
+    
+
+    <li class="toctree-l3"><a href="#market-demand-graphically_1">Market demand - graphically</a></li>
+    
+
+    <li class="toctree-l3"><a href="#market-demand-example-cobb-douglass">Market demand - Example - Cobb Douglass</a></li>
+    
+
+    <li class="toctree-l3"><a href="#market-demand-example-linear-demands">Market demand - Example - Linear Demands</a></li>
+    
+
+    <li class="toctree-l3"><a href="#reservation-price">Reservation price</a></li>
+    
+
+    <li class="toctree-l3"><a href="#market-demand-discrete-goods">Market demand - discrete goods</a></li>
+    
+
+    <li class="toctree-l3"><a href="#elasticity">Elasticity</a></li>
+    
+
+    <li class="toctree-l3"><a href="#elasticity-example-for-linear-demand-curve">Elasticity  - Example for linear demand curve:</a></li>
+    
+
+    <li class="toctree-l3"><a href="#elasticity-example-for-linear-demand-curve_1">Elasticity  - Example for linear demand curve:</a></li>
+    
+
+    <li class="toctree-l3"><a href="#elasticity-iso-elastic-demand-curve">Elasticity  - Iso-elastic demand curve:</a></li>
+    
+
+    <li class="toctree-l3"><a href="#elasticity-classification">Elasticity classification</a></li>
+    
+
+    <li class="toctree-l3"><a href="#revenue">Revenue</a></li>
+    
+
+    <li class="toctree-l3"><a href="#revenue-price-increase-and-elasticity">Revenue, price increase and elasticity</a></li>
+    
+
+    <li class="toctree-l3"><a href="#revenue-price-increase-and-elasticity_1">Revenue, price increase and elasticity</a></li>
+    
+
+    <li class="toctree-l3"><a href="#revenue-price-increase-and-elasticity_2">Revenue, price increase and elasticity</a></li>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S8_Technology_Ch19/">Technology (Chapter 19)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S9_CostMinimization_Ch21/">Cost Minimization (Chapter 21)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S10_CostCurves_Ch22/">Cost Curves (Chapter 22)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S11_FirmSupply_Ch23/">Firm Supply (Chapter 23)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S12_Equilibrium_Ch16/">Equilibrium (Chapter 16)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S13_Monopoly_Ch25/">Monopoly (Chapter 25)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S14_Oligopoly_Ch28/">Oligopoly (Chapter 28)</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../S15_GameTheory_Ch29_Ch30/">Game Theory (Chapter 29, 30)</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Homework Assignemts</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../HW1_Questions/">Homework 1 (Questions)</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../moblab_games/">Moblab experiments</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Lectures and Homeworks</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Lectures &raquo;</li>
+        
+      
+    
+    <li>Market Demand (Chapter 15)</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="market-demand">Market Demand</h2>
+<h4 id="intermediate-microeconomics-econ-100a">Intermediate Microeconomics (Econ 100A)</h4>
+<h4 id="kristian-lopez-vargas">Kristian López Vargas</h4>
+<h4 id="ucsc-spring-2017">UCSC - Spring 2017</h4>
+<hr />
+<h2 id="market-demand_1">Market demand</h2>
+<ul>
+<li>
+<p>Two goods, $ x_1 $ , $ x_2 $</p>
+</li>
+<li>
+<p>$ n $ consumers, indexed by $ i $</p>
+</li>
+<li>
+<p>Individual demands: $ x_{1,i}(p_1, p_2, m_i) $ and $ x_{2,i}(p_1, p_2, m_i) $</p>
+</li>
+</ul>
+<p><br/></p>
+<p>$ X_{1}(p_1, p_2, m_1, ..., m_n) = \sum_{i=1}^{n} x_{1,i}(p_1, p_2, m_i) $</p>
+<p><br/></p>
+<p>$ X_{2}(p_1, p_2, m_1, ..., m_n) = \sum_{i=1}^{n} x_{2,i}(p_1, p_2, m_i) $</p>
+<hr />
+<h2 id="market-demand-graphically">Market demand - graphically</h2>
+<ul>
+<li>
+<p>Market demand is the horizontal addition of individual demands.</p>
+</li>
+<li>
+<p>Make sure you properly account for "zero demand" above highest "reservation price".</p>
+</li>
+</ul>
+<hr />
+<h2 id="market-demand-graphically_1">Market demand - graphically</h2>
+<p><iframe
+
+src="https://www.desmos.com/calculator/mpvgxpebi0?embed"
+
+style="border:0px #FFFFFF none;" name="myiFrame" scrolling="auto" frameborder="0" marginheight="0px" marginwidth="0px" height="600px" width="700px"
+
+></iframe></p>
+<hr />
+<h2 id="market-demand-example-cobb-douglass">Market demand - Example - Cobb Douglass</h2>
+<ul>
+<li>
+<p>$ u = x_1^a  x_2^b $</p>
+</li>
+<li>
+<p>$ 100 $ consumers, indexed by $ i $</p>
+</li>
+<li>
+<p>All individual have the same preferences, so same demand functions: $ x_{1,i}^* = \frac{ a }{ (a+b) } \frac{ m_i}{ p_1} $</p>
+</li>
+</ul>
+<p>$ \begin{aligned}
+X_1(p_1, p_2, m_1, ..., m_{100}) &amp;= \sum_{i=1}^{100} \frac{ a }{ (a+b) } \frac{ m_i }{ p_1 } \\
+~ &amp;= \frac{ a }{ (a+b) } \frac{ \sum_{i=1}^{100} m_i }{ p_1 } \\
+~ &amp;= \frac{ a }{ (a+b) } \frac{ M }{ p_1 } \\
+\end{aligned} $</p>
+<ul>
+<li>What if there are different types of consumers?</li>
+</ul>
+<hr />
+<h2 id="market-demand-example-linear-demands">Market demand - Example - Linear Demands</h2>
+<ul>
+<li>Suppose that the market consists of two individuals with demand functions given by:</li>
+</ul>
+<p>$ x_{adam}(p, m_a) = max(20-p,0) $</p>
+<p>$ x_{bob}(p, m_b) = max(30-3p,0) $</p>
+<ul>
+<li>The aggregate demand function is thereby given by:</li>
+</ul>
+<p>$ Q^d(p,m_a,m_b) = x_a(p,m_a)+x_b(p,m_b) $</p>
+<p>$ Q^d(p,m_a,m_b) =\begin{cases}
+50 - 4p &amp; if\ ~ p &lt; 10 \\
+20 - p &amp; if\ ~ 10 \leq p \leq 20 \\
+0 &amp; if\ ~ p &gt; 20 \\
+\end{cases} $</p>
+<hr />
+<h2 id="reservation-price">Reservation price</h2>
+<ul>
+<li>
+<p>Some goods come in large discrete units</p>
+</li>
+<li>
+<p>Reservation price is price that just makes a person indifferent </p>
+</li>
+<li>
+<p>$ u (0 , m) = u(1, m − p^{*}_{a}) $</p>
+</li>
+<li>
+<p>Add up demand curves to get aggregate demand curve</p>
+</li>
+</ul>
+<hr />
+<h2 id="market-demand-discrete-goods">Market demand - discrete goods</h2>
+<p><img alt="" src="../img/Ch15/INTMIC9_FIG15_03.jpg" /></p>
+<hr />
+<h2 id="elasticity">Elasticity</h2>
+<p>Measures responsiveness of demand to price</p>
+<p>$$ \epsilon = \frac{p}{x} \frac{dx}{dp} $$</p>
+<ul>
+<li>
+<p>What does elasticity depend on? In general, how many and how close
+substitutes a good has.</p>
+</li>
+<li>
+<p>What does it mean? Why is not just the derivative?</p>
+</li>
+<li>
+<p>We care about the magnitude so we often use: $ | \epsilon | $ instead of $ \epsilon $</p>
+</li>
+</ul>
+<hr />
+<h2 id="elasticity-example-for-linear-demand-curve">Elasticity  - Example for linear demand curve:</h2>
+<ul>
+<li>
+<p>We will use q instead of $ x_1 $ or $ x_2 $  </p>
+</li>
+<li>
+<p>Let demand curve be: $ q = a − bp $</p>
+</li>
+<li>
+<p>Price elasticity of demand: $ ε = −b \frac{p}{q} = \frac{−bp}{a−bp} $</p>
+</li>
+</ul>
+<hr />
+<h2 id="elasticity-example-for-linear-demand-curve_1">Elasticity  - Example for linear demand curve:</h2>
+<p><img alt="" src="../img/Ch15/INTMIC9_FIG15_04.jpg" /></p>
+<hr />
+<h2 id="elasticity-iso-elastic-demand-curve">Elasticity  - Iso-elastic demand curve:</h2>
+<p>Let demand curve be: $ Q = A p^{-b} $</p>
+<p>Lets calculate the elasticity:</p>
+<p>$$
+\begin{aligned}
+\epsilon &amp;= \frac{p}{Q} \frac{dQ}{dp} \\
+         &amp;= \frac{p}{ A p^{-b} } ~ A (-b  p^{-b-1} ) \\
+         &amp;= \frac{A}{A} (-b) \frac{p ~ p^{-b-1} }{ p^{-b} }  \\
+         &amp;= -b \\
+\end{aligned}
+$$</p>
+<hr />
+<h2 id="elasticity-classification">Elasticity classification</h2>
+<ul>
+<li>
+<p>Elastic demand: absolute value of elasticity greater than $ 1 $</p>
+</li>
+<li>
+<p>Inelastic demand: absolute value of elasticity less than $ 1 $</p>
+</li>
+</ul>
+<hr />
+<h2 id="revenue">Revenue</h2>
+<iframe src="https://www.desmos.com/calculator/gmsgtpcdoo?embed" width="600px" height="600px" style="border: 1px solid #ccc" frameborder=0></iframe>
+
+<hr />
+<h2 id="revenue-price-increase-and-elasticity">Revenue, price increase and elasticity</h2>
+<p>Demand curve:  $ Q^d = Q(p) $</p>
+<p>Revenue: $ R = p \times Q $</p>
+<p>When does an increase in price turn into an increase in revenue?</p>
+<p>That is, when $ \frac{dR}{dp} &gt; 0 $ ?</p>
+<hr />
+<h2 id="revenue-price-increase-and-elasticity_1">Revenue, price increase and elasticity</h2>
+<p>$$
+\begin{aligned}
+\frac{dR}{dp} &amp;= \frac{d(p  Q(p))}{dp}  \\
+~   &amp;= p \frac{dQ}{dp} + Q(p)  \\
+~   &amp;= Q \big( \frac{p ~ dQ}{Q ~ dp} + 1 \big) \\
+~   &amp;= Q ( \epsilon + 1 ) \\
+\end{aligned}
+$$</p>
+<p>So as long as $ \epsilon &gt; -1  $,  we will have that $ \frac{dR}{dp} &gt; 0 $.</p>
+<hr />
+<h2 id="revenue-price-increase-and-elasticity_2">Revenue, price increase and elasticity</h2>
+<p>You can use the same math, to see that if $ \epsilon &lt; -1  $,  then $ \frac{dR}{dp} &lt; 0 $.</p>
+<p>Why does this matter? Consider the case of the linear demand where elasticity changes from 0 to -infinity as we increase price. Now we know that:</p>
+<ul>
+<li>
+<p>At a price level where demand is price-<strong>inelastic</strong> (which happens at low prices), an <strong>increase</strong> in price will increase revenue. And,</p>
+</li>
+<li>
+<p>At a price level where demand is price-<strong>elastic</strong> (which happens at high prices), a <strong>decrease</strong> in price will increase revenue.</p>
+</li>
+</ul>
+<p>In conclusion, the price level that maximises revenue must be when the price-elasticity equals 1. The point we call unit-elasticity price level.</p>
+<hr />
+<!--
+## Inverse Demand, elasticity and revenue
+
+* Inverse demand: it is the demand curve except we solve for price $ p $: p(Q).
+
+* Example: if demand is $ Q^d = 100 - 2p $ then, inverse demand is  $ P = 50 - 0.5Q $
+
+* Marginal revenue $ = MR = \\frac{ dR }{ dQ } $ 
+
+* $ MR = \\frac{ dR }{ dQ } = p + q \\frac{ dP }{ dQ } = p (1 - 1 / | \\epsilon |) $
+
+-------
+
+-->
+
+<!--If you use calculus, make sure that you compute elasticities for the linear and log-linear cases.-->
+
+<!--I love the Laffer curve example in the appendix. Here are some totally trivial elasticity calculations that give a major insight into a big policy issue. I really push on this example in class to show people how what they have learned can really help in making informed judgments about policy.-->
+
+<!--
+
+// This piece of code below creates the reveal presentation and pushes to GitHub and then deploys to GitHub pages. Modify the commit message and paste it into terminal.
+
+cd docs && \
+pandoc  \
+-t revealjs -V revealjs-url=reveal.js \
+--css=reveal.js/css/theme/simple.css \
+-H reveal.js/js/revealMathJax.js \
+-s S7_Market_Demand_Ch15.md -o S7_Market_Demand_Ch15.html && \
+cd .. && \
+git add docs/S7_Market_Demand_Ch15.html && \
+git commit -m " add content to S7_Market_Demand_Ch15.md " && \
+git push origin master && \
+mkdocs gh-deploy 
+
+-->
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../S8_Technology_Ch19/" class="btn btn-neutral float-right" title="Technology (Chapter 19)">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../S6_Demand_Ch6/" class="btn btn-neutral" title="Demand (Chapter 6)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../S6_Demand_Ch6/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../S8_Technology_Ch19/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" defer></script>
+      <script src="../js/mathjaxhelper.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

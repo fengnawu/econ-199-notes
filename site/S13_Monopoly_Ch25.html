@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title></title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css">
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme">
+  <link rel="stylesheet" href="reveal.js/css/theme/simple.css"/>
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],  
+          processEscapes: true,
+          displaystyle: true
+      },
+      "HTML-CSS": { availableFonts: ["TeX"] }
+    });
+  </script><script type="text/javascript"
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full">
+  </script>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section class="slide level1">
+
+<h2 id="monopoly">Monopoly</h2>
+<h4 id="intermediate-microeconomics-econ-100a">Intermediate Microeconomics (Econ 100A)</h4>
+<h4 id="kristian-lópez-vargas">Kristian López Vargas</h4>
+<h4 id="ucsc---winter-2017">UCSC - Spring 2017</h4>
+</section>
+<section class="slide level1">
+
+<h2 id="monopoly-1">Monopoly</h2>
+<ul>
+<li><p>A monopoly is the exclusive possession of an industry's supply.</p></li>
+<li><p>In a competitive market, producers determine best quantity for a given price (firms are <strong>price-takers</strong>).</p></li>
+<li><p>In monopoly, the firm can <strong>either</strong> determine the price and consumers decide how many units to buy (demand curve), or, equivalently, the firm determines the output and consumers determine the price (inverse demand $ p(q) $ ). We adopt the latter approach.</p></li>
+<li><p>Monopolist cannot determine arbitrary q and p at the same time - the monopolist keeps in mind the demand of the consumer as a restriction, and chooses $ q $ in order to maximize profit ($ \pi = p(q) \times q $).</p></li>
+</ul>
+</section>
+<section id="reminder" class="slide level1">
+<h1>Reminder</h1>
+<ul>
+<li><p>Total Revenue: $ TR(q) = p \times q $</p></li>
+<li><p>Total revenue of a competitive firm is linear in q, because the price is given for the firm.</p></li>
+<li><p>Total revenue of the monopolist not linear because the price changes with quantity ( $ p(q) $ ).</p></li>
+<li><p>Make sure you understand this well before you continue.</p></li>
+</ul>
+</section>
+<section class="slide level1">
+
+<h2 id="monopolist-maximizing-profits">Monopolist Maximizing Profits</h2>
+<p>The monopolist's <strong>profit-maximization problem</strong>:</p>
+<p>Maximize profits: $ ~ \text{max}_q: \pi(q) = TR(q) - c(q) $.</p>
+<p>That is, we want to choose $ q $ that gives highest profit:</p>
+<p>At the peak of the profit &quot;hill&quot; it must be flat, right? This is what mathematically we called the first-order condition:</p>
+<p>$ \frac{d\pi}{dq} = \frac{dTR}{dq} - \frac{dc}{dq} = 0 $</p>
+<p>In other words, monopolist wants to produce $ q $ such that:</p>
+<p>$ MR(q) = MC(q) $</p>
+<p>We often denote this quantity as $ q^M $.</p>
+</section>
+<section class="slide level1">
+
+<h2 id="solving-the-problem-graphically">Solving the problem graphically</h2>
+<ul>
+<li>see document camera</li>
+</ul>
+</section>
+<section class="slide level1">
+
+<h2 id="monopolist---marginal-revenue">Monopolist - Marginal Revenue</h2>
+<p>Let's look at $ MR(q) $ more closely (reminder: although we do not always write it like that, remember $ p $ always represents the <em>inverse demand</em>, $ p(q) $, in the monopoly case).</p>
+<p>Since $ ~ TR(q) = p(q) \times q $, then:</p>
+<p>$ \begin{align} MR(q) &amp;= \frac{d TR(q)}{ d q} \\ &amp;= p + q \frac{dp}{ d q} \\ &amp;= p + q \frac{dp}{ d q} \frac{p}{p} \\ &amp;= p ( 1 + \frac{dp}{ d q} \frac{q}{p}) \\ &amp;= p \left( 1 + \frac{1}{ \epsilon(q)} \right) \\ &amp;= p \left( 1 - \frac{1}{ | \epsilon(q) | } \right) \end{align} $</p>
+</section>
+<section class="slide level1">
+
+<h2 id="back-to-maximizing-profits">Back to Maximizing Profits</h2>
+<p>Remember to maximize profits we want: $ ~ MR(q) = MC(q) $</p>
+<p>But we just learned that: $ ~ MR(q) = p \left( 1 - \frac{1}{ | \epsilon(q) | } \right) $</p>
+<p>Therefore: $ ~ p \left( 1 - \frac{1}{ | \epsilon(q) | } \right) = MC(q) $</p>
+<p>Since $ \left( 1 - 1/ | \epsilon(q) | \right) &lt; 1 $, the monopolist will set $ p &gt; MC $. That is, the consumer pays more for an extra unit of production than what it costs <strong>society</strong> to produce that unit. <em>Inefficiency!</em></p>
+<p>In contrast, in a competitive markets we had: $ price = MC $.</p>
+<p>Also, notice that monopolist produces at a $ q^M $ such that: $ |\epsilon| &gt; 1 $</p>
+</section>
+<section class="slide level1">
+
+<figure>
+<img src="img/Ch25/INTMIC9_FIG25_01.jpg" />
+</figure>
+</section>
+<section class="slide level1">
+
+<h2 id="monopoly-in-a-linear-demand-curve---example">Monopoly in a Linear Demand Curve - Example</h2>
+<p>A monopolist, faces a linear inverse demand curve $ ~ p = a - b q ~ $, and has this cost function $ ~c(q) = c q ~$, for $ ~ a, b, c &gt; 0 ~ $:</p>
+<p>The profit maximization problem is: $ ~ \text{max}_q ~~ \pi = TR(q) - c(q) = (a-bq) q - cq $</p>
+<ol type="1">
+<li><p>Find <em>marginal revenue</em> and <em>marginal cost</em> functions: $ ~~ MR(q) = a - 2bq ~~$ and $ ~~ MC(q) = c $</p></li>
+<li><p>Equate the two and solve for q: $ a-2bq = c ~~ $. It follows that: $ ~ q^M = \frac{(a-c)}{2b} $</p></li>
+<li><p>Plug $ q^M $ into inverse demand and find the price of the monopolist: $ ~ p^M = \frac{(a+c)}{2} $</p></li>
+</ol>
+</section>
+<section class="slide level1">
+
+<figure>
+<img src="img/Ch25/INTMIC9_FIG25_01.jpg" />
+</figure>
+</section>
+<section class="slide level1">
+
+<h2 id="numerical-example-home">Numerical Example! (home)</h2>
+<p>SC Municipal Utility is the sole provider of water to Santa Cruz residents and faces the following demand for water (in gallons): $ q^d = 100 - p $. Also, $ TC = 2q $.</p>
+<p><strong>Step 0:</strong> Inverse Demand: $ p = 100 - q^d $</p>
+<p><strong>Step 1:</strong> Find MR and MC</p>
+<p>$ TR = Pq = (100 - q)~q = 100q -q^2 $</p>
+<p>$ MR = \frac{dTR}{dq} = 100 - 2q ~ $ and $ ~ MC = \frac{dTC}{dq} = 2 $</p>
+<p><strong>Step 2:</strong> Set MR = MC and find $ q^M $</p>
+<p>$ 2 = 100 - 2q ~ $, then: $ ~q^M = 49 $</p>
+<p><strong>Step 3:</strong> Find $ p^M $ by plugging in $ q^M $ into the inverse demand:</p>
+<p>$ p^M = 100 - q^M = 51 $</p>
+</section>
+<section class="slide level1">
+
+<h2 id="inefficiencies-of-monopoly">Inefficiencies Of Monopoly</h2>
+<p>While a competitive industry operates where <strong><em>price = marginal cost</em></strong>, monopolized industry operates where <strong><em>price &gt; marginal cost</em></strong>; which results in lower output.</p>
+<p>Consumers are typically worse off under a monopoly: Suppose you are willing to pay 7 dollars for a burrito, while $ MC = 5 $ and $ P_M = 10 $. Sorry, you don’t get to buy it…</p>
+<p>In a monopoly, there are consumers that are willing to pay more than what it would cost to make those extra units (MC), but they are priced out. This would not happen in a competitive market.</p>
+</section>
+<section class="slide level1">
+
+<h2 id="inefficiencies-of-monopoly---prices-and-quantity">Inefficiencies Of Monopoly - Prices and Quantity</h2>
+<p>Let us consider $ (Q_M,P_M) $ as the optimal production set of a monopolist and $ (Q_C,P_C) $ the optimal production for a competitive firm.</p>
+<figure>
+<img src="img/Ch25/INTMIC9_FIG25_04.jpg" />
+</figure>
+</section>
+<section class="slide level1">
+
+<h2 id="inefficiencies-of-monopoly---deadweight-loss">Inefficiencies Of Monopoly - Deadweight Loss</h2>
+<p>B + C represent the DWL; If pricing is competitive consumers would gain area A + B.</p>
+<figure>
+<img src="img/Ch25/INTMIC9_FIG25_05.jpg" />
+</figure>
+</section>
+<section class="slide level1">
+
+<h2 id="inefficiencies-of-monopoly---deadweight-loss-1">Inefficiencies Of Monopoly - Deadweight Loss</h2>
+<p>Interactive version:</p>
+<iframe src="https://www.desmos.com/calculator/f3poa8u4dm?embed" style="border:0px #FFFFFF none;" name="myiFrame" scrolling="auto" frameborder="0" marginheight="0px" marginwidth="0px" height="600px" width="700px">
+</iframe>
+</section>
+<section class="slide level1">
+
+<h2 id="patents-and-patent-thickets-readings">Patents and Patent Thickets (readings)</h2>
+<p>A <strong>patent</strong> is a license from the government that offers exclusive rights to produce an invention.</p>
+<p>The life of a patent in the United States is 17 years.</p>
+<p>A <strong>patent thicket</strong> refers to the dense and overlapping series of patents an incumbent company might own to fend off competition.</p>
+<p>Companies can file a <em>&quot;preliminary injunction&quot;</em> against a company they feel infringes on their patents.</p>
+<p>Top tier companies arm themselves with dense patent thickets.</p>
+<p>Owning a dense thicket allows protection from injunctions due to the fear of a counter injunction.</p>
+</section>
+<section class="slide level1">
+
+<h2 id="natural-monopoly">Natural Monopoly</h2>
+<ul>
+<li><p>A <strong>natural monopoly</strong> occurs generally when there are</p>
+<ul>
+<li><p><strong>high fixed costs</strong></p></li>
+<li><p><strong>low marginal costs</strong>.</p></li>
+</ul></li>
+<li><p>Examples of natural monopolies include the gas network, electricity grid, and railway infrastructure.</p></li>
+</ul>
+</section>
+<section class="slide level1">
+
+<h2 id="natural-monopoly-1">Natural Monopoly</h2>
+<p>If a natural monopoly is forced to operate at a competitive market's price, $ MC = price $, it would incur in loses from producing under the $ AC $ curve.</p>
+<figure>
+<img src="img/Ch25/INTMIC9_FIG25_06.jpg" />
+</figure>
+</section>
+<section class="slide level1">
+
+<h2 id="what-causes-monopolies">What Causes Monopolies?</h2>
+<p>Remember that a monopolist <strong>IS</strong> the whole of the supply side of a product.</p>
+<p>A monopolist must then have the means of producing the large volume of product.</p>
+<p>The <strong>minimum efficient scale (MES)</strong> represents the level of output that <strong>minimizes average cost</strong>.</p>
+<p>A monopolist must then have a large <strong>minimum efficient scale</strong> $  $ to the demand.</p>
+</section>
+<section class="slide level1">
+
+<h2 id="what-causes-monopolies-readings">What Causes Monopolies? (readings)</h2>
+<figure>
+<img src="img/Ch25/INTMIC9_FIG25_07.jpg" />
+</figure>
+<p>Graph A represents a demand much larger relative to the MES.</p>
+<p>Graph B has a comparable MES relative to demand .</p>
+</section>
+<section class="slide level1">
+
+<h2 id="cartels-readings">Cartels (readings)</h2>
+<p>A <strong>cartel</strong> occurs when a few firms decide to collude and artificially hike prices to monopoly levels and drive out competition.</p>
+<p>The biggest cartel in the world is OPEC, owning 80% of the worlds reserves in oil.</p>
+<p>Price fixing is illegal in the United States; the US courts do not have jurisdiction to try foreign anti-trust cases.</p>
+<p>OPEC has used their influence to cause a massive shortage of gasoline. In 1973, due to retaliation from US involvement in the Yom Kippur War, OPEC imposed an oil embargo.</p>
+</section>
+<section class="slide level1">
+
+<h2 id="tax-effects-on-a-monopolist-graphically-readings">Tax Effects on a Monopolist Graphically (readings)</h2>
+<p>Let us examine what would happen to price if we imposed a quantity tax on the market.</p>
+<p>If we were to gear the tax towards the monopolist, the price of output would increase marginal cost by the tax ($ MC + t $)</p>
+<p>In the case of a linear demand curve, where the marginal revenue is twice as steep demand curve, the price goes up by <em>half the amount of the tax</em></p>
+<figure>
+<img src="img/ch25/INTMIC9_FIG25_03.jpg" />
+</figure>
+</section>
+<section class="slide level1">
+
+<h2 id="monopoly-behavior-beyond-unique-uniform-pricing">Monopoly behavior beyond unique, uniform pricing</h2>
+<ul>
+<li><p>Perfect price discrimination: charging each customer a different price. Efficient level of output BUT CS = 0.</p></li>
+<li><p>Charge different prices in two different markets: Firm will charge the lower price in the market where demand is more elastic.</p></li>
+<li><p>If monopolist can set a two-part tariff: it will want to set price equal to MC and make all of its profits from the entry fee.</p></li>
+</ul>
+</section>
+<section class="slide level1">
+
+<!--
+
+// This piece of code below creates the reveal presentation and pushes to GitHub and then deploys to GitHub pages. Modify the commit message and paste it into terminal.
+
+cd docs && \
+pandoc  \
+-t revealjs -V revealjs-url=reveal.js \
+--css=reveal.js/css/theme/simple.css \
+-H reveal.js/js/revealMathJax.js \
+-s S13_Monopoly_Ch25.md -o S13_Monopoly_Ch25.html && \
+cd .. && \
+git add docs/* && \
+git commit -am " add content to S13_Monopoly_Ch25.md " && \
+git push origin master && \
+mkdocs gh-deploy 
+
+-->
+</section>
+    </div>
+  </div>
+
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+              { src: 'reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title></title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css">
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme">
+  <link rel="stylesheet" href="reveal.js/css/theme/simple.css"/>
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          displayMath: [ ['$$','$$'], ["\\[","\\]"] ],  
+          processEscapes: true,
+          displaystyle: true
+      },
+      "HTML-CSS": { availableFonts: ["TeX"] }
+    });
+  </script><script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full">
+  </script>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section id="firms-decisions---cost-minimization" class="slide level2">
+<h2>Firm's Decisions - Cost Minimization</h2>
+<h4 id="intermediate-microeconomics-econ-100a">Intermediate Microeconomics (Econ 100A)</h4>
+<h4 id="kristian-lópez-vargas">Kristian López Vargas</h4>
+<h4 id="ucsc---spring-2017">UCSC - Spring 2017</h4>
+</section>
+<section id="cost-minimization-problem---intro-idea" class="slide level2">
+<h2>Cost Minimization Problem - intro idea</h2>
+<ul>
+<li>The firm operates in two kinds of markets:
+<ol type="1">
+<li>Inputs/factor markets (e.g. it buys labor and capital)</li>
+<li>Final product market</li>
+</ol></li>
+<li><p>Let's focus on optimal decisions regarding the first kind of market.</p></li>
+<li><p>We will assume for now the firms has a target prod level $ q_0 $. (i.e. an isoquant!)</p></li>
+<li><p>And, it aims to achieve that level of production in the best (most efficient) way possible.</p></li>
+<li><p>let the fun begin</p></li>
+</ul>
+</section>
+<section id="cost-minimization-problem" class="slide level2">
+<h2>Cost Minimization Problem</h2>
+<ul>
+<li><p>The only decision the firm controls at this point is how much of inputs it uses.</p></li>
+<li><p>So the most efficient way in this context refers to what is the &quot;right&quot; combination of (L,K) so achieve $ q_0 $.</p></li>
+<li><p>The right combination is the one that minimize the cost of producing the given target level of output $ q_0 $.</p></li>
+<li><p>Suppose wages are denoted by $ w $ and rental price of capital is denoted by $ r $.</p></li>
+<li><p>So the firm wants to:</p></li>
+</ul>
+<p>minimize: $ cost = w L + r K, \quad $ subject to: $ f(L,K) = q_0 $.</p>
+</section>
+<section id="isocost" class="slide level2">
+<h2>Isocost</h2>
+<ul>
+<li><p>Isocost: Combinations of input usage that cost the same (say $C):</p></li>
+<li><p>Example: This is isocost at a cost of $100:</p>
+<ul>
+<li>$ w L + r K = 100 $</li>
+</ul></li>
+<li><p>Example: This is isocost at a cost of $50 when wages = 20 and price of capital = 10:</p>
+<ul>
+<li>$ 20 L + 10 K = 50 $</li>
+</ul></li>
+<li><p>Draw draw draw more examples until you dream of isocosts a little.</p></li>
+</ul>
+</section>
+<section id="solving-the-cost-minimization-problem" class="slide level2">
+<h2>Solving the cost-minimization problem</h2>
+<ul>
+<li><p>Conceptually: find best(lowest) isocost given the required isoquant.</p></li>
+<li><p>Graphically...</p>
+<ol type="1">
+<li><p>Draw the &quot;target&quot; output level (isoquant) $ q_0 $.</p></li>
+<li><p>Ask: what is the cheapest combination of L,K that makes $ q_0 $ possible.</p></li>
+</ol></li>
+</ul>
+</section>
+<section id="solving-the-cost-minimization-problem-1" class="slide level2">
+<h2>Solving the cost-minimization problem</h2>
+<figure>
+<img src="img/Ch21/INTMIC9_FIG21_01.jpg" />
+</figure>
+<ul>
+<li><p>What if prices of factors change?</p></li>
+<li><p>What if target output changes?</p></li>
+</ul>
+</section>
+<section id="conditional-factor-demand-functions" class="slide level2">
+<h2>Conditional factor demand functions</h2>
+<ul>
+<li><p>Optimal choices of factors are called the <strong>conditional factor demand functions</strong></p>
+<ul>
+<li>That is: $ L^* = L(w,r,q_0) $ and $ K^* = K(w,r,q_0) $</li>
+</ul></li>
+<li><p>Optimal cost is the <strong>cost function</strong></p>
+<ul>
+<li>That is: $ c(w,r,q_0) = w L(w,r,q_0) + r K(w,r,q_0) $</li>
+</ul></li>
+<li><p>Notice: all this is in the &quot;long run&quot; because we are able to adjust all inputs.</p></li>
+</ul>
+</section>
+<section id="cost-minimization-problem---the-math" class="slide level2">
+<h2>Cost-minimization problem - The Math</h2>
+<p><br /><span class="math display">$$
+\underset{L,K}{\text{minimize:}} ~ w L + r K
+\\
+\text{Subject to:} ~  f(L,K) = q_0
+$$</span><br /></p>
+</section>
+<section id="cost-minimization-problem-case-1-tangency." class="slide level2">
+<h2>Cost-minimization problem, Case 1: tangency.</h2>
+<ul>
+<li><p>If technology satisfies mainly convexity and monotonicity then (in most cases) <em>tangency solution!</em></p></li>
+<li><p>Tangency condition: slope of isoquant equals slope of isocost curve.</p>
+<ul>
+<li>In equation: $ - \frac{w}{r} = - \frac{MP_L}{MP_K} $ (EQ. 1)</li>
+</ul></li>
+<li><p>Constraint: $ q = f(L,K) $ (EQ. 2)</p></li>
+<li><p>System of two equations (Eq1 and Eq2), and two unknowns ($ L $ and $ K $).</p></li>
+</ul>
+</section>
+<section id="example-cobb-douglass" class="slide level2">
+<h2>Example: Cobb-Douglass</h2>
+<p>If $ q = f(L,K) = L K $,</p>
+<p><br /><span class="math display">$$ L^{*}(w,r,q) =  \big( \frac{ q r }{ w } \big)^{1/2}  $$</span><br /></p>
+<p><br /><span class="math display">$$ K^{*}(w,r,q) =  \big( \frac{ q w }{ r } \big)^{1/2}  $$</span><br /></p>
+<p><br /><span class="math display"><em>c</em>(<em>w</em>, <em>r</em>, <em>q</em>)=<em>w</em><em>L</em><sup>⋆</sup> + <em>r</em><em>K</em><sup>⋆</sup> = 2(<em>q</em><em>r</em><em>w</em>)<sup>1/2</sup></span><br /></p>
+<p>Home exercise: solve the more general case:</p>
+<ul>
+<li>$ q = f(L,K) = A ~ L^{a} K^{b} $</li>
+<li>Find $ ~ c(w,r,q) = ?????? $</li>
+</ul>
+</section>
+<section id="cost-minimization-problem-case-2-corner-solution." class="slide level2">
+<h2>Cost-minimization problem, Case 2: Corner Solution.</h2>
+<p>Mainly, but not exclusively:</p>
+<ol type="1">
+<li>Perfect Substitutes:</li>
+</ol>
+<p><br /><span class="math display"><em>q</em> = <em>f</em>(<em>L</em>, <em>K</em>)=<em>a</em><em>L</em> + <em>b</em><em>K</em></span><br /></p>
+<ul>
+<li>For example: $ q = f(L,K) = L + K $</li>
+</ul>
+</section>
+<section id="example-linear-technology-1" class="slide level2">
+<h2>Example: Linear technology (1)</h2>
+<p><br /><span class="math display"><em>q</em> = <em>f</em>(<em>L</em>, <em>K</em>)=<em>a</em><em>L</em> + <em>b</em><em>K</em></span><br /></p>
+<ul>
+<li><p>Compare RTS $ ( - \frac{ a }{ b }) $ Vs. slope of the isocosts $ ( - \frac{ w }{ r } ) $</p></li>
+<li><p>Alternatively, compare: $ \frac{ a }{ w } $ Vs. $ \frac{ b }{ r } $</p>
+<ol type="1">
+<li><p>If $ \frac{ a }{ w } &gt; \frac{ b }{ r } $ firm should use labor only.</p></li>
+<li><p>If $ \frac{ a }{ w } &lt; \frac{ b }{ r } $ firm should use capital only.</p></li>
+<li><p>If $ \frac{ a }{ w } = \frac{ b }{ r } $ any point along the isoquant, minimizes cost.</p></li>
+</ol></li>
+</ul>
+</section>
+<section id="example-linear-technology-2" class="slide level2">
+<h2>Example: Linear technology (2)</h2>
+<p>IF $ \frac{ a }{ w } &gt; \frac{ b }{ r } $</p>
+<p>The firm should use only Labor (corner solution).</p>
+<ul>
+<li><p>Then: $ q = a L $ , so $ L^*(w,r,q) = \frac{ q }{ a } $</p></li>
+<li><p>Then: $ K^*(w,r,q) = 0 $</p></li>
+<li><p>Then: $ c(w,r,q) = w L^\star = \frac{ w }{ a } q $</p></li>
+</ul>
+</section>
+<section id="example-linear-technology-3" class="slide level2">
+<h2>Example: Linear technology (3)</h2>
+<p>IF $ \frac{ a }{ w } &lt; \frac{ b }{ r } $</p>
+<p>The firm should use only Capital (corner solution).</p>
+<ul>
+<li><p>Then: $ q = b K $ , so $ K^*(w,r,q) = \frac{ q }{ b } $</p></li>
+<li><p>Then: $ L^*(w,r,q) = 0 $</p></li>
+<li><p>Then: $ c(w,r,q) = r K^\star = \frac{ r }{ b } q $</p></li>
+<li><p>IF $ \frac{ a }{ w } = \frac{ b }{ r } $, any point along the isoquant, minimizes cost.</p></li>
+</ul>
+</section>
+<section id="example-linear-technology-4" class="slide level2">
+<h2>Example: Linear technology (4)</h2>
+<p>Putting all this together:</p>
+<p><br /><span class="math display">$$ c(w,r,q)= q \times
+\begin{cases}
+    \frac{ w }{ a },&amp; \text{if} ~ \frac{ w }{ a } \leq  \frac{ r }{ b }    \\
+    \frac{ r }{ b },&amp; \text{if} ~ \frac{ r }{ b } &lt;     \frac{ w }{ a }
+\end{cases}
+$$</span><br /></p>
+<p>This can be written as:</p>
+<p><br /><span class="math display">$$ c(w,r,q) = q ~ \textrm{min} \{ \frac{ w }{ a } , \frac{ r }{ b } \} $$</span><br /></p>
+</section>
+<section id="simpler-example" class="slide level2">
+<h2>Simpler example:</h2>
+<p>If $ q = f(L,K) = L + K $, then:</p>
+<p><br /><span class="math display"><em>c</em>(<em>w</em>, <em>r</em>, <em>q</em>)=<em>q</em> × min{<em>w</em>, <em>r</em>}</span><br /></p>
+</section>
+<section id="cost-minimization-problem-case-3-kink-solution" class="slide level2">
+<h2>Cost-minimization problem, Case 3: Kink Solution</h2>
+<ol start="2" type="1">
+<li>Perfect Complements (kink solution):</li>
+</ol>
+<p><br /><span class="math display">$$ q = f(L,K) = \text{min} \{ \frac{L}{a} , \frac{K}{b} \} $$</span><br /></p>
+<ol start="2" type="1">
+<li>if $ q = f(L,K) = \textrm{min} \{ L ,K \} $, then:</li>
+</ol>
+<p><br /><span class="math display"><em>c</em>(<em>w</em>, <em>r</em>, <em>q</em>)=(<em>w</em> + <em>r</em>)<em>q</em></span><br /></p>
+</section>
+<section id="short-run-conditional-demand-for-labor-cost-function" class="slide level2">
+<h2>Short-run conditional demand for labor, cost function</h2>
+<ul>
+<li><p>$ K = \bar{K} $</p></li>
+<li><p>do the graph!</p></li>
+<li><p>Short-run conditional demand of labor: $ L = L(w,r,q, \bar{K}) $</p></li>
+<li><p>This demand is obtained from solving L from $ q = f( \bar{K}, L) $</p></li>
+<li><p>If there are no other inputs it does not depend on prices of inputs.</p></li>
+</ul>
+</section>
+<section id="short-run---example" class="slide level2">
+<h2>Short-run - example</h2>
+<ul>
+<li><p>$ q = f(L, K) = K^{0.5} L^{0.5} $</p></li>
+<li><p>$ K = \bar{K} $</p></li>
+<li><p>$ L^{SR} = \frac{ q^2 }{ \bar{K} } $</p></li>
+<li><p>$ c^{SR}(w,r,q, \bar{K}) = w \frac{ q^2 }{ \bar{K} } + r \bar{K} $</p></li>
+</ul>
+</section>
+<section id="returns-to-scale-and-the-cost-function" class="slide level2">
+<h2>Returns to scale and the cost function</h2>
+<ul>
+<li><p>Let us define the average cost function:</p></li>
+<li><p>$ AC(w,r,q) = \frac{ c(w,r,q) }{ q } $</p></li>
+<li><p>IRS implies that <em>AC</em> is decreasing in $ q $. (e.g. if we want to double q, we can less than double costs).</p></li>
+<li><p>CRS implies that <em>AC</em> is constant in $ q $. (e.g. if we want to double q, we need to double costs).</p></li>
+<li><p>DRS implies that <em>AC</em> is increasing in $ q $. (e.g. if we want to double q, we need to more than double costs).</p></li>
+</ul>
+</section>
+<section id="types-of-costs-fixed-and-quasi-fixed-costs" class="slide level2">
+<h2>Types of costs: Fixed and quasi-fixed costs</h2>
+<ol type="1">
+<li><p>Fixed: costs that must be paid, regardless of output level.</p></li>
+<li><p>Quasi-fixed cost: costs that must be paid, only if output level &gt; 0. (heating, lighting, etc.)</p></li>
+<li><p>Sunk cost: fixed costs that are not recoverable (painting your factory)</p></li>
+</ol>
+</section>
+<section class="slide level2">
+
+<!--
+
+ 
+B. Revealed cost minimization
+
+1. Suppose we hold output fixed and observe choices at different factor prices.
+
+2. When prices are $ (w^s,r^s) $, choice is $ (L^s,K^s) $, and when prices are $ (w^t,r^t) $, choice is $ (L^t,K^t) $.
+
+3. If choices minimize cost, then we must have
+
+> $ w^t L^t + r^t K^t \leq w^t L^s + w^t K^s $
+> $ w^s L^s + w^s K^s \leq w^s L^t + r^s K^t $
+
+4. This is the #### ** Weak Axiom of Cost Minimization (WACM) **
+
+5. What does it imply about firm behavior? 
+
+6. Multiply the second equation by -1 and get
+
+> $ w^t L^t + r^t K^t \leq w^t L^s + w^t K^s $
+
+> $ -w^s L^t - w^s K^t \leq -w^s L^s - r^s K^s $
+
+7. Add these two inequalities: 
+
+> (w^t - w^s)(L^t - L^s) + (r^t - r^s)(L^t - L^s) \leq 0 
+
+> \Delta w \Delta L + \Delta r \Delta K \leq 0
+
+8. Roughly speaking, “factor demands move opposite to changes in factor prices”
+
+9. In particular, *factor demand curves must slope downward.*
+
+
+                
+D. Long-run and short-run costs
+1. long run: all inputs variable   
+2. short run: some inputs fixed
+                
+
+
+
+-->
+<!--
+
+// This piece of code below creates the reveal presentation and pushes to GitHub and then deploys to GitHub pages. Modify the commit message and paste it into terminal.
+
+cd docs && \
+pandoc  \
+-t revealjs -V revealjs-url=reveal.js \
+--css=reveal.js/css/theme/simple.css \
+-H reveal.js/js/revealMathJax.js \
+-s S9_CostMinimization_Ch21.md -o S9_CostMinimization_Ch21.html && \
+cd .. && \
+git add docs/S9_CostMinimization_Ch21.html && \
+git commit -m " add content to S9_CostMinimization_Ch21.md " && \
+git push origin master && \
+mkdocs gh-deploy
+
+-->
+</section>
+    </div>
+  </div>
+
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+              { src: 'reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
