@@ -1,13 +1,13 @@
 
 # Lectures and Homeworks
 
-<p> THIS PAGE NEEDS TO BE UPDATED / Sep 25 2016 </p>
+<p> THIS PAGE NEEDS TO BE UPDATED / Dec 2018 </p>
 
-Intermediate Microeconomics - Econ 100A - UCSC - Fall 2017
+Intermediate Microeconomics - Econ 100A - UCSC - Winter 2019
 
 University of California Santa Cruz
 
-Prof. Kristian López Vargas <[kristian@ucsc.edu](kristian@ucsc.edu)>
+Prof. Natalia Lazzati <[nlazzati@ucsc.edu](nlazzati@ucsc.edu)>
 
 This is the page of the class where you will find the lectures in _printable format_ as well as in slide or presentation form. To print a page, go to the corresponding page you want to print on the left navigation menu and use standard file/print menu of your browser (or keyboard shortcuts `Command+P` or `Ctrl+P`).   
       
@@ -73,7 +73,7 @@ Homework assignments (and their solutions) can be found in the left navigation m
 
 I recommend you open the following links in a new tab.
  
-* Lazzati & Lopez Vargas' [Intermediate Microeconomics notes](https://docs.google.com/document/d/1clykSpEGt9y_dnYVIgZaCQFet1q2z0_enbaRtg5_C-A). Most likely this will require you to log into google with your UCSC account.   
+* Lazzati & Lopez Vargas' [Intermediate Microeconomics notes](https://docs.google.com/document/d/1clykSpEGt9y_dnYVIgZaCQFet1q2z0_enbaRtg5_C-A/). Most likely this will require you to log into google with your UCSC account.   
 
 * Kristian's Desmos Interactive graph example: [https://www.desmos.com/calculator/gui6gng3mu](https://www.desmos.com/calculator/gui6gng3mu)
  

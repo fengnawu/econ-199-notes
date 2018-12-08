@@ -3,10 +3,34 @@
 
 #### Intermediate Microeconomics (Econ 100 A)
 
-#### Kristian López Vargas
+#### Natalia Lazzati
 
-#### UCSC - Spring 2017
+#### UCSC - Winter 2019
 
+---------------------------------
+## Consumer Choice
+* This sectio presents some standard economic models of consumer behavior.
+
+---------------------------------
+## 2.1 Rational Choice
+* The basic model of consumer choice studies the decision of a single person regarding what goods to acquire, and how much to buy of each of them, taking as given the prices of the goods and the income level of the consumer. Our simple model assumes that each consumer chooses the “best” combination of goods ---or bundle---  that “he can afford”. The idea of “best” builds on the notions of preferences and utility; our model captures “affordability” via budget sets. 
+
+1. **Preferences**: The preferences on an individual consist of his personal ranking over all possible alternatives. We often capture these preferences by the so called utility function. 
+
+2. ***Budget Set**: The budget set of an individual is the collection of all alternatives that he can afford given his resources (income or wealth) and the prices of the goods he faces in the market.
+
+* Together, (1) and (2) induce choices. That is, they determine what consumption bundles are selected by the consumer. As prices and/or income change, so does the budget set and (often) the combination of goods that the consumer selects. The demand function describes the consumption decisions for all different combinations of prices and income levels. 
+
+* To simplify the exposition, we will focus on a simple version of the consumer problem. The components of our model are as follows:
+
+1. We assume there are only two goods: good 1 and good 2.
+2. We represent the quantities of these goods as x1 and x2, respectively. The ordered pair x1,x2 denotes a bundle of goods.
+3. The prices of the goods are represented by p₁ and p₂, respectively.
+4. The income level of the consumer is denoted by *m*.
+
+* Example: Suppose good 1 is orange juice and good 2 is salad. Then x1 indicates the quantity of orange juice (say in liters) and x2 is the quantity of salads (say in pounds). In this context, the combination (1/2, 1) represents the bundle of half liter of orange juice and one pound of salad. Suppose also that a liter of orange juice costs 5 dollars, a pound of salad costs 10 dollars, and the income level of the consumer is 500 dollars. In our notation, this information is concisely written as p1 = 5, p2 = 10, and m = 500.
+
+* This simple two-goods model can be easily extended to more goods (e.g., it can be extended to the set of all goods you can get in the supermarket). We use the two-goods case because it helps us to illustrate the main concepts and tools in a simple way, often invoking a graphical representations of the model.
 
 ---------------------------------
 

@@ -3,9 +3,9 @@
 
 #### Intermediate Microeconomics (Econ 100A)
 
-#### Kristian López Vargas
+#### Natalia Lazzati
 
-#### UCSC - Spring 2017
+#### UCSC - Winter 2019
 
 -----
 
@@ -13,13 +13,13 @@
 
 * Assistant Professor – Economics UCSC
 
-* My field of work: Micro, Behav. & Exp. Econ
+* My field of work: Micro Theory, Industry Org, Econometrics, & Exp. Econ
  
-* PhD in Economics from the Univ. of Maryland
+* PhD in Economics from the University of Arizona
 
-* Prev. experience: MEF, WB, IADB, UMD, Tel Reg.
+* Prev. experience: 
 
-* Taught microeconomics before
+* Taught Microeconomics before
 
 -----
 
@@ -57,16 +57,16 @@
 
 -----
 
-## Syllabus (1) Kristian
+## Syllabus (1) Natalia
 
-* Email <kristian@ucsc.edu> 
+* Email <nlazzati@ucsc.edu> 
 
-* Office hours:  Thu 8am to 10am.
+* Office hours: MW 3-4PM and by appointment
    
-* Engineering 2 Building - Office 419
+* Engineering 2 Building - Office 415
 
-* Lectures: MWF from 2:40pm to 3:45pm.
-    - J Bask Aud 101
+* Lectures: TuTh from 11:40am to 1:15pm.
+    - Steven Acad 150
 
 ----- 
 
@@ -74,15 +74,15 @@
 
 
 
-* Dahyeon Jeong (DJ) <dajeong@ucsc.edu>; office hrs: Friday 10:00am - 12:00pm , 
+* TBD <@ucsc.edu>; office hrs: Friday 10:00am - 12:00pm , 
 
-* Jiayi Xu <jxu55@ucsc.edu>; office hrs: Monday 2:00pm - 4:00pm, 
+* TBD <@ucsc.edu>; office hrs: Monday 2:00pm - 4:00pm, 
 
-* Quintero, Alfonso	afquinte@ucsc.edu; office hrs: ______
+* TBD <@ucsc.edu>; office hrs: ______
 
-* Zhu, Zijing	zzhu17@ucsc.edu; office hrs: ______
+* TBD <@ucsc.edu>; office hrs: ______
 
-* All TAs will hold office hours in *Engineering 2, Rm 403F* (subject to change)
+* All TAs will hold office hours in *Engineering 2, Rm ____* (subject to change)
 
 
 ----- 
@@ -91,20 +91,17 @@
 
 | Class # | Sec | Day / Time | Location
 | --- | --- | --- | ---
-|  60832 | 01A | M 09:20AM - 10:25AM | Kresge Clrm 319
-|  60833 | 01B | M 10:40AM - 11:45AM | Kresge Clrm 319
-|  60834 | 01C | W 08:00AM - 09:05AM | Kresge Clrm 325
-|  60835 | 01D | W 12:00PM - 01:05PM  | Kresge Clrm 319
-|  60836 | 01E | Th 08:30AM - 09:35AM | Kresge Clrm 319
-|  60837 | 01F | Th 09:50AM - 10:55AM | Kresge Clrm 319
-|  60838 | 01G | F 10:40AM - 11:45AM | Kresge Clrm 319
-|  60839 | 01H | F 12:00PM - 01:05PM | Kresge Clrm 319
+|  41535 | 01A | M 09:20AM - 10:25AM | TBA
+|  41536 | 01B | M 10:40AM - 11:45AM | TBA
+|  41537 | 01C | W 08:00AM - 09:05AM | TBA
+|  41538 | 01D | W 12:00PM - 01:05PM  | TBA
+
 
 ------------ 
 
 ## Syllabus (4) MSI
 
-* There is a new system (Gianluca makes announcement)
+* There is a new system (TBA makes announcement)
 
 ----- 
 
@@ -149,7 +146,7 @@
 
 ----- 
 
-## Syllabus (8) Exams and Grading
+## Syllabus (8) Exams and Grading [ to be changed ]
  
 * Two midterms each worth 20% - April 24 and May 22
 
@@ -159,7 +156,7 @@
 
 -----
 
-## Syllabus (9) Homework Assignments
+## Syllabus (9) Homework Assignments [ to be changed ]
 
 * 5 to 6 graded homework assignments worth 20% of the total grade
 
@@ -235,7 +232,7 @@
 
 -----
 
-## Introduction
+## Introduction [ update this ]
 
 -----
 
