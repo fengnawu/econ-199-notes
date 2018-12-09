@@ -1,310 +1,407 @@
 
-## Oligopoly
+## Markets (Chapter 4)
 
 #### Intermediate Microeconomics (Econ 100A)
 
-#### Kristian López Vargas
+#### Natalia Lazzati
 
-#### UCSC - Spring 2017
+#### UCSC - Winter 2019
 
 ------------------------
 
-## Oligopoly
+## 4.1 Competitive Equilibrium
 
-Oligopoly is the study of a market served by a **small number** of firms.
+The behavior of each firm in the market depends on the structure of the market. 
 
-  * Duopoly is simplest case: 2 firms.
+When we say market structure, we often refer to
 
-  * There is an strategic component because agents are no longer tiny with respect to the whole market.
+- the number of firms in the market;
+- the ease with which firms can enter and leave the market; and
+- the ability of firms to differentiate their products from those of their rivals.
 
-There is no general solution to the equilibrium of this market. It will depend on market structure and specifics of how firms interact.
+One of the main market structures we study in economics is the so called “competitive market”. In a competitive market, a single agent (either a firm or a consumer) cannot alter the market price with its sole actions. As a consequence, each of them takes prices as given and select how much to buy or produce. Notice that the consumers and the firms we have studied so far behave in exactly this fashion.
+
+- this structure is often referred to as a perfectly competitive market
+
+Competitive markets typically exhibit the next characteristics:
+
+- the products of the firms are almost identical from the perspective of the consumers;
+- the consumers can easily get information about the prices of all ---or most--- sellers;
+- there are many producers, so each of them represents a tiny fraction of the market;
+- there are many consumers, so each of them represents a tiny fraction of the market;
+- it is easy for each firm to enter and leave the market; and
+- there is a relatively equal access to technology and inputs by the potential participants of the industry.
+
+Some commodity markets (e.g. the soybeans market) operate close to perfect competition.
+
+A competitive equilibrium indicates a market price at which the amount that the firms would like to produce equals the amount of the good that the consumers would like to buy. We can study this question in the short or in the long run.
+
+In the short run, we assume that the number of firms is fixed. In this case, the competitive equilibrium is given by the price level p* for which the total quantity that consumers are willing to demand (Qd) is the same as the total quantity that firms decide to supply (Qs). That is,
+
+- Q^d(p') = Q^s(p')
+
+------------
+**Example**: Suppose that there are 100 identical consumers with demand functions for a specific good given by
+
+- x=75/p.
+
+In addition, let us assume that there are 12 identical firms, each of which has a supply function given by
+
+- y=p/4.  
+
+Adding up the demand of each consumer, we get that the market demand is given by 
+
+- Q^d(p)=100x(75/p)=7500/p
+
+Adding up the supply of each firm, we get that the market supply is given by 
+
+- Q^s(p)=12 x (p/4) = 3p 
+
+Thus, the short run competitive equilibrium price solves
+
+- 7500/p = 3p
+
+Thus, p' = 50 and Q' = 150 
+
+---------
+
+In the long run, we assume that firms have enough time to make entry/exit decisions. We say there is free entry and exit if there are no barriers to enter or exit the industry. 
+
+As we explained earlier, if there is free entry, then, in the long run, the firms make zero profits. More precisely, the long run equilibrium consists of a price level (p*), a market quantity (Q*) and a number of firms (H*) that simultaneously satisfy the next two conditions: 
+
+1. Quantity demanded equals quantity supplied: Qd(p*)=Qs(p*) 
+
+2. Profits are zero for every incumbent firm: p* yh*=C(yh*) for all h=1,...,H*.
+
+Notice that the zero profit condition in the long run equilibrium contemplates the fact that the number of firms is determined within the model, by the characteristics of the industry. 
+
+**Example**: Consider an industry where all firms are identical and exhibit a cost function given by: 
+
+- C(y) = 40y - y^2 + 0.01y^3
+
+Moreover, assume that the demand function is given by Q^d(p) = 25000-1000p. 
+
+The long-run competitive equilibrium can be obtained as follows. First notice that each firm will optimally select how much to produce solving the next problem
+
+- maxy(y) {py -  40y + y2 - 0.01y^3}
+
+The FOC of this problem is captured by
+
+- p = 40 - 2y + 0.03y^2
+
+In addition, we know that, in the long-run, each of them makes zero profits. Thus,
+
+- p = C(y)/y = 40 - y + 0.01y^2
+
+Combining these two results, we get y'=50. Thus, the equilibrium price is p'=15. 
+
+To determine how many firms will enter the market, notice that, if p'=15, then the quantity demanded is given by
+
+- Q^d(15) = 25000 - 1000 x 15 = 10,000 
+
+Since, Qd(15)=Qs(15) and each firm produces y' = 50, we get that H' = 10,000/50 = 200. 
+
+In sum, we have that p'=15, Q'=10,000 and H'=200.
+
+---------
+
+We often read in the newspapers about different policies that the government of the US implements to make specific markets more competitive. A natural question arises:
+
+**Why are competitive markets desirable?**
+
+To answer this question, we need to introduce the concepts of consumer and producer surplus.
+
+Consumer surplus is defined as the difference between consumers’ willingness to pay for a good and the price that they have to actually pay to buy each of the units that they decide to acquire. Graphically, it is the area below the demand curve and above the market price.
+
+Producer surplus, on the other hand, is the difference between the price that the firms get for selling the good and the cost of producing each unit they put on the market. Graphically, it is the area above the supply curve and below the price that producers are charging for the good. 
+
+The total surplus of the market is just the sum of consumer and producer surplus. Competitive markets are desirable as they maximize to
+
+**[ insert image from page 51 ]** 
+
+**Example**: Suppose the demand curve is given by Qd = 30 – p and the supply curve is Qs = 2p. If we calculate the equilibrium price p* and the equilibrium quantity Q* we get p* = 10 and Q* = 20.
+ 
+If we draw the demand and supply curves and identify the surpluses graphically, we will see that those are triangles. Using the fact that the area of a triangle is base times height divided by two, then the consumer surplus (CS) is given by:
 
 
-------
+Similarly, the producer surplus (PS) is given by:
 
-## Scenarios and theories
+[**insert image**] <http://www.codecogs.com/eqnedit.php?latex=%20PS%20=%20%5Cfrac%7B(P%5E*%20-%200)%20Q%5E*%7D%7B2%7D%20=%20%20%5Cfrac%7B%20(10)%2020%20%7D%7B2%7D%20=%20100%20>
 
-* Collusive 
-    * cartels
 
-* Non-collusive
-    * Simultaneous moves
-        * Cournot: quantity setting  
-        * Bertrand: price setting  
+---------
 
-    * Sequential moves
-        * Stackelberg: leader-follower quantity setting  
-        * price leader: leader-follower price setting 
+## 4.2 Monopoly
+
+We study an industry in which there is only one firm, a monopoly. 
+
+We are interested in situations where this firm has power to set the market price. In this sense we are ruling out what we call contestable markets; these are markets where there is only one firm but if this firm increases the market price, then other firms will surely enter.
+
+There are a few factors that can lead to monopolies: 
+
+- Essential facility: Controlling a scarce resource that any rival firm would need. For example, owning the only quarry in a region generates a cost advantage in the production of gravel.
+- Superior technology: That is, a better way of organizing production. For example, Henry Ford's assembly lines and standardization.
+- Patents: These are licenses that protect a firm from imitation of technologies or informational secrets. For example, many pharmaceutical companies.
+- Network Externalities: Consumers benefit from using the same product as everyone else. Gives incumbent firm advantage. For example, Facebook and Ebay
+- History of fighting entry via price wars or costly advertising campaigns.
+
+The problem of the monopoly is as follows. We can let the firm choose the market price (p), and consumers decide how much they want to consume. Or we can model output (y) as its variable of choice. (But not both!) In the latter case, the maximization problem is given by
+
+- maxy {p(y)y - C(y)}
+
+where Cy is the minimum cost of producing y. 
+
+The FOC for the monopoly problem is 
+- p(y)+p'(y)y-C'(y) = 0
+
+where p(y)+p'(y)y is the marginal revenue, MR(y), and C'(y) is the marginal cost, MC(y).
+
+[**insert image**] from page 53
+
+There is an alternative formulation of the FOC, which helps us to “quantify” the power of the firm to set a “high” market price. First, notice that the MR can be rewritten in an alternative way
+
+- MR(y)=p(y)(1+1/ε(y))
+
+where ε(y)=p(y)/p′(y)y0 is the price elasticity of demand. Then, the FOC takes the form of
+
+- p(y*)(1-1/|ε(y*)|)=MC(y*) or p(y*)=MC(y*)/(1-1/|ε(y*)|) 
+
+where 1/(1-1/|ε(y*)|) is called the mark-up.
+
+This representation of the firm’s optimal choice, makes it clear that the monopoly sets the price above its marginal cost. The mark-up measures how much above it is! For this reason, the latter has being used by regulating authorities as a measure of market power. 
+
+A priori, the mark-up can either be calculated from price and measures of cost, or from estimates of the elasticity of demand. In practice, a starting point for this calculation can come from the income statement of a firm where you learn profit margins from COGS. (Drawbacks: This is a measure of AC ---average costs--- not MC ---marginal costs---, and may not include all the opportunity costs of the firm.)
+
+**Example**: Suppose that the monopolist faces a linear demand curve
+
+p(y)=a-by.
+
+Its cost is also linear C(y)=cy(with a>c). Thus, the problem of the firm is given by
+
+- maxya-byy- cy.
+
+The FOC is 
+
+- a-2by- c=0.
+
+It follows that 
+
+- y*=a-c/2b   and   p*=a+c/2.
+
+In addition, its mark-up is (a+c)/2c.
+
+---------
+## Deadweight Loss of Monopoly
+
+In general, the monopoly produces less output than firms in a competitive market. Moreover, for some of the extra units that competitive markets would produce people are willing to pay more than the cost of producing them. Thus, a natural question arises:
+
+Why doesn't the monopoly increase production?
+
+- The reason is that to convince people to buy these extra units, the firm needs to lower the market price not only to the new consumers, but also to all of them! 
+
+The deadweight loss (DL) is the difference in Consumer Surplus (CS) and Producer Surplus (PS) between a competitive market and the monopoly.
+
+
+**Example**: As before, suppose that the monopolist faces a linear demand curve
+
+- p(y)=a-by.
+
+Its cost is also linear C(y)=cy(with a>c). 
+
+The efficient level of production requires p(y)=C'(y). Doing so, we get 
+
+ y^e=(a-c)/b.
+
+We obtained earlier that the monopolist optimally produces y*=a-c/2b and selects a market price p*=a+c/2.
+
+In this application, the DL is given by
+
+- DL=p*-cy*-ye/2=(a-c)²/8b.
+
+[**insert image**] page 56
+
+---------
+
+## Price Discrimination
+In the previous section we assumed the monopolist charged all the consumers the same market price for the good. There are many situations where this assumption does not hold. That is, situations where this firm sets different prices to different consumers.
+
+In this section, we study three different types of price discrimination:
+
+- First-degree price discrimination: Prices differ from person to person.
+- Second-degree price discrimination: Prices depend on quantities.
+- Third-degree price discrimination: Prices differ across people but depend on observable characteristics (e.g., age or students vs non-students).
+
+##### First-Degree Price Discrimination
+
+This is the simplest type of price discrimination. In this case, the monopolist selects a difference price for each consumer. Ideally, this price captures the maximum willingness to pay of the consumer! An example of this type of behavior is probably given by the car dealers.
+
+We showed before that the regular monopolist produces less than the optimal output level ---i.e., the one that maximizes social welfare. The reason is that, when it produces more units of the good, it has to lower the price of all previous units in order to sell the extra output. Thus,
+
+**What if we allow the monopoly to charge different prices to different consumers?**
+
+If we do so, then the monopolist would produce an efficient level of outcome! 
+
+There are, however, at least two problems with this type of price discrimination:
+
+- From the perspective of the monopoly, it is hard to implement due to lack of information.
+- From the perspective of the society, consumer surplus is zero.
+ 
+##### Second-Degree Price Discrimination
+
+This is a non-linear pricing scheme in which the market price depends on the amount of the good that the consumer gets, e.g., discounts by quantity. 
+
+The monopolist offers different packages ---that differ in number of units and market price--- and each consumer "self-selects" into the most attractive one. The purpose of the monopoly is to design the menus so that people self-select into the package that is more convenient for the firm.
+
+##### Third-Degree Price Discrimination
+
+Suppose that the monopoly can identify two groups of people with individual demands p1(y1) and p2(y2). These groups depend on observable characteristics, e.g., students vs non-students. 
+
+The profit maximization problem is
+- maxy1,y2p1(y1)y1+p2(y2)y2- Cy1+y2.
+
+Thus, the FOC’s for the monopolist are given by
+
+- p1(y1)+p1'(y1)y1- C'y1+y2=0	 (FOC1)
+
+- p2(y2)+p2'(y2)y2- C'y1+y2=0	 (FOC2)
+
+where pi'(yi)=pi(yi)/yi and C'y1+y2=Cy1+y2/yi for i=1,2.
+
+The solution of the problem can be re-written as follows
+
+- p1(y1*)=MC(y1*+y2*)/(1-1/|1(y1*)|)  and   p2(y2*)=MC(y1*+y2*)/(1-1/|2(y2*)|) .
+
+Thus, the price of the monopolist is larger for the group with the lower elasticity of demand! 
+
+The reason is that this group is less sensitive to price changes. 
+
+----------
+## 4.3 Oligopoly
+By oligopoly we mean an industry with a few firms that behave strategically. To simplify the exposition, we will mainly consider an industry with only two firms (i.e., a duopoly).
+
+We will study three types of competition:
+
+- Cournot: Firms compete by choosing quantities.
+- Stackelberg: One firm is the leader and the other one is the follower.
+- Bertrand: Firms compete by choosing prices.
+
+##### Duopoly of Cournot
+The model is as follows:
+
+1. There are two firms in the market that compete in quantities.
+2. Each firm selects how much to produce in order to maximize profits, taking as given the decision of the other firm.
+3. Firms face a linear demand P(y1,y2)=a-by1+y2.
+4. Firms have the same linear cost of production Ciyi=cyi for i=1,2.
+
+Given this information, the profits of these firms are given by
+
+- pi1(y1,y2) = [a-b(y1+y2)]y1-cy1 
+- pi2(y1,y2) = [a-b(y1+y2)]y2-cy2 
+
+Then, the FOC’s of both firms are
+
+- pi1(y1,y2)/y1 = a-c-2by1-by2 = 0
+- pi2(y1,y2)/y2 =  a-c-2by2-by1 = 0 
+
+From the FOC’s we derive the reaction function of each firm
+
+- y1(y2)=(a-c-by2)/2b   and   y2(y1)=(a-c-by1)/2b.
+
+These functions indicate how much a firm would like to produce if it expects certain production level from the other firm.
+
+[**insert picture**] page 59
+
+The equilibrium is given by the pair of quantities y1*,y2* that solve
+
+- y1(y2*)=y1*    and   y2(y1*)=y2* .
+
+This pair requires both, that each firm behaves optimally given what it expects the other firm will do, and that their predictions be correct. In this application, we get
+
+- y1*=y2*=(a-c)/3b   and   p*=a-2(a-c)/3.
+
+Given this result, the profits of the firms are given by
+
+- 1 =a-c2/9b    and   2 =a-c2/9b .
+
+This is an example of what we call Nash equilibrium!
+
+----------
+ 
+Let us next assume that these firms make an initial agreement to maximize joint profits (i.e., they form a cartel).
+
+In this case, they behave as if they were only one (a monopoly)! We obtained before that, with linear demand and cost functions, the solution of the monopoly is
+
+- y*=a-c/2b   and   p*=a+c/2.
+
+If both firms in the cartel produce the same amount of output, then y1*=y2*=a-c/4b. It follows that their profits are given by
+
+- pi1 =a-c2/8b    and   pi2 =a-c2/8b .
+
+Thus, the agreement is convenient for the two firms. The reason is that both of them make more money in the cartel than if they were engaged in Cournot competition.
+
+##### Stackelberg
+In the stackelberg competition there is a leader and a follower. The model is as follows: 
+
+1. Two firms in the market, firm 1 is the leader and firm 2 is the follower.
+2. Firm 1 (often larger than firm 2) chooses first how much to produce. Firm 2 observes the decision of firm 1, and then selects how much to produce.
+3. The demand and cost functions are as before.
+
+To solve this problem we study first the decision of the follower, and then the one of the leader. (From a mathematical perspective, this technique is called back induction.)
+
+The follower observes the production level of the leader.  Then, its profit function is
+
+- pi2(y1,y2) = [a-b(y1+y2)]y2-cy2 .
+
+The FOC for the problem of the follower is given by
+
+- pi2(y1,y2)/y2 =  a-c-2by2-by1=0 .
+
+Thus, y2(y1)=(a-c-by1)/2b.
+
+The leader knows that the follower selects its production according to
+
+- y2(y1)=(a-c-by1)/2b.
+   
+Then, its profit function is given by
+
+- pi1(y1,y2) = [a-b(y1+y2(y1))]y1-cy1= [(a+c-by1)/2]y1-cy1 .
+
+The FOC for the leader is given by
+
+- pi1(y1,y2)/y1=(a-c)/2-by1=0 .
+
+It follows that the equilibrium level of production of the leader is
+
+- y1*=(a-c)/2b.
+
+The equilibrium level of production of the follower is
+
+- y2(y1*)={a-c-b[(a-c)/2b]}/2b=(a-c)/4b.
+
+Given these production levels, the profits of the leader are given by
+
+- pi1 = a-c2/8b   
+
+In addition, the profits of the follower are
+
+- pi2 =a-c2/16b .
+
+Thus, the leader makes more money than the follower!
+
+##### Duopoly of Bertrand
+The model is as follows:
+
+1. There are two firms in the market ---producing an identical good--- that compete in prices.
+2. Each firm selects its market price in order to maximize its own profits, taking as given the price of the other firm.
+3. Firms have the same linear cost of production Ciyi=cyi.
+
+The equilibrium of this model is very simple
+
+- p1*=p2*=c.
+
+Notice that this equilibrium is the same as the competitive one! Whenever one of the firms selects a price above c, then the other firm has incentives to choose a price just below the one by the initial firm. The reason is that the good produced by the two firms is identical and thus, by doing so, the second firm can get the whole market. This process repeats till the above condition is reached. 
     
-------
-
-## Collusion
-
-Firms get together to maximize **joint** profits; together they act like a monopolist.
-
-Total quantity: $ Q = q_1 + q_2 ~ $;  Inverse demand: $ ~ p(Q) = p(q_1 + q_2) $
-
-Cartel profit: $ ~ \\pi(q_1,q_2) = p(q_1 + q_2) \\times (q_1 + q_2) − c(q_1) − c(q_2) $
-
-Cartel problem: $ ~ \\text{max}_{q_1, q_2} : p(q_1 + q_2) \\times (q_1 + q_2) − c(q_1) − c(q_2) $
-
-Solution, FOCs:
-
-WRT $ q_1 $: $ ~~ p(q_1+q_2) + \\frac{dp}{dq_1} \\times (q_1 + q_2) = MC(q_1) $
-
-WRT $ q_2 $: $ ~~ p(q_1+q_2) + \\frac{dp}{dq_2} \\times (q_1 + q_2) = MC(q_2) $
-
-In sum: Cartel's MR must equate $ MC(q_1) \\text{ and } MC(q_2) $
-
-------
-
-## Cartel - Linear Case
-
-Market Inverse Demand: $ p = a - bQ = a - b(q_1 + q_2) $
-
-Costs: $ TC_i = c q_i ~~ $, so $ MC_i = c $
-
-Cartel profit: $ \\pi(q_1 + q_2) = p \\times (q_1 + q_2) - c q_1 - c q_2 $
-
-Cartel profit: $ \\pi(q_1 + q_2) = (a - bq_1 - bq_2) (q_1 + q_2) - c q_1 - c q_2 $
-
-FOC wrt q1: $ ~~  a - 2 b q_1  - 2 b q_2 = c $
-
-This implies: $ q_1 + q_2 =  \\frac{a-c}{2b} $
-
-If firms divide production equally: $ q_1^{cartel} = q_2^{cartel} =  \\frac{a-c}{4b} $
-
------
-
-## The economics of collusion
-
-But, Wait! why don't we see more cartels in real life? Laws and, maybe more importantly, cartels are hard to sustain.
-
-Cartels have instability built-in: if firm 1 believes firm 2 will indeed follow the agreement, then it should increase its own output.
-
-And if a firm believes the other firm will not keep its word, then it should cheat first.
-
-------
-
-## Cournot Oligopoly - Linear Case
-
-Market Inverse Demand: $ p = a - bQ = a - b(q_1 + q_2) $
-
-Costs: $ TC_i = c q_i ~~ $, so $ MC_i = c $
-
-F1's profit: $ \\pi(q_1) = p \\times q_1 - c q_1 $
-
-That is: $ \\pi(q_1) = (a - b q_1 - b q_2^e) q_1 - c q_1 $
-
-FOC wrt q1: $ ~~  a - 2 b q_1  - b q_2^e = c $
-
-This implies the following reaction (or "best response") function:
-
-$ q_1 = \\frac{a-c}{2b} - \\frac{q_2^e}{2} $
-
-
-------
-
-## Cournot Oligopoly - Linear Case (cont.)
-
-This reaction fn is F1's best response to his/her believe regarding F2's behavior, $ q_2^e $.
-
-Similarly, we maximize firm 2's profit to find F2's reaction function:
-
-FOC wrt $ q_2 $: $ ~~  a - 2 b q_2  - b q_1^e = c $
-
-Which implies this reaction function (aka best response fn):
-
-$ q_2 = \\frac{a-c}{2b} - \\frac{q_1^e}{2} $
-
-Solving $ q_1, q_2 $ from the system of two reaction functions yields.
-
-Cournot Equilibrium: $ ~~q_1^C = q_2^C = \\frac{a-c}{3b} ~~ $, and
-$ ~~p^C = \\frac{a+2c}{3} $
-
-
-------
-
-## Cournot Oligopoly - General Case
-
-Cournot Oligopoly: simultaneous, non-collusive quantity setting.
-
-Each firm makes a choice of output, $ q_i $, given its forecast of the other firm’s output, $ q_j^e $
-
-If, for example, $ q_1 $ = chosen output of firm 1, and $ q^e_2 $ = firm 1’s beliefs about firm 2’s chosen output.
-
-Then, firm 1's maximization problem: $ ~~ \\text{max}_{q_1}: \\pi_1(q_1 ~| q^e_2) = p( q_1 + q^e_2) \\times q_1 − c(q_1) $
-
-
-------
-
-## Cournot Oligopoly - General Case
-
-Solution - Firm 1's FOC: $ ~~ \\frac{d \\pi_1}{d q_1} = 0 ~~ $  Then: $ p(q_1 + q^e_2) + \\frac{dp}{dq_1} \\times q_1 = MC_1(q_1) $
-
-Solving for q1, this gives firm 1’s reaction curve: $ q_1 = f_1(q^e_2) $
-
-Similarly, firm 2 also has a reaction curve: $ q_2 = f_2(q^e_1) $
-
-Cournot Equilibrium: $ ~~q_1^C = q^e_1 $, $ ~~q_2^C = q^e_2 $, $ ~~p^C = p(q_1^C + q_2^C) $
-
-Cournot equilibrium — each firm finds its expectations confirmed in equilibrium
-
-
-------
-
-![](img/Ch28/INTMIC9_FIG28_01.jpg)
-
-------
-
-![](img/Ch28/INTMIC9_FIG28_04.jpg)
-
-------
-
-## More than two firms in Cournot Oligopoly
-
-Suppose now that there are $ n $ firms, and let $ Q = q_1 +...+ q_n $ be the total output.
-
-Since $ \\pi(q_i) = p(Q) \\times q_i - c(q_i) $, we can use the fact that $ \\frac{dp}{dq_i} = \\frac{dp}{dQ} $ to write the FOCs of firm $ i $ as follows: $ p(Q) + \\frac{dp}{dQ}q_i = MC(q_i) ~$, where the left-hand side is simply the MR of firm $ i $.
-
-There are a total of $ n $ FOC equations like this one (since $ i = \{1,2,3,...,n\} $ ) and so you have a system of _n equations and n unknowns_ that you can solve to find $ q_1^C, q_2^C, ... , q_n^C $ .
-
-In the case of the the linear inverse demand (p = a - bQ) and constant MC (MC = c), the equilibrim of the _n-firm Cournot oligopoly_ is given by:
-
-$ ~~q_i^C = \\frac{a-c}{(n+1)b} ~~ $, and $ ~~p^C = \\frac{a+nc}{n+1} ~ $
-
-Do this interesting exercise at home and think about what happens when $ n \\rightarrow \\infty $
-
-----------
-
-## Simultaneous Price Setting - Bertrand Oligopoly
-
-What if, instead of setting quantities, firms set prices and allowed consumer to decide how much to buy? This is called a **Bertrand Oligopoly**.
-
-In the equilibrium a la Bertrand, each firms sets a price such that, given the prices of other firms, she cannot obtain a higher profit by choosing a different price.
-
-----------
-
-## Bertrand Oligopoly - Equilibrium
-
-Suppose two firms have identical costs (say, MC = $c) and they produce identical goods.
-
-Firm $ 1 $ believes the other will charge $ p_2 $ and decides to charge $ p_1 $ upon that belief. Both set prices simultaneously.
-
-Because any firm that undercuts its rival captures the entire market and earns positive profit, firms will undercut each other until they hit their MC. That is, while possible $ p_1 $ will always be set just below $ p_2^e $ or at mc if $ mc > p_2^e $.
-
-These incentives make the simultaneous price setters to push their price down to the **Bertrand Equilibrium**:
-
-Equilibrium price = MC:  $ p_1^B = p_2^B = MC $, $ Q^B $ can be found from the market demand curve.
-
----------
-
-## Bertrand Equilibrium
-
-![](https://upload.wikimedia.org/wikipedia/en/1/1b/Economics_bertrand_diag2.png)
-
----------
-
-## Bertrand - Home Exercise
-
-Suppose $ MC_1 = 4 $ and $ MC_1 = 5 $, and prices can be set in pennies at the least.
-
-What is the Bertrand Equilibrium?
-
-------
-
-## Sequential Competition
-
-## Quantity Leadership - Stackelberg
-
-Let us assume there are two firms that produce identical products and have identical cost.
-
-**Quantity Leadership:** there is a leader and a follower that set their quantities in sequential order.
-
-The leader (F1): larger, more dominant firm in the market, sets its quantity first ( $ q_1 $ ).
-
-The follower (F2): smaller firm, observes the leader's behavior and then sets its quantity second ( $ q_2 $ ).
-
-As before, the total market output is $ Q = q_1 + q_2 $.
-
-------
-
-## Quantity Leadership - Stackelberg Oligopoly
-
-The leader is aware that the follower will act after him, and so that the follower will affect the market price. The leader then needs to analyze what the **follower** will choose.
-
-That is the leader will "solve" the follower's problem, first. Then she incorporates that insight to find out her optimal leader output level.
-
-We call this "backward induction" solution.
-
-------
-
-## Stackelberg Oligopoly
-
-The Follower's Profit maximization is:
-
-$ \\text{max}_{q_2}: {\\pi}_2 =  p(q_1 + q_2) \\times q_2 - c_2(q_2) $
-
-Where output of the leader is treated as a constant. Finding MR = MC:
-
-$ MR_2 = p(q_1 + q_2) + \\frac{\\partial p}{\\partial q}q_2 = MC_2 $
-
-This looks a lot like a monopolist's maximization except with a "residual demand" (demand that the leader left unserved). So the profit maximizing choice will depend on the choices of the leader.
-
-Solving for q_2 from that FOC we can get the follower's reaction function:
-
-$ q_2 = f_2(q_1) $
-
---------
-
-## Stackelberg Oligopoly
-
-The Leader's Profit maximization is:
-
-$ \\text{max}_{q_1}: {\\pi}_1 =  p(q_1 + f_2(q_1)) \\times q_1 - c_1(q_1) $
-
-Where output of the follower is NOT treated as a constant.
-
-As always, the leader solves for his optimal $ q_1^S $ by doing:
-
-$ \\frac{ d {\\pi}_1 }{ d q_1 } = 0 ~~ $ to obtain: $ q_1^S $
-
-Equilibrum: $ q_1^S ~~$, $ q_2^S = f_2(q_1^S) ~~$, $ p^S = p(q_1^S + q_2^S) $.
-
------------
-
-## Stackelberg Oligopoly - Linear Example
-
-Market Inverse Demand: $ p = a - bQ = a - b(q_1 + q_2) ~$. Costs: $ TC_i = c q_i ~~ $, so $ MC_i = c $
-
-Finding Stackelberg Equilibrium
-
-Step 1: Leader "solves" followers problem: $ ~~ \\text{max}_{q_2}: {\\pi}_2 =  (a - b(q_1 + q_2)) ~ q_2 - c ~ q_2 $
-
-We make $ d \\pi_2 / d q_2  = 0 $ and find solution -> the follower's reaction function: $ q_2 = f_2(q_1) = \\frac{a−c}{2b} − \\frac{1}{2} q_1 $
-
-------
-
-## Stackelberg Oligopoly - Linear Example (2)
-
-Step 2: Leader solves his problem with the insight of step 1: $ ~~ \\text{max}_{q_1}: {\\pi}_1 =  (a - b(q_1 + f_2(q_1) )) ~ q_1 - c ~ q_1 $
-
-That is: $ ~~ \\text{max}_{q_1}: {\\pi}_1 =  (a - b(q_1 + \\frac{a−c}{2b} − \\frac{1}{2} q_1  )) ~ q_1 - c ~ q_1 $
-
-We make $ d \\pi_1 / d q_1  = 0 $ and find solution -> the leaders's final optimal output: $ q_1^S = \\frac{a-c}{2b} $
-
-Step 3: Using $ ~q_1^S $, calculate $ ~q_2=f_2(q_1) $, $ ~Q = q_1 + q_2 $, and $ ~p^S = a - b Q $
-
-Stackelberg Equilibrium: $ q_1^S = \\frac{a-c}{2b} ~$, $ q_2^S = f_2(q_1) = \\frac{a-c}{4b} ~$, $ p^S = \\frac{a + 3c}{4} $
-
-----------
-
-## Stackelberg Equilibrium
-
-
-![](img/Ch28/INTMIC9_FIG28_02.jpg)
-
-----------
+Competition is tougher when firms compete in prices than when they choose quantities!
 
 
 

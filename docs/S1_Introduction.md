@@ -65,8 +65,7 @@
    
 * Engineering 2 Building - Office 415
 
-* Lectures: TuTh from 11:40am to 1:15pm.
-    - Steven Acad 150
+* Lectures: TuTh from 11:40am to 1:15pm @ Steven Acad 150
 
 ----- 
 
@@ -74,9 +73,9 @@
 
 
 
-* TBD <@ucsc.edu>; office hrs: Friday 10:00am - 12:00pm , 
+* TBD <@ucsc.edu>; office hrs: ______ 
 
-* TBD <@ucsc.edu>; office hrs: Monday 2:00pm - 4:00pm, 
+* TBD <@ucsc.edu>; office hrs: ______ 
 
 * TBD <@ucsc.edu>; office hrs: ______
 
@@ -91,10 +90,10 @@
 
 | Class # | Sec | Day / Time | Location
 | --- | --- | --- | ---
-|  41535 | 01A | M 09:20AM - 10:25AM | TBA
-|  41536 | 01B | M 10:40AM - 11:45AM | TBA
-|  41537 | 01C | W 08:00AM - 09:05AM | TBA
-|  41538 | 01D | W 12:00PM - 01:05PM  | TBA
+|  41535 | 01A | TBA | TBA
+|  41536 | 01B | TBA | TBA
+|  41537 | 01C | TBA | TBA
+|  41538 | 01D | TBA | TBA
 
 
 ------------ 
@@ -120,7 +119,7 @@
 
 ## Syllabus (6) Prerequisites, Math
 
-* Economics 1 and calculus. 
+* Economics 1 and Calculus. 
 
 * Mathematics is a vital tool for conducting economic analysis. 
 

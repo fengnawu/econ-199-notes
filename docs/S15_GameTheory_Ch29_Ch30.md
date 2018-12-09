@@ -1,385 +1,94 @@
 
-## Game Theory
+## Game Theory (Chapter 5)
 
 #### Intermediate Microeconomics (Econ 100A)
 
-#### Kristian López Vargas
+#### Natalia Lazzati
 
-#### UCSC - Spring 2017
+#### UCSC - Winter 2019
 
 --------
 
 ## Game Theory
 
-In competitive markets or in a monopoly there is no reason to think about any specific competitor.
+In competitive markets firms have no incentives to think about what a specific competitor is doing. The reason is that their profits depend on the market price and none of the other firms can unilaterally affect it ---they are too small to do so. In this type of environment, there is no no room for strategic thinking. However, there are many other economic contexts, in which strategic thinking plays a fundamental role. As an example, recall our oligopoly analysis.
 
-BUT many other economic interactions do not have that core feature and agents do find themselves in interdependent / strategic interactions.
+In this section we will study situations in which the payoff of each agent depends on the actions of others. We refer to these situations as games. Moreover, we will focus on static games.
 
-Interdependence (or strategic interdependence) means that my satisfaction or profit depends on my actions AND the actions of at least one other specific player. Therefore, I need to care for what s/he does or does not... I use a strategy.
+In a static game, players act simultaneously and only once. We assume that each player knows how everyone’s actions translate into payoffs, but cannot observe the choices of others. 
 
-A **game** is an interaction with strategic interdependence.
-
---------
-
-## Types of Games
-
-Timing:
-
-* Static Games: Each player acts simultaneously, only once and has complete information about the payoff functions but imperfect information about rivals’ moves.
-
-* Dynamic Games: Players act sequentially. Usually assumed that each player has perfect recall of what happened prior to his/her turn to decide.
-
-Information:
-
-* Complete information (payoff function is common knowledge among all players) is different from
-
-* Perfect information (player knows full history of game up to the point he is about to move)
+We next present different examples of games and discuss their main features.
 
 --------
 
-## Game Theory - Static, Simultaneous-Move Games
+## Prisoner's Dilemma / Social Dilemma
 
-Unless stated otherwise,  we will assume  we are in a "one-shot" (one round only) interaction.
+Imagine the following situation. Adam likes to watch a tv show online but dislikes online advertisement; so, he is contemplating the possibility of installing an ad blocker in his browser. Suppose he knows that there are only two people in the country that like this show. The other person (let’s call her Bob) is probably considering the same decision.
 
-Payoff's will be apparent to the players after the choices have been made (simultaneous game).
+But this is where it gets interesting. The website is funded by ads. Thus, if both players block ads the website cannot operate. Let’s say, A and B in such situation get a utility of 0. If, instead, only A installs an ad blocker, then he gets a utility of 2 and the one without the blocker gets to watch a lot of adverts and gets a utility of -1. If only B installs the adblocker, B gets 2 and A gets -1. If none of them installs the ad blocker, so they both get to watch the show and need to bear some ads, they both receive a utility of 1. All this information can be summarized in the so called bi-matrix.
 
-Typically, we use a **payoff matrix** that arranges all the possible outcomes a game can have.
+|  |  |Player B| |
+||--|--|--|
+| **Player A**| Install Ad Blocker | 0,0 | 2, -1 |
+| | NOT Install Ad Blocker | -1,2 | 1,1 |
 
---------
 
-## Static Games - Representation
+The question we are interested in is:
+-- What will Adam and Bob do? --
 
-* We use a payoff matrix when we have few strategies per player.
+To answer this question, we start by asking what should player A do if he believes B will take a specific action. 
 
-![](img/Ch29/INTMIC9_Table29_02.jpg)
+Suppose A thinks B is installing the Ad Blocker. In that case, he gets a payoff of zero by installing the ad blocker or a payoff of -1 by not installing the ad blocker. Thus, he should also install the ad blocker.  
 
-------------------
+Similarly, if A believes that B will not install the  ab blocker, then he gets a payoff of 2 by installing the ad blocker or a payoff of 1 by not installing it. Again, B is better off installing the ad blocker.
 
-## Best Response Correspondence
+Since for A it is always better to install the ad blocker regardless of what Bob will do, we say that “installing” is a dominant strategy for him.
 
-The **best response correspondence** is the choice a player will make that will maximize her payoff, given the other players strategy.
+Repeating the exercise for B, we find that “installing” is also a dominant strategy for this person.
 
-If there is more than one optimal response; your best response will be all of the choices in the set.
+The logical conclusion is therefore that they will both follow their dominant strategies and install the ad blocker. Doing so, they will each end up with a payoff of 2.
 
-See examples in document camera.
+Because in this case both players are choosing their dominant strategies, we call this type of outcome an equilibrium in dominant strategies.
 
-------
-
-## Dominant Strategy
-
-A strategy $ s $ is a **dominant strategy** if it produces higher payoff than other strategies regardless of rivals’ strategies.
-
-In other words, if a player has an optimal strategy irrespective of the other player's move, such a strategy is the "dominant strategy".
-
-See examples in document camera.
-
-A strategy $ s' $ is a “dominated strategy” if for every strategy played by the opponent, there is another action the player can take and obtain higher payoff than with $ s' $.
-
-If the best response set does not vary with what the opponent chooses and is unique, then the only strategy in the best response set is the dominant strategy.
-
--------
-
-## Dominant Strategy equilibrium
-
-**Dominant strategy equilibrium** represents the combination of strategies that players in the game arrive at when everyone has used their own *dominant strategy*.
-
-There can be a dominant strategy equilibrium only when all players have a dominant strategy.
-
-![](img/Ch29/INTMIC9_Table29_01.jpg)
-
-------
-
-## Nash Equilibrium
-
-We say that a set of strategies in a game forms a **Nash Equilibrium** if:
-
-* Agents are MUTUALLY BEST RESPONDING to each other's played strategies. So no player has an incentive to deviate from what they are playing.
-
-* When all other players use in fact those strategies, one cannot obtain a higher playoff by choosing a different strategy.
-
-Example: Cournot's equilibrium.
-
-------
-
-## Nash Equilibrium in Pure Strategies
-
-NE: (Player A, Top); (Player A, Left)
-
-![](img/Ch29/INTMIC9_Table29_02.jpg)
-
-------
-
-## Mixed Strategies
-
-So far, players have used pure strategies, which means that each player chooses a single action.
-
-A mixed strategy is when a player chooses among possible actions probabilistically (flipping coins, tossing the dice, etc.)
-
-A pure strategy assigns a probability of 1 to a single action, and zero to the other actions.
-
-In a mixed strategy, more than one strategy receives a probability greater than zero.
-
--------
-
-## OK, but WHY Mixed Strategies?
-
-* Practical point of view: In some games you want to be unpredictable
-    * Tennis service
-    * Penalty kick in football
-    * Poker
-    * War
-
-* Mathematical point of view:
-    * Needed if pure strategy equilibria do not exist
-    * May coexist with pure strategy NE
-
-------
-
-## Mixed Strategies - Example
-
-![](img/Ch29/INTMIC9_Table29_03.jpg)
-
-Calculate expected payoff if both players play 50/50 chances between their strategies:
-
----------
-
-## Best response curves (in simultaneous games)
-
-Let's go deeper into finding mixed strategy Nash Equilibria
-
-Consider the simple game in which the players are given the matrix beforehand-
-
-![](img/Ch30/INTMIC9_Table30_01.jpg)
-
-Suppose $ b_c(r) $ is the best response for column player and $ b_r(c) $ is the best response for player row.
-
-**Nash Equilibrium** is the strategy profile ($ r^\* $, $ c^\* $) such that: $ c^\* = b_c(r^\*) ~~ $ and $ ~ r^\* = b_r(c^\*) $
-
-N.E. in pure strategies: NE1: $ ~(r^\* = Top $ , $ c^\* = Left) ~$ and NE2: $ ~(r^\* = Bottom$ , $ c^\* = Right) ~$
-
--------------
-
-## Best response curves - adding mixed Strategies
-
-Let's add mixed strategies to what we know about best response curves.
-
-$ r = $ probability row plays top. $ 1-r $ probability row plays bottom.
-
-$ c = $ probability column plays left. $ 1-c $ probability column plays right.
-
-We have pure strategies is $ r $ and $ c $ are equal to either 0 or 1.
-
-Let's now calculate the payoff of the row and the columns
-
-------------
-
-## Best response curves - adding mixed Strategies
-
-
-| Combination 	| Probability 	  | Row's Payoff 	| Column's Payoff 	|
-|-------------	|-------------	  |--------------	|-----------------	|
-| Top, Left   	| $ r ~ c $       | 2            	| 1               	|
-| B, L        	| $ (1-r)~c $     | 0            	| 0               	|
-| T, R        	| $ r~(1-c) $     | 0            	| 0               	|
-| B, R        	| $ (1-r)~(1-c) $ | 1            	| 2               	|
-
-------------
-
-## Calculating Row's Expected Payoff
-
-Row's Expected  Payoff becomes:
-
-$ \\pi_{row}(r,c) = 2rc+ (1-r)(1-c) = 2rc+1-r-c +rc = (3c - 1)r + (1- c) $
-
-Row chooses $ r $ so the key term is $ (3c - 1) $
-
-This implies:
-
-$
-r^\*(c)=
-\\begin{cases}
-0 ~~~if ~c < 1/3 \\\\
-1 ~~~if ~c > 1/3 \\\\
-\[0,1 \] ~~~if ~c = 1/3 \\\\
-\\end{cases}
-$
-
-<!-- Now suppose that row consider increasing $ r $ by $ \\Delta{r} $ -->
-
-<!-- $ \\Delta{\\pi_{row}(r,c)} = \\pi_{row}(r+\\Delta{r} ,c) - \\pi_{row}(r,c) =  (3c - 1)\\Delta{r} $ -->
-
-<!-- When is this expression positive and when is it negative? -->
-
-<!-- We want to increase $ r $ when $ c > 1/3 $, decrease $ r $ if $ c < 1/3 $ and do nothing if $ 0 \\le r \\le 1 $ when $ c = 1/3 $ -->
-
-
------------
-
-## Calculating Column's Expected Payoff
-
-Columns's Expected Payoff becomes:
-
-$ \\pi_{column}(r,c) = rc+ 2(1-r)(1-c) = rc + 2 - 2r - 2c + 2rc = (3r - 2)c + 2(1 - r) $
-
-Columns chooses $ c $ so the key term is $ (3r - 2) $
-
-This implies:
-
-$
-c^\*(r)=
-\\begin{cases}
-0 ~~~if ~r < 2/3 \\\\
-1 ~~~if ~r > 2/3 \\\\
-\[0,1 \] ~~~if ~r = 2/3 \\\\
-\\end{cases}
-$
-
-------------
-
-## Best Response Curves
-
-Let's draw then: How many Equilibria do you see?
-
-![](img/Ch30/INTMIC9_FIG30_01.jpg)
-
-
-------
-
-## Sequential Games
-
-Consider the following "The new entry game" where the Incumbent can choose to drive prices down if the entrant joins the market.
-
-Key concepts: Decision node; Proper subgame; Strategy vs. Action; Payoff pairs.
-
-![](img/Ch29/INTMIC9_FIG29_02.jpg)
-
--------
-
-## Sequential Games - Key concepts
-
-* In games where players move sequentially, we distinguish between an action and a strategy.
-
-* An _action_ is a move that a player makes at a specified point (decision node).
-
-* A _strategy_ is a <u> complete plan </u> that specifies the action a player will make based on information available at each decision node. (e.g, Entrant: Enters; Incumbent: Fight if Entrant Enters; Incumbent: Don't Fight if Entrant Stays Out;)
-
-* A **strategy profile** is simply a particular combination of strategies implemented by all players.
-
--------
-
-## Sequential Games - Key concepts
-
-* A **subgame** is a subset of game that starts at an independent node and can be analyzed in isolation of other subgames.
-
-* A **subgame-perfect equilibrium** is A strategy profile that constitutes a Nash equilibrium for every proper "subgame".
-
-* We find the equilibrium using backward induction and that is why we also call it "backward induction equilibrium".
+An interesting observation is that ---in this example--- they could both end up better off by cooperating and choosing not to install the ad blocker. However, by following their dominant strategy then end up a lower payoff situation. We call this type of situation a “social dilemma” or a “prisoner’s dilemma game."
 
 -----------------
 
-## Game Applications
+## Coordination Game / Battle of the Sexes
 
-------------
+Another standard model in game theory is the so called coordination game. In this situation, the incentives of the players are aligned but there are multiple possible outcomes to coordinate on. The classic example of this type of game is the “battle of the sexes."
 
-## Games of Coordination
+In the battle of the sexes, each member of a married couple has to decide where to go during the weekend. There are two options, each of them can either go to see boxing or ballet. While both prefer to coordinate in one of these options, their preferences regarding the best option differ. 
 
-Coordination games involve both (or more) players to work together to obtain the highest payoff.
+* The wife prefers going to see ballet together (payoff of 2) over boxing together (payoff of 1), which in turn is preferred to either option by herself (payoff of 0.) The husband prefers going to see boxing together (payoff of 2) over ballet together (payoff of 1), which in turn is preferred to either option by himself (payoff of 0). As you can see, the interdependence in this situation is quite clear: If one of the partners goes to specific place, then the other one prefers to go to that place too.
 
-The constraining aspect to this game is lack of communication that can arise.
+In this situation, it is hard to predict what the couple will do. In particular, there two likely outcomes or equilibria. The first equilibrium is going together to see ballet; this outcome is an equilibrium because when each member of the couple thinks the other one will do so, it is in his/her interest to go to the ballet. Using a similar argument, we can show that going to see boxing is also an equilibrium. The following table illustrate this situation. 
 
-------------
+|  | |Player B (husband)| |
+|--|--|--|--|
+| **Player A (wife)**| Ballet | 2,1 | 0,0 |
+| | Boxing | 0,0 | 1,2 |
 
-## Battle of the Sexes
+* The important takeaways from this example are: 1) strategic interdependence implies that my best strategy might change with what I think “the other” will do; 2) there can be more than one equilibrium; and 3) not all games have dominant strategies.
 
-"Battle of the Sexes" is a coordination game
+The equilibria for this game is not one in dominant strategies. Instead, each equilibrium (ballet, ballet) and (boxing, boing) is simply an equilibrium in best responses. This type of equilibrium is known as Nash Equilibrium and is due to the famous mathematician John Nash.
 
-![](img/Ch30/INTMIC9_Table30_03.jpg)
+-----------------
+## Mixed Strategies
 
+In the previous two games, there was at least one equilibrium in which each player implemented a strategy with certainty. For example, when we say that (ballet, ballet) is an equilibrium we mean that wife chooses ballet for sure and husband chooses ballet for sure as well. We refer to this type of equilibrium as pure-strategy equilibrium. Unfortunately, many games do not have an equilibrium in pure-strategies. In these cases, we often use mixed strategy equilibria as our solution concept.
 
-<!-- Let us assume a couple plan to watch a movie together but by miraculous phenomenon, they got amnesia and forgot which movie they were supposed to watch. -->
+Let’s illustrate the concept of mixed strategy equilibrium with one example. Imagine a penalty kick situation, where player A is the kicker and player B is the goal keeper. To make things simple, let us assume that the kicker has to decide whether to kick left or right. As a consequence, the goalkeeper has to choose whether to fly right or to fly left. Also, let us assume that if the kick goes to the same side that the keeper jumps to, then there is no score and payoffs are 0 for the kicker and 1 for the keeper. If, on the other hand, the kick and the keeper jump to different sides, we assume there is a score and payoffs are 1 for the kicker and 0 for the keeper. The following table illustrates this game.
 
-<!-- The boy would prefer to watch the new action movie and the girl would like something more artistically nuanced. Note: both would be willing to sacrifice their choice for the opportunity to be with their partner. (IF ONLY THEY KNEW!) -->
+|  | |Player B (goal keeper)| |
+|--|--|--|--|
+| | | Left | Right|
+| **Player A (kicker)**| Left | 0,1 | 1,0 |
+| | Right | 1,0 | 0,1 |
 
-<!-- Battle of the Sexes example -->
+* Because the kicker wants to choose a different side than keeper, and the keeper wants to choose the same side as kicker, there is no equilibrium in pure strategies. To see this more clearly, imagine, for example, that the kicker believes the goalkeeper is going to the left. In this case, he will want to kick to the right. But if the keeper believes the kick is coming to the right, the keeper will will want to deviate and fly to the right, instead.
 
-<!-- Finally, say the girl's choice was the closest choice via walking distance in relation the lobby. Assuming this stipulation, we find the **focal point** of the game. -->
-
-
-----------
-
-## Prisoner's Dilemma
-
-![](img/ch29/INTMIC9_Table29_04.jpg)
-
-----------
-
-## Prisoner's Dilemma
-
-Summed up: two people convicted of a crime are questioned. Each can choose to confess (implicating the other) and take less punishment, or deny and take risk of being implicated. 2 confessions = mild punishment, both deny = negligible punishment.
-
-The (unique) dominant strategy dictates that you are better off confessing than to risk being implicated.
-
-*Pareto Efficiency* occurs when all resources are allocated efficiently. Is this the case here?
-
-The problem arises due to lack of trust. A common occurrence of a one-shot game.
-
-What would it happen is this game repeated over and over?
-
-----------------
-## Assurance Games
-
-![](img/Ch30/INTMIC9_Table30_05.jpg)
-
-<!-- Consider the nuclear arms race of the 1950's. Two countries on the brink of destruction and terror. -->
-
-<!-- The Nash Equilibrium would be either for both parties to refrain or to build. (Refraining is twice the payoff!) -->
-
-<!-- A country that chooses to refrain leaves their constituents at the mercy of the foreign counterpart. -->
-
-<!-- One way to cooperate is by allowing the counterpart to inspect your facilities; to ensure that you don't have the intention of building nuclear bombs. -->
-
-<!-- The matter then comes down to whether or not the evidence is sufficient. -->
-
-----------------
-
-## Chicken
-
-![](img/Ch30/INTMIC9_Table30_06.jpg)
-
-<!-- Recall every movie that involves two cars and two irresponsible individuals: -->
-
-<!-- Obviously we can assume that Nash Equilibrium would not be achieved if both choose to drive straight both diverted. -->
-
-<!-- *Note the two Nash Equilibria are preferred differently by each player* (different from the assurance game) -->
-
-<!-- The most important strategy is this game is **commitment**. If a person knows they are messing with a maniac, they are more likely to swerve. -->
-
-
-----------------
-
-## Games of Commitment
-
-The friendly kidnapper
-
-![](img/Ch30/INTMIC9_FIG30_08.jpg)
-
----------------
-
-## Savings and Social Security
-
-![](img/Ch30/INTMIC9_Table30_10.jpg)
-
----------------
-
-## Savings and Social Security
-
-![](img/Ch30/INTMIC9_FIG30_09.jpg)
-
-
---------------
-
-## Now a Beauty Contest
-
+* However, we can find here an equilibrium in mixed strategies. It consists on  In our example, the kicker will randomly select left or right with 50% chance each, so the kicker cannot guess what he will do. Conversely, the goalkeeper will fly to the right or the left with 50% chance each. 
 
 
 <!--

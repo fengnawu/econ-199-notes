@@ -1,5 +1,5 @@
 
-## Consumer Choice
+## Consumer Choice (Chapter 2)
 
 #### Intermediate Microeconomics (Econ 100 A)
 
@@ -13,34 +13,107 @@
 
 ---------------------------------
 ## 2.1 Rational Choice
-* The basic model of consumer choice studies the decision of a single person regarding what goods to acquire, and how much to buy of each of them, taking as given the prices of the goods and the income level of the consumer. Our simple model assumes that each consumer chooses the “best” combination of goods ---or bundle---  that “he can afford”. The idea of “best” builds on the notions of preferences and utility; our model captures “affordability” via budget sets. 
+The basic model of consumer choice studies the decision of a single person regarding what goods to acquire, and how much to buy of each of them, taking as given the prices of the goods and the income level of the consumer. Our simple model assumes that each consumer chooses the “best” combination of goods ---or bundle---  that “he can afford”. The idea of “best” builds on the notions of preferences and utility; our model captures “affordability” via budget sets. 
+
 
 1. **Preferences**: The preferences on an individual consist of his personal ranking over all possible alternatives. We often capture these preferences by the so called utility function. 
 
-2. ***Budget Set**: The budget set of an individual is the collection of all alternatives that he can afford given his resources (income or wealth) and the prices of the goods he faces in the market.
 
-* Together, (1) and (2) induce choices. That is, they determine what consumption bundles are selected by the consumer. As prices and/or income change, so does the budget set and (often) the combination of goods that the consumer selects. The demand function describes the consumption decisions for all different combinations of prices and income levels. 
+2. **Budget Set**: The budget set of an individual is the collection of all alternatives that he can afford given his resources (income or wealth) and the prices of the goods he faces in the market.
 
-* To simplify the exposition, we will focus on a simple version of the consumer problem. The components of our model are as follows:
+
+Together, **(1)** and **(2)** induce choices. That is, they determine what consumption bundles are selected by the consumer. As prices and/or income change, so does the budget set and (often) the combination of goods that the consumer selects. The demand function describes the consumption decisions for all different combinations of prices and income levels. 
+
+To simplify the exposition, we will focus on a simple version of the consumer problem. The components of our model are as follows:
 
 1. We assume there are only two goods: good 1 and good 2.
 2. We represent the quantities of these goods as x1 and x2, respectively. The ordered pair x1,x2 denotes a bundle of goods.
 3. The prices of the goods are represented by p₁ and p₂, respectively.
 4. The income level of the consumer is denoted by *m*.
 
-* Example: Suppose good 1 is orange juice and good 2 is salad. Then x1 indicates the quantity of orange juice (say in liters) and x2 is the quantity of salads (say in pounds). In this context, the combination (1/2, 1) represents the bundle of half liter of orange juice and one pound of salad. Suppose also that a liter of orange juice costs 5 dollars, a pound of salad costs 10 dollars, and the income level of the consumer is 500 dollars. In our notation, this information is concisely written as p1 = 5, p2 = 10, and m = 500.
 
-* This simple two-goods model can be easily extended to more goods (e.g., it can be extended to the set of all goods you can get in the supermarket). We use the two-goods case because it helps us to illustrate the main concepts and tools in a simple way, often invoking a graphical representations of the model.
+**Example**: Suppose good 1 is orange juice and good 2 is salad. Then x1 indicates the quantity of orange juice (say in liters) and x2 is the quantity of salads (say in pounds). In this context, the combination (1/2, 1) represents the bundle of half liter of orange juice and one pound of salad. Suppose also that a liter of orange juice costs 5 dollars, a pound of salad costs 10 dollars, and the income level of the consumer is 500 dollars. In our notation, this information is concisely written as p1 = 5, p2 = 10, and m = 500.
+
+This simple two-goods model can be easily extended to more goods (e.g., it can be extended to the set of all goods you can get in the supermarket). We use the two-goods case because it helps us to illustrate the main concepts and tools in a simple way, often invoking a graphical representations of the model.
 
 ---------------------------------
+## Utility Function
 
-## Consumer's Optimal Choice 
+Consumer preferences represent a ranking over consumption bundles or combinations of different goods. For instance, if the consumer strictly prefers bundle x1,x2 = (1 pizza, 2 burritos) over bundle x1' ,x2' = (2 pizzas, 1 burrito), then the first combination of goods is ranked before than the second one in the preferences of this consumer.
 
-* Budget determines what I can buy.
+We will always assume consumer preferences are transitive. Transitivity means that if a consumer prefers bundle a over bundle b, and he also prefers bundle b over bundle c, then it must be the case that the consumer prefers bundle a over bundle c
 
-* Utility function (preferences) determine how I value those affordable alternatives.
+Transitivity is a very important property as it allows us to talk of the most preferred bundle! When it holds, we can often conveniently represent the preferences of a given consumer by what we call a utility function.
+* To do so, we also require the preferences to be continuous. Roughly speaking, “preferences are continuous” if whenever an alternative A is preferred to an alternative B, any option A’ that is sufficiently similar to option A is also preferred to option B.
 
-* Which bundle do I buy?
+
+Formally, a utility function is a function that assigns a number to each bundle in such a way that these numbers respect the underlying preference ranking of the consumer (i.e., the utility function assigns higher numbers to more preferred combinations of goods).
+
+**Example**: : Let good 1 be pizza and good 2 be burrito. In addition, assume the preferences of a given consumer over slices of pizza and burritos are captured by the next utility function:
+[ insert function ]
+
+* Suppose that a first bundle contains 16 slices of pizza and 1 burrito, so that u(16,1)=2. If a second bundle has 3 slices of pizzas and 3 burritos, then u(3,3)=3. It follows that this consumer prefers the second over the first combination of goods (i.e., he likes to have 3 slices of pizzas and 3 burritos more than having 16 slices of pizza and 1 burrito.)
+
+Though there are many types of utility functions, in this course we will mainly focus on three of them: Cobb-Douglas, Perfect Complements (i.e., Leontieff), and Perfect Substitutes (i.e., linear). We will sometimes also use the CES utility function. (CES stands for constant elasticity of substitution. We will clarify this term later.) The specific mathematical (functional) form of each of these utilities is given in the next table.
+
+| Utility Function| Mathematical Form|
+| ------------- |:-------------:| 
+| Perfect Substitutes  | ux1,x2=ax1 | 
+| Perfect Complements  | ux1,x2=min{x1/a,x2/b} | 
+| Cobb-Douglas | ux1,x2=x1a | 
+| CES | ux1,x2=a x1r+b x2r1/r | 
+
+In the first three cases we typically assume a,b0. In the last one, we let r1. As we shall see, these parameters play very different roles in each specification.
+
+As we explained earlier, the important aspect of a utility function is that it captures the underlying preferences of a specific consumer. According to the ordinal utility theory, it is meaningful to ask whether a bundle is better than a second one, but not how much better it is. In other words, the actual numbers that a utility function assigns to the specific bundles are not important as far as they preserve (respect) the ranking of the individual over the combination of goods. It follows that when the preferences of an individual can be represented by a utility function, then an infinite number of them can capture the same preferences!
+
+**Example**: Suppose that our previous consumer strictly prefers 16 slices of pizza and 1 burrito to 3 slices of pizzas and 3 burritos. In addition, he is indifferent between having 3 slices of pizzas and 3 burritos and 2 slices of pizzas and 4 burritos. Moreover, he strictly prefers 2 slices of pizzas and 4 burritos to having 2 slices of pizzas and 2 burritos. In summary, this consumer ranks the different combinations of goods as follows:
+
+1st (16, 1);   2nd (3, 3) and (2, 4);   3rd (2,2).
+
+It follows that a utility function represents his preferences if and only if it assigns numbers to each combination of goods in the following way:
+
+u(16,1)>u(3,3)=(2,4)>u(2,2).
+
+Let us now consider the three possible utility functions shown in the next table. Which of these three utilities represent the preferences we just described? 
+
+| Bundle | Utility 1 | Utility 2 | Utility 3 |
+|--------|-----------|-----------|-----------|
+|(16,1)|8|12|4|
+|(3,3)|7|9|2|
+|(2,4)|6|9|2|
+|(2,2)|3|2|-1|
+
+It is clear that Utility 1 does not do so. The reason is that it assigns to bundle 3,3 a higher number than to bundle 2,4, contradicting the fact that the consumer is indifferent between these two combinations of goods. On the other hand, even when Utility 2 and Utility 3 assign different numbers to the bundles, both of them are consistent with the preference ranking of the consumer. Therefore, Utility 2 and Utility 3 both represent this consumer’s preferences.
+
+There are two concepts associated to the utility function, which play a key role in explaining consumer behavior, namely, indifference curves and marginal rate of substitution. We next elaborate on each of them.
+
+An indifference curve is the set of all bundles that a consumer regards as equally desirable. In other words, it is the set of all combination of goods that give the consumer the same utility level. 
+
+We often assume that preferences satisfy a property that says more is always better. Under this monotonicity assumption, the indifference curves cannot be “thick” and they must be downward slopping. 
+
+Weakly preferred sets also provide a convenient characterization of preferences. In terms of the utility function, a weakly preferred set is the sets of all bundles x1,x2 such that ux1,x2 is at least as large as a specific value k.
+
+**Example**: Let u(x1,x2)=(x1)1/4(x2)3/4
+implicitly describes the set of all combinations of goods 1 and 2 that give the consumer a level k of utility. For each k, this set ---which can be also written as x2=k2/x1--- denotes a specific indifferent curve. We can get all the indifference curves by changing k
+
+In addition, for each k, the associated weakly preferred set is x2>k4/3/x11/3. ■
+
+
+The next figure shows the typical shape of the indifference curves for the case of Perfect Substitutes (top, left), Perfect Complements (top, right), Cobb-Douglas (bottom, left) and CES (bottom, right). You can find an interactive version of this figure here:
+ <https://www.desmos.com/calculator/sh2hmdkie9>
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---------------------------------
 
